@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "AI-powered study app for Bocconi exams",
   "main": "server.js",
-  "engines": { "node": ">=18.0.0" },
+  "engines": { "node": ">=20.0.0" },
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch-path=./server.js --watch-path=./public --watch-path=./data server.js"
