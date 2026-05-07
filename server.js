@@ -1192,8 +1192,16 @@ app.post('/api/user/keys', async (req, res) => {
   if (!username) return res.status(401).json({ error: 'Not logged in' });
   const { anthropic_key, openai_key } = req.body || {};
   const update = {};
-  if (typeof anthropic_key === 'string') update.anthropic_key = anthropic_key.trim() || null;
-  if (typeof openai_key    === 'string') update.openai_key    = openai_key.trim()    || null;
+  if (typeof anthropic_key === 'string') {
+    const k = anthropic_key.trim();
+    if (k && !k.startsWith('sk-ant-')) return res.status(400).json({ error: 'Invalid Anthropic key — should start with sk-ant-' });
+    update.anthropic_key = k || null;
+  }
+  if (typeof openai_key === 'string') {
+    const k = openai_key.trim();
+    if (k && !k.startsWith('sk-')) return res.status(400).json({ error: 'Invalid OpenAI key — should start with sk-' });
+    update.openai_key = k || null;
+  }
   if (!Object.keys(update).length) return res.status(400).json({ error: 'No keys provided' });
   const { error } = await supabase.from('users').update(update).eq('username', username);
   if (error) return res.status(500).json({ error: error.message });

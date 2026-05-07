@@ -37,7 +37,7 @@ export function mount(container) {
 
       <div class="settings-section">
         <div class="settings-label">Anthropic API key</div>
-        <p class="settings-desc">Required for AI Tutor, orbit chat, and question generation. Get yours at console.anthropic.com.</p>
+        <p class="settings-desc">Required for AI Tutor, orbit chat, and question generation. Get yours at console.anthropic.com — paste just the key (starts with <code>sk-ant-</code>), nothing else.</p>
         <div style="display:flex;gap:0.5rem;margin-bottom:0.5rem;">
           <input type="password" id="anthropic-key-input" placeholder="sk-ant-…" autocomplete="off"
             style="flex:1;padding:0.5rem 0.75rem;background:var(--surface-2);color:var(--t1);border:1px solid var(--border);border-radius:0.5rem;font-family:monospace;font-size:0.8125rem;">
@@ -48,7 +48,7 @@ export function mount(container) {
 
       <div class="settings-section">
         <div class="settings-label">OpenAI API key</div>
-        <p class="settings-desc">Required for voice chat (TTS + Whisper). Get yours at platform.openai.com.</p>
+        <p class="settings-desc">Required for voice chat (TTS + Whisper). Get yours at platform.openai.com — paste just the key (starts with <code>sk-</code>), nothing else.</p>
         <div style="display:flex;gap:0.5rem;margin-bottom:0.5rem;">
           <input type="password" id="openai-key-input" placeholder="sk-…" autocomplete="off"
             style="flex:1;padding:0.5rem 0.75rem;background:var(--surface-2);color:var(--t1);border:1px solid var(--border);border-radius:0.5rem;font-family:monospace;font-size:0.8125rem;">
