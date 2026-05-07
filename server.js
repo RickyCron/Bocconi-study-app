@@ -21,10 +21,16 @@ const uploadPdf = multer({
 
 // ── Supabase client ───────────────────────────────────────────────────────────
 
-const supabase = createClient(
-  process.env.SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY
-);
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
+console.log('[startup] SUPABASE_URL set:', !!SUPABASE_URL);
+console.log('[startup] SUPABASE_SERVICE_ROLE_KEY set:', !!SUPABASE_KEY);
+if (!SUPABASE_URL || !SUPABASE_KEY) {
+  console.error('[startup] Missing required env vars. Available keys:', Object.keys(process.env).filter(k => !k.includes('SECRET') && !k.includes('KEY') && !k.includes('TOKEN')).join(', '));
+  process.exit(1);
+}
+
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // ── Course data (backed by Supabase: tables + Storage bucket 'course-slides') ──
 
