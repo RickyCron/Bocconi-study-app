@@ -106,16 +106,11 @@ window.ttsPlay = async function () {
     });
 
     if (!res.ok) {
-      const e = await res.json().catch(() => ({}));
-      // No OpenAI key — fall back to browser TTS silently
-      if (res.status === 400 && e.error?.includes('OpenAI')) {
-        if (playBtn) { playBtn.disabled = false; playBtn.textContent = 'Play'; }
-        if (playBtn)  playBtn.style.display  = 'none';
-        if (pauseBtn) pauseBtn.style.display = 'block';
-        _browserPlay(_tts.text, speed);
-        return;
-      }
-      throw new Error(e.error || 'TTS request failed');
+      if (playBtn) { playBtn.disabled = false; playBtn.textContent = 'Play'; }
+      if (playBtn)  playBtn.style.display  = 'none';
+      if (pauseBtn) pauseBtn.style.display = 'block';
+      _browserPlay(_tts.text, speed);
+      return;
     }
 
     const blob  = await res.blob();
