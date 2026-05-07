@@ -79,7 +79,7 @@ window.ttsPlay = async function () {
       headers: { 'Content-Type': 'application/json' },
       body:    JSON.stringify({ text: _tts.text }),
     });
-    if (!res.ok) throw new Error('TTS request failed');
+    if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.error || 'TTS request failed'); }
     const blob  = await res.blob();
     const url   = URL.createObjectURL(blob);
     const audio = new Audio(url);
