@@ -1,0 +1,19 @@
+{
+  "name": "bocconi-study-app",
+  "version": "1.0.0",
+  "description": "AI-powered study app for Bocconi exams",
+  "main": "server.js",
+  "engines": { "node": ">=18.0.0" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch-path=./server.js --watch-path=./public --watch-path=./data server.js"
+  },
+  "dependencies": {
+    "@ricky0123/vad-web": "^0.0.30",
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "multer": "^2.0.0",
+    "onnxruntime-web": "^1.24.3"
+  }
+}
