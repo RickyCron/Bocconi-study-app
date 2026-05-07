@@ -3,7 +3,7 @@ import { escapeHtml } from '../lib/utils.js';
 
 // ── Module-scoped TTS state ───────────────────────────────────────────────────
 
-const _tts = { text: '', audio: null };
+const _tts = { text: '', audio: null, usingBrowser: false };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -57,16 +57,41 @@ window.closeListen = function () {
   _closeModal('listen-modal');
 };
 
+function _browserPlay(text, speed) {
+  speechSynthesis.cancel();
+  const utterance  = new SpeechSynthesisUtterance(text);
+  utterance.rate   = Math.min(speed, 2); // SpeechSynthesis caps at 2
+  utterance.onend  = () => {
+    _tts.usingBrowser = false;
+    const playBtn  = document.getElementById('btn-play');
+    const pauseBtn = document.getElementById('btn-pause');
+    if (playBtn)  playBtn.style.display  = 'block';
+    if (pauseBtn) pauseBtn.style.display = 'none';
+  };
+  _tts.usingBrowser = true;
+  speechSynthesis.speak(utterance);
+}
+
 window.ttsPlay = async function () {
   if (!_tts.text) return;
 
   const playBtn  = document.getElementById('btn-play');
   const pauseBtn = document.getElementById('btn-pause');
   const speedEl  = document.getElementById('listen-speed');
+  const speed    = parseFloat(speedEl?.value || '1');
 
+  // Resume paused OpenAI audio
   if (_tts.audio && _tts.audio.paused && _tts.audio.src) {
-    _tts.audio.playbackRate = parseFloat(speedEl?.value || '1');
+    _tts.audio.playbackRate = speed;
     _tts.audio.play();
+    if (playBtn)  playBtn.style.display  = 'none';
+    if (pauseBtn) pauseBtn.style.display = 'block';
+    return;
+  }
+
+  // Resume paused browser TTS
+  if (_tts.usingBrowser && speechSynthesis.paused) {
+    speechSynthesis.resume();
     if (playBtn)  playBtn.style.display  = 'none';
     if (pauseBtn) pauseBtn.style.display = 'block';
     return;
@@ -79,11 +104,24 @@ window.ttsPlay = async function () {
       headers: { 'Content-Type': 'application/json' },
       body:    JSON.stringify({ text: _tts.text }),
     });
-    if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(e.error || 'TTS request failed'); }
+
+    if (!res.ok) {
+      const e = await res.json().catch(() => ({}));
+      // No OpenAI key — fall back to browser TTS silently
+      if (res.status === 400 && e.error?.includes('OpenAI')) {
+        if (playBtn) { playBtn.disabled = false; playBtn.textContent = 'Play'; }
+        if (playBtn)  playBtn.style.display  = 'none';
+        if (pauseBtn) pauseBtn.style.display = 'block';
+        _browserPlay(_tts.text, speed);
+        return;
+      }
+      throw new Error(e.error || 'TTS request failed');
+    }
+
     const blob  = await res.blob();
     const url   = URL.createObjectURL(blob);
     const audio = new Audio(url);
-    audio.playbackRate = parseFloat(speedEl?.value || '1');
+    audio.playbackRate = speed;
     audio.onended = () => {
       if (playBtn)  playBtn.style.display  = 'block';
       if (pauseBtn) pauseBtn.style.display = 'none';
@@ -108,7 +146,8 @@ window.ttsPlay = async function () {
 };
 
 window.ttsPause = function () {
-  if (_tts.audio) _tts.audio.pause();
+  if (_tts.usingBrowser) speechSynthesis.pause();
+  else if (_tts.audio) _tts.audio.pause();
   const playBtn  = document.getElementById('btn-play');
   const pauseBtn = document.getElementById('btn-pause');
   if (playBtn)  playBtn.style.display  = 'block';
@@ -116,6 +155,7 @@ window.ttsPause = function () {
 };
 
 window.ttsStop = function () {
+  if (_tts.usingBrowser) { speechSynthesis.cancel(); _tts.usingBrowser = false; }
   if (_tts.audio) { _tts.audio.pause(); _tts.audio.src = ''; _tts.audio = null; }
   const playBtn  = document.getElementById('btn-play');
   const pauseBtn = document.getElementById('btn-pause');
