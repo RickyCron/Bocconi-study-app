@@ -1,5 +1,5 @@
 import { state } from './store/store.js';
-import { auth, loadAppData, syncChatsFromServer } from './lib/api.js';
+import { auth, loadAppData, syncChatsFromServer, clearChatData } from './lib/api.js';
 import { showToast } from './lib/toast.js';
 import { navigate, registerView } from './router.js';
 
@@ -345,6 +345,7 @@ window.logout = async function () {
   window.closeProfileMenu();
   StudySession.end();
   try { await fetch('/api/auth/logout', { method: 'POST' }); } catch {}
+  clearChatData();
   state.user = null;
   state.courses = null;
   state.questions = null;

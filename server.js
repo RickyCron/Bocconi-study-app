@@ -109,6 +109,55 @@ async function loadCourse(id) {
   return all[id] || null;
 }
 
+// ── PDF fetch + memory cache ──────────────────────────────────────────────────
+// Slide PDFs rarely change; cache base64 in-process for the lifetime of the server.
+// Invalidated alongside the course cache on slide upload.
+
+const _pdfCache = new Map(); // url → base64 string
+
+function invalidatePdf(url) { _pdfCache.delete(url); }
+
+async function fetchPdfBase64(url) {
+  if (!url || !url.startsWith('http')) return null;
+  if (_pdfCache.has(url)) return _pdfCache.get(url);
+  try {
+    const r = await fetch(url);
+    if (!r.ok) { console.warn('[pdf-cache] fetch failed:', url, r.status); return null; }
+    const buf = await r.arrayBuffer();
+    const b64 = Buffer.from(buf).toString('base64');
+    _pdfCache.set(url, b64);
+    console.log('[pdf-cache] cached', url.split('/').pop(), `(${Math.round(buf.byteLength / 1024)} KB)`);
+    return b64;
+  } catch (err) {
+    console.warn('[pdf-cache] error fetching', url, err.message);
+    return null;
+  }
+}
+
+async function buildCoursePdfBlocks(courseId, sessionId) {
+  const course = await loadCourse(courseId);
+  if (!course) return [];
+
+  // No session selected → don't auto-load PDFs; rely on structured notes only.
+  if (!sessionId) return [];
+
+  const session = course.sessions.find(s => String(s.id) === String(sessionId));
+  if (!session) return [];
+
+  const slides = session.slides || [];
+  const blocks = [];
+  for (const slide of slides) {
+    const data = await fetchPdfBase64(slide.file);
+    if (data) blocks.push({
+      type: 'document',
+      title: slide.title,
+      source: { type: 'base64', media_type: 'application/pdf', data },
+      cache_control: { type: 'ephemeral' },
+    });
+  }
+  return blocks;
+}
+
 function shuffle(arr) { return [...arr].sort(() => Math.random() - 0.5); }
 
 // ── Auth helpers ──────────────────────────────────────────────────────────────
@@ -1211,6 +1260,22 @@ app.post('/api/user/keys', async (req, res) => {
 
 // ── Data endpoints ────────────────────────────────────────────────────────────
 
+app.get('/api/lecture-primer', async (req, res) => {
+  const username = getUser(req);
+  if (!username) return res.status(401).json({ error: 'Not logged in' });
+  const { courseId, sessionId } = req.query;
+  const { data, error } = await supabase
+    .from('lecture_primers')
+    .select('text')
+    .eq('username', username)
+    .eq('course_id', courseId)
+    .eq('session_id', sessionId || '')
+    .maybeSingle();
+  if (error) console.error('[lecture-primer] GET error:', error);
+  console.log('[lecture-primer] GET', username, courseId, sessionId || '(overview)', '->', data ? 'HIT' : 'MISS');
+  res.json({ text: data?.text || null });
+});
+
 app.get('/api/courses', async (req, res) => {
   const all = await loadAllCourses();
   const courses = {};
@@ -1309,6 +1374,7 @@ app.post('/api/courses/:courseId/slides', uploadPdf.single('file'), async (req, 
   }
 
   invalidateCourses();
+  invalidatePdf(publicUrl);
   res.json({ slide: { title: rawTitle, file: publicUrl, id: inserted.id, session_ext_id: sessionExtId } });
 });
 
@@ -1590,6 +1656,28 @@ app.get('/api/adaptive-questions', async (req, res) => {
   if (!courseId) return res.status(400).json({ error: 'courseId required' });
 
   const userId = await getUserId(username);
+
+  // Serve pre-generated personalised set if available
+  if (userId) {
+    const { data: genSet } = await supabase
+      .from('generated_question_sets')
+      .select('id, questions')
+      .eq('user_id', userId)
+      .eq('course_id', courseId)
+      .eq('consumed', false)
+      .order('created_at', { ascending: false })
+      .limit(1)
+      .maybeSingle();
+
+    if (genSet?.questions?.length) {
+      supabase.from('generated_question_sets')
+        .update({ consumed: true }).eq('id', genSet.id)
+        .then(() => {}).catch(() => {});
+      const n = Math.min(parseInt(count), genSet.questions.length);
+      return res.json(shuffle(genSet.questions).slice(0, n));
+    }
+  }
+
   const course = await loadCourse(courseId);
   const allQs = (course && course.questions) || [];
   const n = Math.min(parseInt(count), allQs.length);
@@ -2865,6 +2953,30 @@ app.post('/api/chat', async (req, res) => {
   const { anthropic_key: apiKey } = await getUserKeys(username);
   if (!apiKey) return res.status(400).json({ error: 'No Anthropic API key set. Add it in Settings.' });
   try {
+    const { courseId, sessionId, ...body } = req.body;
+
+    // Inject the active session's slide PDFs as the first conversation turn.
+    // Only fires when the student has selected a specific session to study.
+    if (courseId && sessionId) {
+      const pdfBlocks = await buildCoursePdfBlocks(courseId, sessionId);
+      if (pdfBlocks.length > 0) {
+        body.messages = [
+          {
+            role: 'user',
+            content: [
+              ...pdfBlocks,
+              { type: 'text', text: 'These are my course slide decks. Use them as the primary reference throughout our session.' },
+            ],
+          },
+          {
+            role: 'assistant',
+            content: 'Got it — I have all your slide decks loaded and will refer directly to them.',
+          },
+          ...body.messages,
+        ];
+      }
+    }
+
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -2873,10 +2985,68 @@ app.post('/api/chat', async (req, res) => {
         'anthropic-version': '2023-06-01',
         'anthropic-beta': 'pdfs-2024-09-25,prompt-caching-2024-07-31'
       },
-      body: JSON.stringify(req.body)
+      body: JSON.stringify(body)
     });
     const data = await response.json();
     res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ── Grade open-ended answer via Claude ───────────────────────────────────────
+
+app.post('/api/grade-answer', async (req, res) => {
+  const username = getUser(req);
+  if (!username) return res.status(401).json({ error: 'Not logged in' });
+  const { anthropic_key: apiKey } = await getUserKeys(username);
+  if (!apiKey) return res.status(400).json({ error: 'No Anthropic API key set. Add it in Settings.' });
+
+  const { question, studentAnswer, modelAnswer, keyPoints = [] } = req.body;
+  if (!question || !studentAnswer) return res.status(400).json({ error: 'Missing question or answer' });
+
+  const prompt = `You are a strict but fair university exam marker.
+
+Question: ${question}
+
+Model answer: ${modelAnswer}
+
+Key points that must be addressed:
+${keyPoints.map((p, i) => `${i + 1}. ${p}`).join('\n')}
+
+Student's answer: ${studentAnswer}
+
+Evaluate the answer. Return ONLY a JSON object with these fields:
+- "verdict": one of "correct", "partial", or "incorrect"
+  - "correct": covers all or nearly all key points clearly
+  - "partial": covers some key points but misses important ones
+  - "incorrect": fundamentally wrong, missing, or does not address the question
+- "score": integer 0–100
+- "feedback": 1–2 sentences of specific, direct feedback (what they got right and/or where they fell short)
+- "missing": array of key point strings the student missed or addressed poorly (empty array if none)
+
+Return only valid JSON, no markdown, no explanation.`;
+
+  try {
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+      },
+      body: JSON.stringify({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 512,
+        messages: [{ role: 'user', content: prompt }],
+      }),
+    });
+    const data = await response.json();
+    const raw = data?.content?.[0]?.text || '{}';
+    let parsed;
+    try { parsed = JSON.parse(raw); }
+    catch { parsed = { verdict: 'partial', score: 50, feedback: 'Could not parse grading response.', missing: [] }; }
+    res.json(parsed);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -2951,6 +3121,286 @@ Make questions genuinely challenging and exam-realistic.`;
     res.status(500).json({ error: err.message });
   }
 });
+
+// ── Seed questions for a session (generate + save to Supabase) ───────────────
+
+app.post('/api/seed-questions', async (req, res) => {
+  const username = getUser(req);
+  if (!username) return res.status(401).json({ error: 'Not logged in' });
+  const { courseId, sessionId, target = 5 } = req.body;
+  if (!courseId || !sessionId) return res.status(400).json({ error: 'courseId and sessionId required' });
+
+  const { anthropic_key: apiKey } = await getUserKeys(username);
+  if (!apiKey) return res.status(400).json({ error: 'No Anthropic API key set. Add it in Settings.' });
+
+  const course = await loadCourse(courseId);
+  if (!course) return res.status(404).json({ error: 'Course not found' });
+  const session = course.sessions.find(s => s.id === sessionId);
+  if (!session) return res.status(404).json({ error: 'Session not found' });
+
+  const existing = (course.questions || []).filter(q => q.session === sessionId).length;
+
+  const userId = await getUserId(username);
+
+  const { data: sessionAnswers } = userId ? await supabase
+    .from('quiz_answers')
+    .select('question_id, is_correct')
+    .eq('user_id', userId)
+    .eq('course_id', courseId)
+    .eq('session_id', sessionId) : { data: [] };
+
+  const answerStats = {};
+  for (const a of sessionAnswers || []) {
+    if (!answerStats[a.question_id]) answerStats[a.question_id] = { correct: 0, total: 0 };
+    answerStats[a.question_id].total++;
+    if (a.is_correct) answerStats[a.question_id].correct++;
+  }
+  const weakIds = Object.entries(answerStats)
+    .filter(([, s]) => s.correct / s.total < 0.6)
+    .map(([id]) => id);
+  const weakQuestions = (course.questions || [])
+    .filter(q => weakIds.includes(q.id))
+    .map(q => q.question);
+  const existingQTexts = (course.questions || [])
+    .filter(q => q.session === sessionId)
+    .map(q => q.question);
+
+  const weaknessSection = weakQuestions.length > 0
+    ? `\n## Student Weakness Signal\nThe student has answered these questions incorrectly (accuracy < 60%). Generate new questions that probe the SAME underlying concepts from different angles:\n${weakQuestions.map(q => `- ${q}`).join('\n')}\n`
+    : '';
+
+  const avoidSection = existingQTexts.length > 0
+    ? `\n## Existing questions to AVOID duplicating\n${existingQTexts.map(q => `- ${q}`).join('\n')}\n`
+    : '';
+
+  const prompt = `You are a Bocconi University exam question generator.
+
+Course: ${course.name}
+Exam format: ${course.exam_format}
+Session: ${session.title}
+Topics: ${session.topics.join(', ')}
+${weaknessSection}${avoidSection}
+Generate ${target} NEW exam-style questions for this session. If weakness signals are provided above, weight the new questions toward those concepts.
+
+For MCQ courses (GTM, Geopolitics, IBM), use the Bocconi style: "Which of the following statements is NOT correct?" with 4 options (a, b, c, d) where exactly one is false.
+
+For Digital Strategy, generate a mix of MCQ and open-ended questions.
+
+For ISM, generate open-ended questions like "Describe X and explain how it applies to Y."
+
+Return ONLY a valid JSON array with this format:
+[
+  {
+    "id": "gen-${courseId}-${sessionId}-${Date.now()}-0",
+    "session": "${sessionId}",
+    "type": "mcq_not_correct",
+    "question": "...",
+    "options": {"a": "...", "b": "...", "c": "...", "d": "..."},
+    "correct": "b",
+    "explanation": "..."
+  }
+]
+
+For open questions use type "open" with fields: question, model_answer, key_points (array).
+Make questions genuinely challenging and exam-realistic.`;
+
+  try {
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
+      body: JSON.stringify({ model: 'claude-opus-4-5', max_tokens: 2000, messages: [{ role: 'user', content: prompt }] })
+    });
+    const data = await response.json();
+    const text = data.content?.[0]?.text || '';
+    const jsonMatch = text.match(/\[[\s\S]*\]/);
+    if (!jsonMatch) return res.status(500).json({ error: 'Could not parse generated questions' });
+
+    const questions = JSON.parse(jsonMatch[0]);
+    const ts = Date.now();
+    const rows = questions.map((q, i) => ({
+      id: `gen-${courseId}-${sessionId}-${ts}-${i}`,
+      course_id: courseId,
+      session_ext_id: sessionId,
+      type: q.type,
+      question: q.question,
+      options: q.options || null,
+      correct_answer: q.correct || null,
+      model_answer: q.model_answer || null,
+      key_points: q.key_points || null,
+      explanation: q.explanation || null,
+      order_idx: existing + i
+    }));
+
+    const { error: insertErr } = await supabase.from('course_questions').insert(rows);
+    if (insertErr) return res.status(500).json({ error: insertErr.message });
+
+    // Bust course cache so next load picks up new questions
+    invalidateCourses();
+
+    res.json({ added: rows.length, total: existing + rows.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ── Personalised quiz pre-generation ─────────────────────────────────────────
+
+app.post('/api/generate-next-quiz', async (req, res) => {
+  const username = getUser(req);
+  if (!username) return res.status(401).json({ error: 'Not logged in' });
+  const { courseId } = req.body;
+  if (!courseId) return res.status(400).json({ error: 'courseId required' });
+  res.json({ ok: true });
+  _generateAndStoreNextQuiz(username, courseId).catch(err =>
+    console.error('[generate-next-quiz]', err.message)
+  );
+});
+
+async function _generateAndStoreNextQuiz(username, courseId) {
+  const { anthropic_key: apiKey } = await getUserKeys(username);
+  if (!apiKey) return;
+  const userId = await getUserId(username);
+  if (!userId) return;
+  const course = await loadCourse(courseId);
+  if (!course) return;
+
+  // Weakness signals from quiz history
+  const { data: answers } = await supabase
+    .from('quiz_answers')
+    .select('session_id, is_correct, question_id')
+    .eq('user_id', userId)
+    .eq('course_id', courseId);
+
+  const sessionStats = {};
+  const wrongQIds = new Set();
+  for (const a of answers || []) {
+    const sid = a.session_id || 'unknown';
+    if (!sessionStats[sid]) sessionStats[sid] = { total: 0, correct: 0 };
+    sessionStats[sid].total++;
+    if (a.is_correct) sessionStats[sid].correct++;
+    if (!a.is_correct) wrongQIds.add(a.question_id);
+  }
+
+  const weakSessions = course.sessions
+    .map(s => {
+      const st = sessionStats[s.id];
+      if (!st || st.total === 0) return null;
+      const pct = Math.round((st.correct / st.total) * 100);
+      return { id: s.id, title: s.title, pct };
+    })
+    .filter(s => s && s.pct < 70)
+    .sort((a, b) => a.pct - b.pct);
+
+  const qById = {};
+  for (const s of course.sessions)
+    for (const q of (course.questions || []).filter(q => q.session === s.id))
+      qById[q.id] = s.title;
+
+  const wrongWithLabels = [...wrongQIds].slice(0, 30)
+    .map(id => ({ id, session: qById[id] || 'unknown' }));
+
+  // Tutor conversation context
+  const { data: convRows } = await supabase
+    .from('chat_conversations')
+    .select('messages, updated_at')
+    .eq('user_id', userId)
+    .eq('course_id', courseId)
+    .order('updated_at', { ascending: false })
+    .limit(3);
+
+  const tutorLines = [];
+  for (const conv of (convRows || [])) {
+    for (const msg of [...(conv.messages || [])].reverse()) {
+      if (tutorLines.length >= 20) break;
+      const raw = msg.content;
+      let text = typeof raw === 'string' ? raw
+        : Array.isArray(raw) ? raw.filter(b => b.type === 'text').map(b => b.text).join(' ')
+        : '';
+      text = text.trim().slice(0, 300);
+      if (!text) continue;
+      tutorLines.push(`${msg.role === 'user' ? 'Student' : 'Tutor'}: ${text}`);
+    }
+    if (tutorLines.length >= 20) break;
+  }
+  tutorLines.reverse();
+
+  const timestamp = Date.now();
+  const count = 10;
+
+  const weakBlock = weakSessions.length
+    ? weakSessions.map(s => `  - ${s.title} (${s.pct}% accuracy)`).join('\n')
+    : '  - No sessions below 70% yet — generate across all topics';
+  const wrongBlock = wrongWithLabels.length
+    ? wrongWithLabels.map(w => `  - ${w.id} (${w.session})`).join('\n')
+    : '  - None recorded yet';
+  const tutorBlock = tutorLines.length
+    ? tutorLines.join('\n')
+    : '  (No tutor conversation history)';
+  const sessionList = course.sessions.map(s => `  - ${s.id} → ${s.title}`).join('\n');
+
+  const prompt = `You are a Bocconi University exam question generator creating a personalised quiz.
+
+Course: ${course.name}
+Exam format: ${course.exam_format}
+
+Valid session IDs (use these exactly in the "session" field):
+${sessionList}
+
+## Student Weakness Profile
+
+Sessions below 70% accuracy (worst first):
+${weakBlock}
+
+Recently answered incorrectly:
+${wrongBlock}
+
+Recent tutor conversation (chronological):
+${tutorBlock}
+
+## Task
+Generate ${count} exam-style questions that:
+1. Heavily weight weak sessions listed above
+2. Target concepts raised or struggled with in the tutor conversation
+3. Do NOT reproduce the exact wrong-question IDs — test the same concepts with new questions
+4. Match authentic Bocconi exam style
+
+For MCQ courses (GTM, Geopolitics, IBM): "Which of the following statements is NOT correct?" — 4 options (a–d), exactly one false.
+For Digital Strategy: mix MCQ and open-ended.
+For ISM: open-ended only ("Describe X and explain how it applies to Y.").
+
+Return ONLY a valid JSON array (no markdown fences) using this format:
+[
+  {
+    "id": "gen-${courseId}-${timestamp}-0",
+    "session": "<valid-session-id>",
+    "type": "mcq_not_correct",
+    "question": "...",
+    "options": {"a":"...","b":"...","c":"...","d":"..."},
+    "correct": "b",
+    "explanation": "..."
+  }
+]
+For open questions: type "open", fields: question, model_answer, key_points (string array).
+Number IDs sequentially: gen-${courseId}-${timestamp}-0, gen-${courseId}-${timestamp}-1, etc.`;
+
+  const response = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'x-api-key': apiKey, 'anthropic-version': '2023-06-01' },
+    body: JSON.stringify({ model: 'claude-opus-4-5', max_tokens: 4000, messages: [{ role: 'user', content: prompt }] })
+  });
+  if (!response.ok) throw new Error(`Claude API ${response.status}`);
+
+  const data = await response.json();
+  const jsonMatch = (data.content?.[0]?.text || '').match(/\[[\s\S]*\]/);
+  if (!jsonMatch) throw new Error('No JSON array in response');
+  const questions = JSON.parse(jsonMatch[0]);
+  if (!Array.isArray(questions) || !questions.length) throw new Error('Empty question array');
+
+  await supabase.from('generated_question_sets').insert({
+    user_id: userId, course_id: courseId, questions, consumed: false
+  });
+  console.log(`[generate-next-quiz] stored ${questions.length} questions for ${username} / ${courseId}`);
+}
 
 // ── OpenAI TTS proxy ──────────────────────────────────────────────────────────
 
@@ -3118,14 +3568,15 @@ app.post('/api/voice/summarize', async (req, res) => {
     return res.json({ summary: priorSummary });
   }
 
+  const studentName = username.charAt(0).toUpperCase() + username.slice(1);
   const transcript = newMessages
-    .map(m => `${m.role === 'user' ? 'Ricky' : 'Tutor'}: ${m.content}`)
+    .map(m => `${m.role === 'user' ? studentName : 'Tutor'}: ${m.content}`)
     .join('\n');
   const prior = priorSummary.trim()
     ? `Prior summary:\n${priorSummary.trim()}\n\n`
     : '';
 
-  const prompt = `${prior}New exchanges to fold in:\n${transcript}\n\nProduce an updated 3-5 sentence prose summary of the conversation so far. Cover: key topics covered, concepts Ricky found difficult or wanted clarified, decisions made, and where the conversation left off. Be specific, not generic. Prose only — no bullet points, no headings.`;
+  const prompt = `${prior}New exchanges to fold in:\n${transcript}\n\nProduce an updated 3-5 sentence prose summary of the conversation so far. Cover: key topics covered, concepts the student found difficult or wanted clarified, decisions made, and where the conversation left off. Be specific, not generic. Prose only — no bullet points, no headings.`;
 
   try {
     const response = await fetch('https://api.anthropic.com/v1/messages', {
@@ -3215,6 +3666,12 @@ Write as if speaking directly to the student. Flowing prose, conversational tone
     const data = await response.json();
     const text = data.content?.[0]?.text;
     if (text) {
+      const { error: upsertErr } = await supabase.from('lecture_primers').upsert(
+        { username, course_id: courseId, session_id: sessionId || '', text, updated_at: new Date().toISOString() },
+        { onConflict: 'username,course_id,session_id' }
+      );
+      if (upsertErr) console.error('[lecture-primer] upsert error:', upsertErr);
+      else console.log('[lecture-primer] saved for', username, courseId, sessionId || '(overview)');
       res.json({ text });
     } else {
       res.status(500).json({ error: 'Empty response from Claude' });
@@ -3268,6 +3725,7 @@ async function start() {
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => {
     console.log(`\n🎓 Bocconi Study App → http://localhost:${PORT}\n`);
+    console.log('✓  Primer cache: Supabase lecture_primers table');
     console.log('Exams:');
     console.log('  18 May — GTM Strategies');
     console.log('  21 May — Geopolitics');

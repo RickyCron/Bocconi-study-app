@@ -295,11 +295,17 @@ export async function streamOrbitChat(body) {
 // Chat data lives in localStorage (large) + synced to server.
 // This is NOT part of the reactive store — it's too large to be reactive.
 
-const CHAT_STORE = 'bocconi_chats';
+function chatStoreKey() {
+  return state.user ? `bocconi_chats:${state.user}` : 'bocconi_chats';
+}
 
 export function loadChatData() {
-  try { return JSON.parse(localStorage.getItem(CHAT_STORE)) || { conversations: {}, memory: {} }; }
+  try { return JSON.parse(localStorage.getItem(chatStoreKey())) || { conversations: {}, memory: {} }; }
   catch { return { conversations: {}, memory: {} }; }
+}
+
+export function clearChatData() {
+  try { localStorage.removeItem(chatStoreKey()); } catch {}
 }
 
 function _stripAttachmentData(conversations) {
@@ -332,7 +338,7 @@ export function saveChatData(data) {
     body:    JSON.stringify({ conversations: data.conversations }),
   }).catch(() => {});
   const stripped = _stripAttachmentData(data.conversations);
-  try { localStorage.setItem(CHAT_STORE, JSON.stringify({ ...data, conversations: stripped })); }
+  try { localStorage.setItem(chatStoreKey(), JSON.stringify({ ...data, conversations: stripped })); }
   catch (e) { console.warn('localStorage quota exceeded', e); }
 }
 
@@ -353,7 +359,7 @@ export async function syncChatsFromServer() {
       }
     }
     const stripped = _stripAttachmentData(local.conversations);
-    try { localStorage.setItem(CHAT_STORE, JSON.stringify({ ...local, conversations: stripped })); }
+    try { localStorage.setItem(chatStoreKey(), JSON.stringify({ ...local, conversations: stripped })); }
     catch {}
   } catch {}
 }

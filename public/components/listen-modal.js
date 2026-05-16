@@ -1,5 +1,4 @@
 import { state } from '../store/store.js';
-import { escapeHtml } from '../lib/utils.js';
 
 // ── Module-scoped TTS state ───────────────────────────────────────────────────
 
@@ -18,20 +17,29 @@ function _closeModal(id) {
 
 // ── Public API (window globals) ───────────────────────────────────────────────
 
-window.openListen = async function (courseId, sessionId) {
+const _primerCache = new Map(); // key: "courseId:sessionId" → text
+let _primerContext = { courseId: null, sessionId: null };
+
+async function _loadPrimer(courseId, sessionId, forceRegenerate) {
+  const textEl   = document.getElementById('listen-text');
+  const playBtn  = document.getElementById('btn-play');
+  const regenBtn = document.getElementById('btn-regen-primer');
+  const key      = `${courseId}:${sessionId || ''}`;
+
   _tts.text = '';
-  const titleEl    = document.getElementById('listen-title');
-  const subtitleEl = document.getElementById('listen-subtitle');
-  const textEl     = document.getElementById('listen-text');
-  const playBtn    = document.getElementById('btn-play');
+  if (playBtn)  playBtn.disabled  = true;
+  if (regenBtn) regenBtn.disabled = true;
 
-  if (titleEl)    titleEl.textContent    = 'Listen · ' + (state.courses?.[courseId]?.name || courseId);
-  if (subtitleEl) subtitleEl.textContent = sessionId ? 'Lecture ' + sessionId : 'Course Overview';
-  if (textEl)     textEl.textContent     = 'Generating lecture primer…';
-  if (playBtn)    playBtn.disabled       = true;
+  if (!forceRegenerate && _primerCache.has(key)) {
+    const cached = _primerCache.get(key);
+    _tts.text = cached;
+    if (textEl)   textEl.textContent  = cached;
+    if (playBtn)  playBtn.disabled    = false;
+    if (regenBtn) regenBtn.disabled   = false;
+    return;
+  }
 
-  document.getElementById('listen-modal').classList.add('open');
-
+  if (textEl) textEl.textContent = 'Generating lecture primer…';
   try {
     const res  = await fetch('/api/lecture-primer', {
       method:  'POST',
@@ -40,16 +48,35 @@ window.openListen = async function (courseId, sessionId) {
     });
     const data = await res.json();
     if (data.text) {
+      _primerCache.set(key, data.text);
       _tts.text = data.text;
-      if (textEl) textEl.textContent = data.text;
-      if (playBtn) playBtn.disabled  = false;
+      if (textEl)  textEl.textContent = data.text;
+      if (playBtn) playBtn.disabled   = false;
     } else {
-      if (textEl) textEl.textContent = 'Could not generate primer. ' + escapeHtml(data.error || '');
+      if (textEl) textEl.textContent = 'Could not generate primer. ' + (data.error || '');
     }
   } catch (err) {
-    if (document.getElementById('listen-text'))
-      document.getElementById('listen-text').textContent = 'Error: ' + err.message;
+    if (textEl) textEl.textContent = 'Error: ' + err.message;
   }
+  if (regenBtn) regenBtn.disabled = false;
+}
+
+window.openListen = async function (courseId, sessionId) {
+  _tts.text = '';
+  _primerContext = { courseId, sessionId };
+  const titleEl    = document.getElementById('listen-title');
+  const subtitleEl = document.getElementById('listen-subtitle');
+
+  if (titleEl)    titleEl.textContent    = 'Listen · ' + (state.courses?.[courseId]?.name || courseId);
+  if (subtitleEl) subtitleEl.textContent = sessionId ? 'Lecture ' + sessionId : 'Course Overview';
+
+  document.getElementById('listen-modal').classList.add('open');
+  await _loadPrimer(courseId, sessionId, false);
+};
+
+window.regenPrimer = async function () {
+  window.ttsStop();
+  await _loadPrimer(_primerContext.courseId, _primerContext.sessionId, true);
 };
 
 window.closeListen = function () {

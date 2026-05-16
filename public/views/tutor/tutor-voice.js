@@ -60,6 +60,11 @@ window.updateVoiceSettings = function () {
 
 // ── Voice system prompt ───────────────────────────────────────────────────────
 
+function voiceUserName() {
+  const u = state.user || 'there';
+  return u.charAt(0).toUpperCase() + u.slice(1);
+}
+
 function buildVoiceSystemPrompt(courseId) {
   const courses = state.courses || {};
   const c = courseId && courses[courseId];
@@ -71,11 +76,11 @@ function buildVoiceSystemPrompt(courseId) {
 - End with a brief follow-up question when it would keep the dialogue going.
 - Never say "as an AI" or apologise for being a model.`;
 
-  if (!c) return `You are Ricky's voice tutor for his May 2026 Bocconi exams.\n\n${voiceRules}`;
+  if (!c) return `You are ${voiceUserName()}'s voice tutor for their May 2026 Bocconi exams.\n\n${voiceRules}`;
 
   const sessions = c.sessions.map(s => `- Session ${s.id}: ${s.title}`).join('\n');
   const keyTerms = (c.definitions || []).slice(0, 12).map(d => `- ${d.term}: ${d.definition}`).join('\n');
-  return `You are Ricky's voice tutor for ${c.name} at Università Bocconi. Exam: ${c.exam_date} (${c.exam_format}).
+  return `You are ${voiceUserName()}'s voice tutor for ${c.name} at Università Bocconi. Exam: ${c.exam_date} (${c.exam_format}).
 
 SESSIONS:
 ${sessions}
@@ -266,7 +271,7 @@ async function streamClaudeReply() {
   } else {
     history = Voice.history.slice(-RECENT);
     if (Voice.summary?.trim()) {
-      systemPrompt += `\n\nCONVERSATION SO FAR (prior context, already discussed with Ricky):\n${Voice.summary.trim()}\n\nUse this as context — do not recap it back unless Ricky asks. Continue naturally from the recent exchanges below.`;
+      systemPrompt += `\n\nCONVERSATION SO FAR (prior context, already discussed with ${voiceUserName()}):\n${Voice.summary.trim()}\n\nUse this as context — do not recap it back unless they ask. Continue naturally from the recent exchanges below.`;
     }
   }
 

@@ -5,6 +5,7 @@ import {
   escapeHtml, daysUntil, effectiveExamDate,
   getCoverage, getWrongCount, animateStaggerItems, animateProgressBars,
 } from '../../lib/utils.js';
+import { showToast } from '../../lib/toast.js';
 
 let _courseId = null;
 
@@ -139,6 +140,7 @@ function _sessionHtml(courseId, s) {
   const score = sp.quizScore;
   const scoreColor = score >= 70 ? 'var(--green)' : score >= 50 ? 'var(--c-gtm)' : 'var(--red)';
   const slides = s.slides || [];
+  const qCount = (state.questions?.[courseId] || []).filter(q => q.session === s.id).length;
 
   const slideLink = sl => (sl.file && /^https?:\/\//.test(sl.file))
     ? sl.file
@@ -173,6 +175,7 @@ function _sessionHtml(courseId, s) {
           <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.5rem;flex-wrap:wrap;">
             ${done ? `<span class="badge badge-green">Notes done</span>` : ''}
             ${score !== undefined ? `<span style="font-size:0.75rem;color:var(--t3);">Quiz <span style="font-family:'Geist Mono',monospace;font-weight:600;color:${scoreColor};">${score}%</span></span>` : ''}
+            <span style="font-size:0.75rem;color:var(--t3);">${qCount} question${qCount !== 1 ? 's' : ''}</span>
           </div>
         </div>
         <div style="display:flex;gap:0.25rem;flex-shrink:0;">
@@ -184,6 +187,9 @@ function _sessionHtml(courseId, s) {
           </button>
           <button class="btn-icon" title="Quiz" data-action="quiz-session" data-course="${courseId}" data-session="${s.id}">
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+          </button>
+          <button class="btn-icon" id="genq-btn-${courseId}-${s.id}" title="Add 5 new questions (targets your weak spots)" data-action="generate-questions" data-course="${courseId}" data-session="${s.id}">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
           </button>
           <button class="btn-icon" title="${done ? 'Mark undone' : 'Mark done'}" style="color:${done ? 'var(--green)' : 'var(--t3)'};"
             data-action="toggle-done" data-course="${courseId}" data-session="${s.id}">
@@ -283,6 +289,40 @@ export function mount(container, params = {}) {
     else if (action === 'listen-course') window.openListen?.(courseId, null);
     else if (action === 'ask-tutor')     window.askTutorAbout?.(courseId);
     else if (action === 'add-slides')    openSlideUpload(courseId, sessionId);
+    else if (action === 'generate-questions') {
+      const btn = container.querySelector(`#genq-btn-${courseId}-${sessionId}`);
+      if (!btn || btn.dataset.loading) return;
+      btn.dataset.loading = '1';
+      btn.style.opacity = '0.4';
+      btn.innerHTML = `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor" style="animation:spin 1s linear infinite"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/></svg>`;
+      fetch('/api/seed-questions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ courseId, sessionId, target: 5 }),
+      })
+        .then(r => r.json())
+        .then(async data => {
+          if (data.error) throw new Error(data.error);
+          const [coursesRes, questionsRes] = await Promise.all([
+            fetch('/api/courses').then(r => r.json()),
+            fetch('/api/questions').then(r => r.json()),
+          ]);
+          state.courses = coursesRes.courses;
+          state.questions = questionsRes;
+          _render(container, courseId);
+          if (data.added > 0) {
+            showToast(`Added ${data.added} new questions`, 'success');
+          } else {
+            showToast('Generation failed — try again', 'error');
+          }
+        })
+        .catch(err => {
+          delete btn.dataset.loading;
+          btn.style.opacity = '';
+          btn.innerHTML = `<svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>`;
+          showToast(err.message, 'error');
+        });
+    }
     else if (action === 'toggle-slides') {
       const el  = container.querySelector(`#slides-${courseId}-${sessionId}`);
       const bEl = container.querySelector(`#slides-btn-${courseId}-${sessionId}`);

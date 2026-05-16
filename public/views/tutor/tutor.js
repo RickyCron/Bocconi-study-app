@@ -73,6 +73,13 @@ function getSmartSuggestions(courseId) {
   ];
 }
 
+// ── User display name ─────────────────────────────────────────────────────────
+
+function userName() {
+  const u = state.user || 'there';
+  return u.charAt(0).toUpperCase() + u.slice(1);
+}
+
 // ── Greeting ──────────────────────────────────────────────────────────────────
 
 function buildGreetingHtml(courseId) {
@@ -85,9 +92,9 @@ function buildGreetingHtml(courseId) {
 
   let html = '';
   if (sessionCount === 0) {
-    html += `<span class="md-p">Hey Ricky! I've got your <strong>${course ? escapeHtml(course.name) : 'course'}</strong> notes and exam format loaded. Let's get to work.</span>`;
+    html += `<span class="md-p">Hey ${escapeHtml(userName())}! I've got your <strong>${course ? escapeHtml(course.name) : 'course'}</strong> notes and exam format loaded. Let's get to work.</span>`;
   } else {
-    html += `<span class="md-p">Hey Ricky, session ${sessionCount + 1} for <strong>${course ? escapeHtml(course.name) : 'this course'}</strong>.`;
+    html += `<span class="md-p">Hey ${escapeHtml(userName())}, session ${sessionCount + 1} for <strong>${course ? escapeHtml(course.name) : 'this course'}</strong>.`;
     if (mem.lastTopic) html += ` Last time we covered <strong>${escapeHtml(mem.lastTopic)}</strong>.`;
     html += `</span>`;
   }
@@ -106,86 +113,106 @@ function buildTutorSystemPrompt(courseId) {
   const courses = state.courses || {};
   if (courseId && courses[courseId]) {
     const c = courses[courseId];
-    const sessions = c.sessions.map(s => `  - Session ${s.id}: ${s.title} (${s.topics.join(', ')})`).join('\n');
+    const sessions = c.sessions.map(s => `  - Session ${s.id}: ${s.title}\n    Topics: ${s.topics.join(' | ')}`).join('\n');
     const defs = (c.definitions || []).map(d => `  - ${d.term}: ${d.definition}`).join('\n');
     const concepts = (c.concepts || []).map(k => `  - ${k.name}: ${k.explanation}`).join('\n');
     const distinctions = (c.distinctions || []).map(d => `  - ${d.a} vs ${d.b}: ${d.difference}`).join('\n');
+    const examples = (c.examples || []).map(e => `  - ${typeof e === 'string' ? e : `${e.name}: ${e.description}`}`).join('\n');
+    const keywords = (c.keywords || []).join(', ');
     const chatData = loadChatData();
     const mem = chatData.memory[courseId] || {};
     const weakTopics = getWeakTopics(courseId);
     let memCtx = '';
     if (mem.sessionCount > 0 || weakTopics.length > 0) {
       memCtx += '\n\nSTUDENT CONTEXT:';
-      if (mem.sessionCount > 0) memCtx += `\n- This is session ${mem.sessionCount + 1} with Ricky for this course.`;
+      if (mem.sessionCount > 0) memCtx += `\n- This is session ${mem.sessionCount + 1} with ${userName()} for this course.`;
       if (mem.lastTopic) memCtx += `\n- Last session topic: "${mem.lastTopic}"`;
       if (weakTopics.length > 0) memCtx += `\n- Quiz weak areas: ${weakTopics.join(', ')}`;
       memCtx += '\n\nUse this context — do not re-introduce yourself. Pick up naturally. Prioritise weak areas if relevant.';
     }
-    return `You are an expert tutor for Ricky, a student at Università Bocconi in Milan studying for his May 2026 exams.
+    return `You are an expert tutor for ${userName()}, a student at Università Bocconi in Milan studying for their May 2026 exams.
 
 COURSE: ${c.name}
 EXAM DATE: ${c.exam_date}
 EXAM FORMAT: ${c.exam_format}
 
-SESSIONS COVERED:
+━━ COURSE MATERIALS — YOUR ONLY SOURCE OF TRUTH ━━
+
+SESSIONS (in order):
 ${sessions}
 
 KEY DEFINITIONS:
-${defs}
+${defs || 'None listed.'}
 
 KEY CONCEPTS:
-${concepts}
+${concepts || 'None listed.'}
 
 KEY DISTINCTIONS:
 ${distinctions || 'None listed.'}
 
+KEY EXAMPLES FROM THE COURSE:
+${examples || 'None listed.'}
+
+KEYWORDS:
+${keywords || 'None listed.'}
+
+━━ GROUNDING RULES — FOLLOW EXACTLY ━━
+- ONLY teach from the materials above. Every explanation must trace back to something listed here.
+- Do NOT introduce frameworks, models, tools, statistics, or examples that are not named in the materials above — even if you know them from general knowledge.
+- Walk through sessions in the order they appear above unless ${userName()} asks otherwise.
+- If asked about something not covered in these materials, say: "That's not in your course notes for this exam. Want me to stick to what's examinable, or explain it from general knowledge?"
+- When explaining a concept, use the EXACT wording and framing from the materials above — do not substitute your own version or paraphrase with synonyms.
+- If you are not certain something is in the materials, do not say it.
+
 YOUR ROLE:
 - Teach like a human tutor having a conversation — not like a textbook or Wikipedia.
 - Lead with the core idea in plain English, then add nuance. Short paragraphs, not lists.
-- When something is subtle or commonly confused, slow down and really explain the *why*.
+- When something is subtle or commonly confused, slow down and explain the *why*.
 - For wrong answers: say exactly which part of the thinking is off and why the right answer holds.
-- For MCQ courses (GTM, Geopolitics, IBM): be alert to the "which is NOT correct" trap — help Ricky spot the false statement quickly.
-- For ISM: coach him on building a structured answer, not just recalling facts.
+- For MCQ courses (GTM, Geopolitics, IBM): be alert to the "which is NOT correct" trap — help the student spot the false statement quickly.
+- For ISM: coach the student on building a structured answer, not just recalling facts.
 - End with a follow-up question or small challenge when it would help cement the concept.
 - Use **bold** for key terms. Avoid walls of bullet points — prose is warmer and sticks better.
-- If asked to quiz, generate 3-5 questions in the exact exam format for this course.${memCtx}`;
+- If asked to quiz, generate 3–5 questions in the exact exam format for this course.${memCtx}`;
   }
   const courseList = Object.values(state.courses || {}).map(c => `- ${c.name} (${c.exam_date}, ${c.exam_format})`).join('\n');
-  return `You are Ricky's personal tutor for his May 2026 Bocconi exams:\n${courseList}\n\nTeach conversationally — like a tutor in the room, not a textbook. Lead with the core idea in plain English. Use short paragraphs and **bold** for key terms. Avoid walls of bullet points. Explain *why* things are true, not just *what* they are. End with a follow-up question when it helps cement the concept.`;
+  return `You are ${userName()}'s personal tutor for their May 2026 Bocconi exams:\n${courseList}\n\nTeach conversationally — like a tutor in the room, not a textbook. Lead with the core idea in plain English. Use short paragraphs and **bold** for key terms. Avoid walls of bullet points. Explain *why* things are true, not just *what* they are. End with a follow-up question when it helps cement the concept.`;
 }
 
 function buildNotesSystemPrompt(courseId) {
   const courses = state.courses || {};
   const c = courseId && courses[courseId];
-  const sessionList = c ? c.sessions.map(s => `  - Session ${s.id}: ${s.title} (${s.topics.join(', ')})`).join('\n') : 'All courses';
+  const sessionList = c ? c.sessions.map(s => `  - Session ${s.id}: ${s.title}\n    Topics: ${s.topics.join(' | ')}`).join('\n') : 'All courses';
   const defs = c ? (c.definitions || []).map(d => `  - ${d.term}: ${d.definition}`).join('\n') : '';
   const concepts = c ? (c.concepts || []).map(k => `  - ${k.name}: ${k.explanation}`).join('\n') : '';
   const distinctions = c ? (c.distinctions || []).map(d => `  - ${d.a} vs ${d.b}: ${d.difference}`).join('\n') : '';
+  const examples = c ? (c.examples || []).map(e => `  - ${typeof e === 'string' ? e : `${e.name}: ${e.description}`}`).join('\n') : '';
+  const keywords = c ? (c.keywords || []).join(', ') : '';
   const courseBlock = c
-    ? `COURSE: ${c.name}\nEXAM DATE: ${c.exam_date}\nEXAM FORMAT: ${c.exam_format}\n\nSESSIONS:\n${sessionList}\n\nDEFINITIONS:\n${defs}\n\nCONCEPTS:\n${concepts}\n\nDISTINCTIONS:\n${distinctions || 'None listed.'}`
+    ? `COURSE: ${c.name}\nEXAM DATE: ${c.exam_date}\nEXAM FORMAT: ${c.exam_format}\n\n━━ COURSE MATERIALS — YOUR ONLY SOURCE OF TRUTH ━━\n\nSESSIONS (in order):\n${sessionList}\n\nDEFINITIONS:\n${defs || 'None listed.'}\n\nCONCEPTS:\n${concepts || 'None listed.'}\n\nDISTINCTIONS:\n${distinctions || 'None listed.'}\n\nEXAMPLES:\n${examples || 'None listed.'}\n\nKEYWORDS:\n${keywords || 'None listed.'}\n\n━━ GROUNDING RULES ━━\n- ONLY use information from the materials above — no outside knowledge, frameworks, or examples.\n- Notes must reflect what is in the course, not general academic knowledge.\n- If something asked about is not in these materials, flag it: "That's not in your course notes — do you want to include it anyway or skip it?"`
     : 'All Bocconi May 2026 courses.';
-  return `You are Ricky's collaborative note-writing partner. Your job is NOT to lecture — it is to help Ricky write his own notes in his own words, so they actually stick.
+  return `You are ${userName()}'s collaborative note-writing partner. Your job is NOT to lecture — it is to help ${userName()} write their own notes in their own words, so they actually stick.
 
 ${courseBlock}
 
 HOW TO RUN THE SESSION:
-1. Ask which session or topic he wants to cover (offer a numbered list from the sessions above).
-2. For each topic: ask him to explain it in his own words first. Then refine his explanation — fix gaps, sharpen phrasing, catch misconceptions. Do NOT just give him the answer unprompted.
-3. After refining 2–3 points, show a "Notes so far" block — clean markdown, structured as he would write it for revision.
-4. Keep going until the topic feels complete, then ask if he wants to add depth or move on.
-5. When he says "done", "finished" or "show full notes": output the complete final notes under a ## Final Notes heading, formatted as clean markdown suitable for copying.
+1. Ask which session or topic they want to cover (offer a numbered list from the sessions above).
+2. For each topic: ask them to explain it in their own words first. Then refine their explanation — fix gaps, sharpen phrasing, catch misconceptions. Do NOT just give them the answer unprompted.
+3. After refining 2–3 points, show a "Notes so far" block — clean markdown, structured as they would write it for revision.
+4. Keep going until the topic feels complete, then ask if they want to add depth or move on.
+5. When they say "done", "finished" or "show full notes": output the complete final notes under a ## Final Notes heading, formatted as clean markdown suitable for copying.
 
-STYLE RULES FOR THE NOTES YOU HELP HIM BUILD:
+STYLE RULES FOR THE NOTES YOU HELP THEM BUILD:
 - Concise bullet points or short paragraphs — exam-answer ready, not a textbook dump
 - **Bold** key terms. No fluff.
 - For MCQ courses (GTM, Geopolitics, IBM): include a "Common traps" subsection flagging NOT-correct pitfalls
 - For ISM: structure answers as: definition → mechanism → example → limitation
-- Use Ricky's own words wherever possible — only polish, don't replace
+- Use ${userName()}'s own words wherever possible — only polish, don't replace
 
-TONE: Direct. Like a study partner who knows the material cold and won't let him get away with vague answers. Push him to be precise.
+TONE: Direct. Like a study partner who knows the material cold and won't let them get away with vague answers. Push them to be precise.
 
 VIDEO LINKS:
-Ricky learns well through video. When a concept would genuinely click better with a visual — a diagram, a mechanism, a historical sequence, an abstract framework — include one YouTube search link inline using this exact markdown format:
+When a concept would genuinely click better with a visual — a diagram, a mechanism, a historical sequence, an abstract framework — include one YouTube search link inline using this exact markdown format:
 [▶ Watch: {short description}](https://www.youtube.com/results?search_query={url-encoded+query})
 
 Rules:
@@ -195,27 +222,51 @@ Rules:
 - One link per message at most
 - Only include it when a visual would genuinely add something text can't — skip it for straightforward definitions or simple facts
 
-Start by asking which session/topic to cover. Offer the list. Do not start lecturing until he picks one and you've heard what he already knows.`;
+Start by asking which session/topic to cover. Offer the list. Do not start lecturing until they pick one and you've heard what they already know.`;
 }
 
 // ── Thinking roulette ─────────────────────────────────────────────────────────
 
-const ROULETTE_PHASES = [
-  'Reading course notes…', 'Checking exam format…', 'Pulling key concepts…',
-  'Thinking through this…', 'Scanning definitions…', 'Connecting the dots…',
-  'Preparing explanation…', 'Almost there…',
-];
+function buildRoulettePhases(courseId, sessionId) {
+  const course = (state.courses || {})[courseId];
+  if (!course) {
+    return [
+      'Reading course notes…', 'Checking exam format…', 'Pulling key concepts…',
+      'Thinking through this…', 'Connecting the dots…', 'Preparing explanation…',
+    ];
+  }
+  const phases = [];
 
-function startThinkingRoulette(textEl) {
+  if (sessionId) {
+    // Only show slides for the active session
+    const session = course.sessions.find(s => s.id === sessionId);
+    for (const sl of (session?.slides || [])) phases.push(`Reading ${sl.title}…`);
+  }
+
+  // Always include the structured data counts
+  const defCount  = (course.definitions  || []).length;
+  const conCount  = (course.concepts     || []).length;
+  const distCount = (course.distinctions || []).length;
+  const exCount   = (course.examples     || []).length;
+  if (defCount)  phases.push(`Checking ${defCount} definitions…`);
+  if (conCount)  phases.push(`Scanning ${conCount} key concepts…`);
+  if (distCount) phases.push(`Reviewing ${distCount} distinctions…`);
+  if (exCount)   phases.push(`Pulling ${exCount} course examples…`);
+  phases.push('Thinking through this…', 'Connecting the dots…', 'Preparing explanation…');
+  return phases;
+}
+
+function startThinkingRoulette(textEl, courseId, sessionId) {
+  const phases = buildRoulettePhases(courseId, sessionId);
   let i = 0;
   function setPhase(idx) {
     textEl.classList.remove('slide-in');
     void textEl.offsetWidth;
-    textEl.textContent = ROULETTE_PHASES[idx];
+    textEl.textContent = phases[idx];
     textEl.classList.add('slide-in');
   }
   setPhase(0);
-  return setInterval(() => { i = (i + 1) % ROULETTE_PHASES.length; setPhase(i); }, 1500);
+  return setInterval(() => { i = (i + 1) % phases.length; setPhase(i); }, 1500);
 }
 
 // ── File attachment handling ──────────────────────────────────────────────────
@@ -261,6 +312,25 @@ function _renderUserMsgEl(content) {
   return el;
 }
 
+// ── Session context (which lecture's PDFs to load) ────────────────────────────
+
+let _sessionContext = null; // session ext_id currently being studied, e.g. "1-3"
+
+function _setSessionContext(container, sessionId) {
+  _sessionContext = sessionId;
+  _updateSources(container, state.chat.courseContext);
+}
+
+// Try to detect a session from the sent message text, e.g. "Session 1-3: The Business Idea"
+function _detectSession(msg, courseId) {
+  if (!msg || !courseId) return null;
+  const sessions = ((state.courses || {})[courseId] || {}).sessions || [];
+  const m = msg.match(/[Ss]ession\s+([\w-]+)/);
+  if (!m) return null;
+  const hit = sessions.find(s => String(s.id) === m[1]);
+  return hit ? hit.id : null;
+}
+
 // ── sendChat (exposed globally) ───────────────────────────────────────────────
 
 function _sendChat(container, preset = null) {
@@ -278,6 +348,8 @@ function _sendChat(container, preset = null) {
         userContent.push({ type: 'image', source: { type: 'base64', media_type: att.mediaType, data: att.data } });
       } else if (att.mediaType === 'application/pdf') {
         userContent.push({ type: 'document', source: { type: 'base64', media_type: 'application/pdf', data: att.data }, cache_control: { type: 'ephemeral' } });
+      } else if (att.mediaType === 'text/plain') {
+        userContent.push({ type: 'text', text: `[Attached file: ${att.name}]\n\n${att.text}` });
       }
     }
     if (msg) userContent.push({ type: 'text', text: msg });
@@ -287,6 +359,12 @@ function _sendChat(container, preset = null) {
 
   state.chat.pendingAttachments = [];
   _renderAttachmentPreview(container);
+
+  // Detect and lock in session context from the message (e.g. "Session 1-3: …")
+  if (msg) {
+    const detected = _detectSession(msg, state.chat.courseContext);
+    if (detected && detected !== _sessionContext) _setSessionContext(container, detected);
+  }
 
   const msgArea = container.querySelector('#chat-messages');
   if (!msgArea) return;
@@ -309,7 +387,7 @@ function _sendChat(container, preset = null) {
   thinkingEl.appendChild(textSpan);
   msgArea.appendChild(thinkingEl);
   msgArea.scrollTop = msgArea.scrollHeight;
-  const rouletteTimer = startThinkingRoulette(textSpan);
+  const rouletteTimer = startThinkingRoulette(textSpan, state.chat.courseContext, _sessionContext);
 
   let systemPrompt;
   try {
@@ -327,13 +405,18 @@ function _sendChat(container, preset = null) {
   }
 
   function buildApiMessages(history) {
+    const hasValidData = b => (b.type === 'document' || b.type === 'image') && b.source?.data && b.source.data !== '[stripped]';
     const lastAttachIdx = history.reduceRight((found, m, i) => {
       if (found !== -1) return found;
-      if (Array.isArray(m.content) && m.content.some(b => b.type === 'document' || b.type === 'image')) return i;
+      if (Array.isArray(m.content) && m.content.some(hasValidData)) return i;
       return -1;
     }, -1);
     return history.map((m, i) => {
-      if (i === lastAttachIdx || !Array.isArray(m.content)) return m;
+      if (!Array.isArray(m.content)) return m;
+      if (i === lastAttachIdx) {
+        const validContent = m.content.filter(b => !((b.type === 'document' || b.type === 'image') && b.source?.data === '[stripped]'));
+        return { ...m, content: validContent };
+      }
       const textBlocks = m.content.filter(b => b.type !== 'document' && b.type !== 'image');
       const hadAttachment = textBlocks.length < m.content.length;
       if (!hadAttachment) return m;
@@ -346,6 +429,8 @@ function _sendChat(container, preset = null) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
+      courseId: state.chat.courseContext || undefined,
+      sessionId: _sessionContext || undefined,
       model: state.chat.model,
       max_tokens: 1500,
       system: [{ type: 'text', text: systemPrompt, cache_control: { type: 'ephemeral' } }],
@@ -476,6 +561,62 @@ function _updateHeader(container, courseId) {
     if (dotEl)  dotEl.style.background = 'var(--t3)';
     if (header) header.style.removeProperty('--tutor-course-color');
   }
+  _updateSources(container, courseId);
+}
+
+function _updateSources(container, courseId) {
+  const body = container.querySelector('#sources-panel-body');
+  if (!body) return;
+  const course = (state.courses || {})[courseId];
+  if (!course) {
+    body.innerHTML = '<p class="sources-empty">Select a course to see what the tutor is reading from.</p>';
+    return;
+  }
+
+  const defCount  = (course.definitions  || []).length;
+  const conCount  = (course.concepts     || []).length;
+  const distCount = (course.distinctions || []).length;
+  const exCount   = (course.examples     || []).length;
+
+  const sessionsHtml = course.sessions.map(s => {
+    const isActive = _sessionContext === s.id;
+    const slidesHtml = (s.slides || []).map(sl =>
+      `<div class="sources-slide${isActive ? ' sources-slide-active' : ''}">
+        <svg viewBox="0 0 12 12" fill="none"><path d="M2 1h5l3 3v7H2V1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+        ${escapeHtml(sl.title)}
+      </div>`
+    ).join('');
+    return `<div class="sources-session${isActive ? ' sources-session-active' : ''}">
+      <div class="sources-session-title">
+        ${isActive ? '<span class="sources-reading-dot"></span>' : ''}Session ${escapeHtml(String(s.id))}: ${escapeHtml(s.title)}
+      </div>
+      ${slidesHtml || '<div class="sources-slide sources-slide-none">No slides listed</div>'}
+    </div>`;
+  }).join('');
+
+  const counts = [
+    { label: 'Definitions',  n: defCount  },
+    { label: 'Concepts',     n: conCount  },
+    { label: 'Distinctions', n: distCount },
+    { label: 'Examples',     n: exCount   },
+  ].filter(r => r.n > 0);
+
+  const countsHtml = counts.map(r =>
+    `<div class="sources-count-row">
+      <span>${escapeHtml(r.label)}</span>
+      <span class="sources-count-val">${r.n}</span>
+    </div>`
+  ).join('');
+
+  body.innerHTML = `
+    <div class="sources-section">
+      <div class="sources-section-label">Slide decks</div>
+      ${sessionsHtml}
+    </div>
+    ${countsHtml ? `<div class="sources-section">
+      <div class="sources-section-label">Also loaded</div>
+      <div class="sources-counts">${countsHtml}</div>
+    </div>` : ''}`;
 }
 
 // ── Notes mode ────────────────────────────────────────────────────────────────
@@ -522,6 +663,7 @@ function _newChat(container, courseId) {
   cleanupDraft();
   saveCurrentConv();
   updateMemory(state.chat.courseContext);
+  _sessionContext = null;
 
   const id = 'c-' + Date.now();
   state.chat.currentConvId = id;
@@ -587,6 +729,7 @@ function _selectCourse(container, courseId) {
   cleanupDraft();
   saveCurrentConv();
   updateMemory(state.chat.courseContext);
+  _sessionContext = null;
   state.chat.courseContext = courseId;
   state.chat.notesMode     = false;
   _updateNotesModeUI(container);
@@ -616,7 +759,7 @@ export function mount(container, params = {}) {
         </div>
         <div id="chat-messages"></div>
         <div class="tutor-input-wrap">
-          <input type="file" id="file-input" multiple accept="image/jpeg,image/png,image/gif,image/webp,application/pdf" style="display:none">
+          <input type="file" id="file-input" multiple accept="image/jpeg,image/png,image/gif,image/webp,application/pdf,text/plain,text/markdown,.md,.txt" style="display:none">
           <div class="chat-input-row">
             <div id="file-attachment-preview" class="file-attachment-preview" style="display:none"></div>
             <div class="chat-input-shell">
@@ -679,7 +822,7 @@ export function mount(container, params = {}) {
     }
     msgArea.scrollTop = msgArea.scrollHeight;
   } else {
-    msgArea.innerHTML = '<div class="chat-msg chat-msg-ai">Hey Ricky. Pick a course on the left to get started.</div>';
+    msgArea.innerHTML = `<div class="chat-msg chat-msg-ai">Hey ${escapeHtml(userName())}. Pick a course on the left to get started.</div>`;
   }
 
   // If called with a courseId param (e.g. from askTutorAbout), auto-select it
@@ -694,22 +837,32 @@ export function mount(container, params = {}) {
   fileInput.addEventListener('change', e => {
     const files = Array.from(e.target.files);
     e.target.value = '';
-    const MAX_IMG = 5 * 1024 * 1024, MAX_PDF = 24 * 1024 * 1024, MAX_FILES = 5;
+    const MAX_IMG = 5 * 1024 * 1024, MAX_PDF = 24 * 1024 * 1024, MAX_TEXT = 2 * 1024 * 1024, MAX_FILES = 5;
     const available = MAX_FILES - state.chat.pendingAttachments.length;
     for (const file of files.slice(0, available)) {
       const isPDF = file.type === 'application/pdf';
-      if (file.size > (isPDF ? MAX_PDF : MAX_IMG)) {
-        alert(`${file.name} exceeds the ${isPDF ? '24 MB' : '5 MB'} limit.`);
+      const isText = file.type === 'text/plain' || file.type === 'text/markdown' || file.name.endsWith('.md') || file.name.endsWith('.txt');
+      const limit = isPDF ? MAX_PDF : isText ? MAX_TEXT : MAX_IMG;
+      if (file.size > limit) {
+        alert(`${file.name} exceeds the ${isPDF ? '24 MB' : isText ? '2 MB' : '5 MB'} limit.`);
         continue;
       }
       const reader = new FileReader();
-      reader.onload = ev => {
-        const [header, data] = ev.target.result.split(',');
-        const mediaType = header.match(/:(.*?);/)[1];
-        state.chat.pendingAttachments.push({ name: file.name, mediaType, data, previewUrl: mediaType.startsWith('image/') ? ev.target.result : null });
-        _renderAttachmentPreview(container);
-      };
-      reader.readAsDataURL(file);
+      if (isText) {
+        reader.onload = ev => {
+          state.chat.pendingAttachments.push({ name: file.name, mediaType: 'text/plain', text: ev.target.result });
+          _renderAttachmentPreview(container);
+        };
+        reader.readAsText(file);
+      } else {
+        reader.onload = ev => {
+          const [header, data] = ev.target.result.split(',');
+          const mediaType = header.match(/:(.*?);/)[1];
+          state.chat.pendingAttachments.push({ name: file.name, mediaType, data, previewUrl: mediaType.startsWith('image/') ? ev.target.result : null });
+          _renderAttachmentPreview(container);
+        };
+        reader.readAsDataURL(file);
+      }
     }
   });
 

@@ -52,23 +52,14 @@ function _renderQuestion() {
   ).join('');
 
   if (q.type === 'open') {
-    const kp = (q.key_points || []).map(p => `<li style="margin-bottom:0.375rem;color:var(--t2);">${escapeHtml(p)}</li>`).join('');
     document.getElementById('quiz-body').innerHTML = `
       <div>
         <div class="quiz-progress-dots">${dotsHTML}</div>
         <div class="quiz-q-text">${escapeHtml(q.question)}</div>
-        <textarea id="open-answer" style="width:100%;min-height:130px;margin-top:0;padding:0.75rem;background:var(--bg);border:1px solid var(--border-2);border-radius:0.5rem;color:var(--t1);font-family:inherit;font-size:0.9rem;resize:vertical;line-height:1.6;" placeholder="Write your answer…"></textarea>
-        <button id="open-submit" style="margin-top:0.75rem;width:100%;" class="btn-primary">Submit answer</button>
-        ${_quiz.answered ? `
-          <div class="quiz-explanation">
-            <div style="font-size:0.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--accent);margin-bottom:0.625rem;">Model answer</div>
-            <div style="color:var(--t2);line-height:1.7;margin-bottom:0.875rem;">${escapeHtml(q.model_answer)}</div>
-            <ul style="padding-left:1.25rem;font-size:0.875rem;">${kp}</ul>
-          </div>
-          <button id="open-next" style="margin-top:0.75rem;width:100%;" class="btn-primary">Next →</button>` : ''}
+        <textarea id="open-answer" style="width:100%;min-height:130px;margin-top:0;padding:0.75rem;background:var(--bg);border:1px solid var(--border-2);border-radius:0.5rem;color:var(--t1);font-family:inherit;font-size:0.9rem;resize:vertical;line-height:1.6;" placeholder="Write your answer…" ${_quiz.answered ? 'disabled' : ''}></textarea>
+        <button id="open-submit" style="margin-top:0.75rem;width:100%;" class="btn-primary" ${_quiz.answered ? 'disabled' : ''}>Submit answer</button>
       </div>`;
     document.getElementById('open-submit')?.addEventListener('click', _submitOpenAnswer);
-    document.getElementById('open-next')?.addEventListener('click', _dismissFeedback);
     return;
   }
 
@@ -97,10 +88,84 @@ function _renderQuestion() {
   document.getElementById('mcq-next')?.addEventListener('click', _dismissFeedback);
 }
 
-function _submitOpenAnswer() {
+async function _submitOpenAnswer() {
+  const textarea = document.getElementById('open-answer');
+  const answer = textarea?.value?.trim();
+  if (!answer) return;
+
+  const q = _quiz.questions[_quiz.idx];
+  const submitBtn = document.getElementById('open-submit');
+  if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Grading…'; }
+  if (textarea) textarea.disabled = true;
+
+  let grading = { verdict: 'partial', score: 50, feedback: 'See model answer below.', missing: [] };
+  try {
+    const res = await fetch('/api/grade-answer', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        question: q.question,
+        studentAnswer: answer,
+        modelAnswer: q.model_answer || '',
+        keyPoints: q.key_points || [],
+      }),
+    });
+    if (res.ok) grading = await res.json();
+  } catch { /* use default */ }
+
   _quiz.answered = true;
+  const isCorrect = grading.verdict === 'correct';
+  const isPartial = grading.verdict === 'partial';
+  if (isCorrect) _quiz.score++;
+  else if (isPartial) _quiz.score += 0.5;
+
   if (!state.progress[_currentCourse]) state.progress[_currentCourse] = {};
-  _renderQuestion();
+  _quiz.results.push({ q, isCorrect, isPartial, grading, studentAnswer: answer });
+
+  const isLast = _quiz.idx + 1 >= _quiz.questions.length;
+  const nextLbl = isLast ? 'See results' : 'Continue';
+  const arrow = `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="flex-shrink:0"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+  const panelClass = isCorrect ? 'correct-panel' : isPartial ? 'partial-panel' : 'wrong-panel';
+  const iconLabel = isCorrect ? '✓' : isPartial ? '~' : '✕';
+  const verdictLabel = isCorrect ? 'Correct' : isPartial ? 'Partial' : 'Incorrect';
+
+  const missingHTML = grading.missing?.length
+    ? `<div style="margin-top:0.75rem;font-size:0.8125rem;color:var(--t3);">
+        <span style="font-size:0.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;">Missed</span>
+        <ul style="margin:0.375rem 0 0;padding-left:1.125rem;">${grading.missing.map(m => `<li style="margin-bottom:0.25rem;">${escapeHtml(m)}</li>`).join('')}</ul>
+       </div>`
+    : '';
+
+  const kp = (q.key_points || []).map(p => `<li style="margin-bottom:0.25rem;color:var(--t3);">${escapeHtml(p)}</li>`).join('');
+  const modelHTML = `
+    <details style="margin-top:0.75rem;font-size:0.8125rem;">
+      <summary style="cursor:pointer;color:var(--t3);font-size:0.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;list-style:none;display:flex;align-items:center;gap:0.375rem;">
+        <span>▸</span> Model answer
+      </summary>
+      <div style="margin-top:0.625rem;color:var(--t2);line-height:1.65;">${escapeHtml(q.model_answer || '')}</div>
+      ${kp ? `<ul style="margin-top:0.5rem;padding-left:1.125rem;font-size:0.8125rem;">${kp}</ul>` : ''}
+    </details>`;
+
+  const panel = document.createElement('div');
+  panel.className = `quiz-feedback-panel ${panelClass}`;
+  panel.id = 'quiz-feedback';
+  panel.innerHTML = `
+    <div class="feedback-header">
+      <div class="feedback-icon">${iconLabel}</div>
+      <div class="feedback-label">${verdictLabel}</div>
+      <div style="font-family:'Geist Mono',monospace;font-size:0.875rem;font-weight:700;margin-left:auto;">${grading.score}%</div>
+    </div>
+    <div class="feedback-body">
+      <p class="feedback-explanation">${escapeHtml(grading.feedback)}</p>
+      ${missingHTML}
+      ${modelHTML}
+    </div>
+    <button class="feedback-next-btn" id="feedback-dismiss">${nextLbl} ${arrow}</button>`;
+
+  document.getElementById('quiz-body').appendChild(panel);
+  panel.querySelector('#feedback-dismiss').addEventListener('click', _dismissFeedback);
+  requestAnimationFrame(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }));
 }
 
 function _answerQuiz(key) {
@@ -116,6 +181,7 @@ function _answerQuiz(key) {
 
   if (isCorrect) _quiz.score++;
   _quiz.answered = true;
+  _quiz.results.push({ q, isCorrect, pickedKey: key });
 
   if (!state.progress[_currentCourse]) state.progress[_currentCourse] = {};
   if (!state.progress[_currentCourse][q.session]) state.progress[_currentCourse][q.session] = {};
@@ -197,14 +263,82 @@ function _nextQuestion() {
 
   saveProgress();
 
+  if (!_quiz.isDrill && _currentCourse) {
+    fetch('/api/generate-next-quiz', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ courseId: _currentCourse }),
+    }).catch(() => {});
+  }
+
+  // Build session breakdown from this quiz's results
+  const _sessionLabelMap = {};
+  for (const s of (state.courses?.[_currentCourse]?.sessions || [])) _sessionLabelMap[s.id] = s.title;
+
+  const _sessionMap = {};
+  for (const r of _quiz.results) {
+    const sid = r.q.session || 'general';
+    if (!_sessionMap[sid]) _sessionMap[sid] = { total: 0, correct: 0, label: _sessionLabelMap[sid] || `Session ${sid}` };
+    _sessionMap[sid].total++;
+    if (r.isCorrect) _sessionMap[sid].correct++;
+    else if (r.isPartial) _sessionMap[sid].correct += 0.5;
+  }
+
+  const _sessionEntries = Object.entries(_sessionMap).sort(([,a],[,b]) => (a.correct/a.total) - (b.correct/b.total));
+  const sessionRows = _sessionEntries.map(([, s]) => {
+    const pct = Math.round((s.correct / s.total) * 100);
+    const col = pct >= 70 ? 'var(--green)' : pct >= 50 ? 'var(--c-gtm)' : 'var(--red)';
+    return `<div style="display:flex;align-items:center;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid var(--b1);">
+      <div style="font-size:0.8125rem;color:var(--t2);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-right:0.75rem;">${escapeHtml(s.label)}</div>
+      <div style="display:flex;align-items:center;gap:0.625rem;flex-shrink:0;">
+        <div style="width:56px;height:3px;background:var(--b2);border-radius:2px;overflow:hidden;"><div style="width:${pct}%;height:100%;background:${col};border-radius:2px;"></div></div>
+        <span style="font-size:0.75rem;font-family:'Geist Mono',monospace;color:${col};width:2.75rem;text-align:right;">${pct}%</span>
+      </div>
+    </div>`;
+  }).join('');
+
+  const wrongInQuiz = _quiz.results.filter(r => !r.isCorrect && !r.isPartial);
+  const reviewRows = wrongInQuiz.map(r => {
+    const q = r.q;
+    if (q.type === 'open') {
+      return `<div style="padding:0.875rem 0;border-bottom:1px solid var(--b1);">
+        <div style="font-size:0.8125rem;color:var(--t1);margin-bottom:0.5rem;line-height:1.45;">${escapeHtml(q.question)}</div>
+        ${r.grading?.feedback ? `<div style="font-size:0.75rem;color:var(--t3);line-height:1.5;">${escapeHtml(r.grading.feedback)}</div>` : ''}
+      </div>`;
+    }
+    return `<div style="padding:0.875rem 0;border-bottom:1px solid var(--b1);">
+      <div style="font-size:0.8125rem;color:var(--t1);margin-bottom:0.5rem;line-height:1.45;">${escapeHtml(q.question)}</div>
+      ${q.options?.[q.correct] ? `<div style="font-size:0.75rem;color:var(--green);display:flex;gap:0.375rem;align-items:flex-start;margin-bottom:0.25rem;"><span style="flex-shrink:0;">✓</span><span>${escapeHtml(q.options[q.correct])}</span></div>` : ''}
+      ${q.explanation ? `<div style="font-size:0.75rem;color:var(--t3);line-height:1.5;">${escapeHtml(q.explanation)}</div>` : ''}
+    </div>`;
+  }).join('');
+
+  const reviewSection = _sessionEntries.length > 0 ? `
+    <div style="text-align:left;border-top:1px solid var(--b1);padding-top:1.25rem;margin-top:0.25rem;">
+      <div style="font-size:0.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--t3);margin-bottom:0.625rem;">Session breakdown</div>
+      ${sessionRows}
+    </div>` : '';
+
+  const wrongSection = wrongInQuiz.length ? `
+    <div style="text-align:left;border-top:1px solid var(--b1);padding-top:1.25rem;margin-top:1.25rem;">
+      <div style="font-size:0.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--t3);margin-bottom:0.625rem;">Missed · ${wrongInQuiz.length}</div>
+      ${reviewRows}
+    </div>` : '';
+
   document.getElementById('quiz-body').innerHTML = `
-    <div style="text-align:center;padding:2.5rem 0;position:relative;" id="score-wrap">
-      <div style="font-size:0.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--t3);margin-bottom:1rem;">${_quiz.isDrill ? 'Drill complete' : 'Quiz complete'}</div>
-      <div class="score-reveal" style="font-family:'Geist Mono',monospace;font-size:3.5rem;font-weight:800;color:${scoreColor};line-height:1;letter-spacing:-0.04em;margin-bottom:0.5rem;">${finalScore}%</div>
-      <div style="font-size:0.9375rem;color:var(--t2);margin-bottom:0.375rem;">${_quiz.score} of ${_quiz.questions.length} correct</div>
-      ${drillFooter}
-      ${remaining > 0 && _quiz.isDrill ? `<button id="drill-again-btn" class="btn-secondary" style="margin-right:0.5rem;">Drill again</button>` : ''}
-      <button id="quiz-done-btn" class="btn-primary">Done</button>
+    <div style="padding:2.5rem 1.25rem 2rem;position:relative;" id="score-wrap">
+      <div style="text-align:center;margin-bottom:${reviewSection || wrongSection ? '1.5rem' : '0'};">
+        <div style="font-size:0.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--t3);margin-bottom:1rem;">${_quiz.isDrill ? 'Drill complete' : 'Quiz complete'}</div>
+        <div class="score-reveal" style="font-family:'Geist Mono',monospace;font-size:3.5rem;font-weight:800;color:${scoreColor};line-height:1;letter-spacing:-0.04em;margin-bottom:0.5rem;">${finalScore}%</div>
+        <div style="font-size:0.9375rem;color:var(--t2);margin-bottom:0.375rem;">${Number.isInteger(_quiz.score) ? _quiz.score : _quiz.score.toFixed(1)} of ${_quiz.questions.length} correct</div>
+        ${drillFooter}
+      </div>
+      ${reviewSection}
+      ${wrongSection}
+      <div style="text-align:center;margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--b1);">
+        ${remaining > 0 && _quiz.isDrill ? `<button id="drill-again-btn" class="btn-secondary" style="margin-right:0.5rem;">Drill again</button>` : ''}
+        <button id="quiz-done-btn" class="btn-primary">Done</button>
+      </div>
     </div>`;
 
   if (finalScore >= 60) {
@@ -241,7 +375,7 @@ window.openQuiz = async function (courseId, sessionId = null) {
 
   if (!qs.length) { alert('No questions available yet.'); return; }
   _currentCourse = courseId;
-  Object.assign(_quiz, { questions: qs, idx: 0, score: 0, answered: false, isDrill: false, cleared: 0 });
+  Object.assign(_quiz, { questions: qs, idx: 0, score: 0, answered: false, isDrill: false, cleared: 0, results: [] });
   document.getElementById('quiz-title').textContent = (state.courses?.[courseId]?.name || courseId) + (sessionId ? ' · Lecture ' + sessionId : '');
   document.getElementById('quiz-modal').classList.add('open');
   _renderQuestion();
@@ -263,7 +397,7 @@ window.openWeakDrill = function (courseId) {
     _currentCourse = qs[0]?.id?.split('-')[1] || Object.keys(state.courses || {})[0];
   }
   if (!qs.length) return;
-  Object.assign(_quiz, { questions: shuffle(qs), idx: 0, score: 0, answered: false, isDrill: true, cleared: 0 });
+  Object.assign(_quiz, { questions: shuffle(qs), idx: 0, score: 0, answered: false, isDrill: true, cleared: 0, results: [] });
   document.getElementById('quiz-title').textContent = title;
   document.getElementById('quiz-modal').classList.add('open');
   _renderQuestion();
