@@ -338,7 +338,7 @@ function _sendChat(container, preset = null) {
   const msg   = preset || (input ? input.value.trim() : '');
   const attachments = state.chat.pendingAttachments.slice();
   if (!msg && attachments.length === 0) return;
-  if (input) input.value = '';
+  if (input) { input.value = ''; input.style.height = ''; }
 
   let userContent;
   if (attachments.length > 0) {
@@ -748,9 +748,13 @@ function _selectCourse(container, courseId) {
 export function mount(container, params = {}) {
   container.innerHTML = `
     <div class="tutor-layout">
+      <div class="tutor-sidebar-backdrop" id="tutor-sidebar-backdrop"></div>
       <div class="tutor-sidebar" id="tutor-sidebar"></div>
       <div class="tutor-main">
         <div class="tutor-header">
+          <button class="tutor-menu-btn" id="tutor-menu-btn" aria-label="Select course">
+            <svg viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
           <span class="tutor-header-dot" id="tutor-header-dot"></span>
           <div class="tutor-header-meta">
             <span class="tutor-header-name" id="tutor-header-name">AI Tutor</span>
@@ -766,7 +770,7 @@ export function mount(container, params = {}) {
               <button class="chat-attach-btn" id="chat-attach-btn" title="Attach image or PDF" type="button">
                 <svg viewBox="0 0 16 16" fill="none"><path d="M13.5 8.5L7.5 14.5a4 4 0 01-5.657-5.657l7-7a2.5 2.5 0 013.536 3.536L5.879 12.38A1 1 0 114.464 10.96l6.5-6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </button>
-              <input id="chat-input" type="text" class="chat-input" placeholder="Ask anything…">
+              <textarea id="chat-input" class="chat-input" placeholder="Ask anything…" rows="1"></textarea>
               <button class="chat-voice-btn" id="chat-voice-btn" title="Start a voice conversation" type="button">
                 <svg viewBox="0 0 16 16" fill="none"><rect x="6" y="2" width="4" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 7v1a4.5 4.5 0 009 0V7M8 12.5V14M5.5 14h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
               </button>
@@ -866,11 +870,30 @@ export function mount(container, params = {}) {
     }
   });
 
+  const layout   = container.querySelector('.tutor-layout');
+  const backdrop = container.querySelector('#tutor-sidebar-backdrop');
+
+  function closeSidebar() {
+    layout.classList.remove('sidebar-open');
+  }
+
+  container.querySelector('#tutor-menu-btn').addEventListener('click', (e) => {
+    e.stopPropagation();
+    layout.classList.toggle('sidebar-open');
+  });
+
+  backdrop.addEventListener('click', closeSidebar);
+
   container.querySelector('#chat-attach-btn').addEventListener('click', () => fileInput.click());
   container.querySelector('#chat-voice-btn').addEventListener('click', () => window.openVoiceModal?.());
   container.querySelector('#chat-send-btn').addEventListener('click', () => _sendChat(container));
-  container.querySelector('#chat-input').addEventListener('keydown', e => {
-    if (e.key === 'Enter') _sendChat(container);
+  const chatInput = container.querySelector('#chat-input');
+  chatInput.addEventListener('input', () => {
+    chatInput.style.height = '';
+    chatInput.style.height = chatInput.scrollHeight + 'px';
+  });
+  chatInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); _sendChat(container); }
   });
 
   container.querySelector('#notes-mode-btn').addEventListener('click', () => {
@@ -940,7 +963,7 @@ export function mount(container, params = {}) {
     const send    = el.dataset.send;
     e.stopPropagation();
 
-    if (action === 'select-course') _selectCourse(container, courseId);
+    if (action === 'select-course') { _selectCourse(container, courseId); closeSidebar(); }
     else if (action === 'new-chat')   _newChat(container, courseId);
     else if (action === 'open-conv')  _openConversation(container, courseId, convId);
     else if (action === 'rename-conv') {
