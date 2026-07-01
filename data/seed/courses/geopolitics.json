@@ -1,0 +1,2144 @@
+{
+  "id": "geopolitics",
+  "name": "Geopolitics",
+  "exam_date": "21 May 2026",
+  "exam_format": "MCQ",
+  "sessions": [
+    {
+      "id": "1",
+      "title": "Prologue. The Return of Geopolitics",
+      "topics": [
+        "Course introduction and framework",
+        "Why geopolitics is making a comeback after decades of neglect",
+        "What the term geopolitics exactly means today"
+      ],
+      "slides": [
+        {"title": "Prologue", "file": "Geopolitics/PROLOGUE(1) (2).pdf"}
+      ]
+    },
+    {
+      "id": "2",
+      "title": "What is Geopolitics and Why It (Increasingly) Matters",
+      "topics": [
+        "Brief history of geopolitics as an academic discipline",
+        "Rise and fall after WWII; resurgence in the last two decades",
+        "Concepts and jargon of geopolitical analysis: space, time, culture, politics in action"
+      ],
+      "slides": [
+        {"title": "What is Geopolitics", "file": "Geopolitics/2 WHAT IS GEOPOLITICS (2).pdf"}
+      ]
+    },
+    {
+      "id": "3",
+      "title": "The Age of Empires. The Hegemonic Multipolar World Order of the XIX Century",
+      "topics": [
+        "19th century: apparent multipolarity to emergence of two dominant powers",
+        "Sea power (British Empire) vs land power (Germany) in growing tension",
+        "Colonial expansion and the logic of imperial geopolitics"
+      ],
+      "slides": [
+        {"title": "Imperial Geopolitics", "file": "Geopolitics/3 IMPERIAL GEOPOLITICS (3).pdf"}
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Theorizing Geopolitics in the Age of Empires: Pivots and Spheres of Influence",
+      "topics": [
+        "Classical geopolitical thinkers: Mackinder (Heartland), Mahan (sea power), Haushofer (Lebensraum)",
+        "Review of most influential thinkers from 19th century to WWI",
+        "Concepts: Heartland, Rimland, spheres of influence, vital space"
+      ],
+      "slides": [
+        {"title": "Theorizing Imperial Geopolitics", "file": "Geopolitics/THEORIZING IMPERIAL GEOPOLITICS(1) (3).pdf"}
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Post-Great War Geopolitics. Multipolarity and German Geopolitik",
+      "topics": [
+        "WWI cancelled German, Austro-Hungarian, Ottoman, and Russian empires",
+        "New powers with new geopolitical strategies seeking legitimation",
+        "Revanchist Germany and expansionist Japan as destabilising forces",
+        "Quick destabilisation of the post-WWI multipolar order"
+      ],
+      "slides": [
+        {"title": "The Interwar Multipolarity", "file": "Geopolitics/THE INTERWAR MULTIPOLARITY (3).pdf"}
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Cold War Geopolitics: From Multipolarity to Bi-polarity",
+      "topics": [
+        "Post-WWII breakdown of cooperation among superpowers",
+        "Unprecedented hostility that never originated direct conflict",
+        "Bipolar contest to carve out a new world equilibrium",
+        "50-year geopolitical order established after WWII"
+      ],
+      "slides": [
+        {"title": "Cold War Geopolitics", "file": "Geopolitics/COLD WAR GEOPOLITICS_STUDENTS (2).pdf"}
+      ]
+    },
+    {
+      "id": "7",
+      "title": "After 1989: Back to Unipolarity",
+      "topics": [
+        "End of Cold War and temporary but unprecedented US unipolarity",
+        "Second wave of globalization and neoliberal Washington Consensus",
+        "Unipolarity as enabler of global integration, until the first decade of the 21st century"
+      ],
+      "slides": [
+        {"title": "Post Cold War Geopolitics", "file": "Geopolitics/POST COLD WAR GEOPOLITICS 2 (2).pdf"}
+      ]
+    },
+    {
+      "id": "8",
+      "title": "21st Century Geopolitics. The Rise of the Challenging Powers",
+      "topics": [
+        "Global financial crisis 2007-8 as the turning point",
+        "Increasingly challenged US unipolar order",
+        "Rise of China and regional powers in Asia and the Middle East",
+        "US strategy of progressive retreat and retrenchment mixing economic and domestic political motives"
+      ],
+      "slides": [
+        {"title": "21st Century Geopolitics", "file": "Geopolitics/21 CENTURY GEOPOLITICS_NEW (3).pdf"}
+      ]
+    },
+    {
+      "id": "9",
+      "title": "CLASS 9 Introduction: How China Wins the Future",
+      "topics": [
+        "Discussion of Elizabeth Economy's article in Foreign Affairs (Jan/Feb 2026)",
+        "Beijing's strategy to seize new frontiers of power",
+        "China's approach to technology, governance, and influence in international institutions"
+      ],
+      "slides": [
+        {"title": "How China Wins the Future (Foreign Affairs)", "file": "Geopolitics/Compusory reading /How China Wins the Future _ Foreign Affairs.pdf"}
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Geopolitics of the Arctic",
+      "topics": [
+        "Climate change and the transformation of the Arctic commons",
+        "Once a success of transnational cooperation, now a zone of confrontation over sovereign claims",
+        "Resource competition and strategic shipping routes in the polar region"
+      ],
+      "slides": [
+        {"title": "Geopolitics in the Arctic", "file": "Geopolitics/GEOPOLITICS IN THE ARCTIC.pdf"}
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Outer Space Geopolitics",
+      "topics": [
+        "Technological progress transforming outer space as a 'commons'",
+        "Space as arena of confrontation among big and middle powers",
+        "Space as critical zone for national security and territory for challenging existing governance rules"
+      ],
+      "slides": [
+        {"title": "Outer Space Geopolitics", "file": "Geopolitics/14 OUTER SPACE GEOPOLITICS.pdf"}
+      ]
+    },
+    {
+      "id": "12",
+      "title": "The Geopolitics of Rare Earth",
+      "topics": [
+        "Energy transition and its profound geopolitical implications",
+        "Transformation of the geography of strategic natural resources",
+        "Critical minerals (rare earths, lithium, cobalt) as new strategic dependencies",
+        "Shaping new international relations and triggering further instability"
+      ],
+      "slides": [
+        {"title": "Geopolitics of Renewables and Rare Earth", "file": "Geopolitics/13 GEOPOLITICS OF RENEWABLES.pdf"}
+      ]
+    },
+    {
+      "id": "13",
+      "title": "The Geopolitics of Fossil Fuels. Seminar by the Istituto Affari Internazionali (Rome)",
+      "topics": [
+        "The energy trilemma: balancing security, equity, and sustainability",
+        "1973 oil embargo: three simultaneous crises (geopolitical/Yom Kippur, energy market, US political/Watergate); ended March 18, 1974",
+        "US shale revolution: shale gas ~70% and tight oil ~60% of US production by Dec 2018; US becomes world's top producer",
+        "Geopolitical effects of shale: pressure on Russia (gas) and Saudi Arabia (oil); enabled US Pivot to Asia",
+        "EU-Russia gas dependence: 155 bcm (~40% of EU supply) in 2021; collapse of Wandel durch Handel paradigm post-2022",
+        "Post-2022 EU diversification: Norway 30% of EU pipeline imports, US 50% of EU LNG imports",
+        "2026 Strait of Hormuz Crisis: 20 mb/d oil (25% global seaborne), 110 bcm LNG (20% global LNG)",
+        "Petrostates vs Electrostates: contrasting geopolitical actor types in fossil fuel vs energy transition eras"
+      ],
+      "slides": [
+        {"title": "The Geopolitics of Fossil Fuels (Raimondi/IAI)", "file": "Geopolitics/The geopolitics of fossil fuels.pdf"}
+      ]
+    },
+    {
+      "id": "14",
+      "title": "From Geopolitics to Geoeconomics",
+      "topics": [
+        "Control of economic spheres of influence as core of geoeconomics",
+        "Use of economic tools to shape power relationships among political actors",
+        "Amplification of economic instruments during globalisation",
+        "Weaponisation of production and trade: a 'war by other means' threatening the global economy"
+      ],
+      "slides": [
+        {"title": "Geoeconomics", "file": "Geopolitics/GEOECONOMICS.pdf"}
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Geopolitics and Techno-nationalism",
+      "topics": [
+        "Technological knowledge has lost its nature as common good and become a weapon",
+        "The ongoing race for geopolitical leadership through technology",
+        "Radical transformation of the global semiconductor industry",
+        "Tech supply chains as instruments of strategic competition"
+      ],
+      "slides": [
+        {"title": "Neo-Techno Nationalism", "file": "Geopolitics/NEO-TECHNO NATIONALISM_INTRO.pdf"}
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Geopolitics and Connectivity: the Belt and Road Initiative",
+      "topics": [
+        "Is the new global race an infrastructure race?",
+        "China challenging the West via infrastructure connectivity",
+        "BRI as geoeconomic strategy: creating dependencies and extending influence"
+      ],
+      "slides": [
+        {"title": "Belt & Road Initiative", "file": "Geopolitics/Geopolitics_Belt & Road_2026.pdf"}
+      ]
+    },
+    {
+      "id": "17",
+      "title": "US National Security Strategy",
+      "topics": [
+        "US strategic framework for great power competition",
+        "China and Russia as primary strategic challenges",
+        "Indo-Pacific strategy and the reinvestment in alliance systems (NATO, QUAD, AUKUS)",
+        "Integration of economic, technological, and military dimensions of competition"
+      ],
+      "slides": [
+        {"title": "US National Security Strategy 2026", "file": "Geopolitics/Geopolitics_US NSS_2026 (1).pdf"}
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Critical Geopolitics: the Meta-Meaning of Space",
+      "topics": [
+        "Space and geography as meaningful beyond their physical characteristics",
+        "Symbolic meaning of locations as a relevant component of political discourse",
+        "Critical Geopolitics: analysing the relationship between geography and immaterial values",
+        "How spatial representations shape political agendas and justify policy"
+      ],
+      "slides": [
+        {"title": "Critical Geopolitics", "file": "Geopolitics/CRITICAL GEOPOLITICS_DEF (2).pdf"}
+      ]
+    },
+    {
+      "id": "19",
+      "title": "The EU: From Geoeconomics to Geopolitics",
+      "topics": [
+        "EU's traditional role as a geoeconomic and normative power rather than a geopolitical one",
+        "Strategic autonomy and European defence capability",
+        "Ukraine war as catalyst for EU geopolitical awakening",
+        "Guest lecture by Matteo Scotto, Villa Vigoni Center"
+      ],
+      "slides": [
+        {"title": "EU: From Geoeconomics to Geopolitics (Scotto)", "file": "Geopolitics/SCOTTO_Bocconi_26.4 (1) (2).pptx"}
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Does Ideology Matter in Geopolitics?",
+      "topics": [
+        "Is there an ideological clash between Western liberal democracy and autocratic visions (China, Russia)?",
+        "Beijing Consensus as alternative to Washington Consensus",
+        "Is ideology a primary driver of geopolitical alignment or does power logic dominate?",
+        "The role of values vs interests in shaping state behaviour"
+      ],
+      "slides": [
+        {"title": "Consensus", "file": "Geopolitics/Consensus.pdf"}
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Seminar: Measuring Geopolitical Risk",
+      "topics": [
+        "Methodologies for quantifying geopolitical risk",
+        "Geopolitical risk indices: construction, applications, and limitations",
+        "Business and investment implications of geopolitical risk measurement",
+        "Limits of quantitative forecasting for inherently political phenomena"
+      ],
+      "slides": [
+        {"title": "Measuring Geopolitical Risk (GPR Index)", "file": "Geopolitics/Geopolitics_GPR Index Lecture - Undergrad (1).pptx"}
+      ]
+    },
+    {
+      "id": "22",
+      "title": "When Geopolitics Makes a Business a Risky Business. Introduction to Geopolitics & Strategy",
+      "topics": [
+        "How geopolitical fragmentation creates supply chain and operational risk for firms",
+        "Sanctions, asset seizure, and regulatory exposure for multinationals",
+        "Rethinking efficiency-driven globalisation under geopolitical fragmentation",
+        "Geopolitics & Strategy as a discipline: integrating IR and business strategy"
+      ],
+      "slides": [
+        {"title": "Geopolitics and Strategy", "file": "Geopolitics/GEOPOLITICS AND STRATEGY.pdf"}
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Guest Lecture: Against Geopolitics. Andrea Ruggeri, Università di Milano",
+      "topics": [
+        "Critical perspectives on geopolitical thinking and its limits",
+        "Against deterministic readings of geography as destiny",
+        "Geopolitics as a discourse that can be used to justify imperialism and aggression",
+        "What geopolitical frameworks omit: norms, institutions, agency, and ideas"
+      ],
+      "slides": [
+        {"title": "Against Geopolitics (Ruggeri)", "file": "Geopolitics/RuggeriBocconi14may2025.pdf"}
+      ]
+    },
+    {
+      "id": "24",
+      "title": "Summing Up: From Globalization to Fragmentation. Cui Prodest?",
+      "topics": [
+        "A world in transition across five dimensions: political systems, international relations, culture, technology, and economy",
+        "Historical cycles of globalization: first wave (1815-1914), deglobalization (1920s-1950s), second wave (1950s-2010s), slowbalization (2010s-)",
+        "Effects of globalization: convergence and equality between countries, but growing inequality within countries",
+        "Populism on the rise: domestic losers of globalization driving protectionism",
+        "Globalization beneficial for revisionist autocracies, contributing to rising multipolarity and retreat of internationalism",
+        "The 'crashing apps': technology (common good → global threat), institutions (crisis of Washington Consensus), culture (cosmopolitan → localism), IR (return of zero-sum realism), geopolitics (hegemony → multipolar assertiveness), political systems (populism and autocracy rising)",
+        "Multiple futures: Slowbalization (suboptimal but stable), Two Worlds Apart (bloc division, worst for developing countries), Armageddon (already happened historically), Rise of Stakeholder Geopolitics"
+      ],
+      "slides": [
+        {"title": "From Globalization to Fragmentation", "file": "Geopolitics/24 .pdf"}
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Geopolitics",
+      "definition": "Study of how geography, resources, and spatial distribution of power influence international relations and state behaviour"
+    },
+    {
+      "term": "Bipolarity",
+      "definition": "International system where two superpowers dominate; characteristic of Cold War era (US vs USSR)"
+    },
+    {
+      "term": "Multipolarity",
+      "definition": "International system with multiple centres of power; several major powers balance and compete"
+    },
+    {
+      "term": "Unipolarity",
+      "definition": "International system dominated by a single superpower; characteristic of 1990s-2000s under US hegemony"
+    },
+    {
+      "term": "Geoeconomics",
+      "definition": "Use of economic tools and interdependencies as instruments of geopolitical power and influence; weaponisation of trade, investment, and supply chains"
+    },
+    {
+      "term": "Hegemony",
+      "definition": "Dominance of one state or group of states in the international system; ability to set rules and impose preferences"
+    },
+    {
+      "term": "Sphere of Influence",
+      "definition": "Geographic region where one power exercises dominant political and economic control"
+    },
+    {
+      "term": "Heartland Theory",
+      "definition": "Mackinder's thesis that control of the Eurasian 'Heartland' (the pivot area) confers the potential for world domination; 'Who rules the Heartland commands the World-Island'"
+    },
+    {
+      "term": "Sea Power",
+      "definition": "Mahan's theory that naval supremacy is the decisive factor in great power competition; control of sea lanes and chokepoints is strategically decisive"
+    },
+    {
+      "term": "Slowbalization",
+      "definition": "The post-2010s trend of decelerating — but not reversing — globalisation; trade and FDI growth slowing relative to GDP growth, with rising protectionism and fragmentation"
+    },
+    {
+      "term": "Techno-nationalism",
+      "definition": "State strategy of treating technological capability as a national security asset rather than a global public good; using tech policy (export controls, subsidies, standards) for geopolitical competitive advantage"
+    },
+    {
+      "term": "Critical Geopolitics",
+      "definition": "Branch of geopolitics that analyses how spatial and geographic representations are constructed and used in political discourse; concerned with the symbolic meaning of space, not just its physical attributes"
+    },
+    {
+      "term": "Washington Consensus",
+      "definition": "Post-1989 neoliberal policy framework promoting free markets, privatisation, and fiscal discipline; associated with IMF/World Bank conditionality and US-led global economic order"
+    },
+    {
+      "term": "Beijing Consensus",
+      "definition": "Alternative development model promoted by China emphasising state-led growth, political control, and economic pragmatism over Western liberal democratic norms"
+    },
+    {
+      "term": "Revisionist Power",
+      "definition": "State that seeks to overturn or revise the existing international order rather than operate within it; Russia and China are the principal contemporary examples"
+    },
+    {
+      "term": "Decoupling",
+      "definition": "Process of separating national economies from integrated global supply chains for strategic reasons; particularly relevant to US-China technology and trade competition"
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Great Power Competition",
+      "explanation": "Contest for influence, resources, and strategic advantage among major states; characterises the contemporary multipolar order with US, China, and Russia as primary rivals"
+    },
+    {
+      "name": "Strategic Competition for Resources",
+      "explanation": "Competition for critical resources including fossil fuels, rare earth minerals, semiconductors, and control of strategic sea routes and infrastructure"
+    },
+    {
+      "name": "Belt and Road Initiative (BRI)",
+      "explanation": "China's massive infrastructure investment and connectivity programme spanning Asia, Africa, Europe; aims to create economic dependencies, extend influence, and build an alternative governance architecture"
+    },
+    {
+      "name": "Arctic as Geopolitical Arena",
+      "explanation": "Climate change opening Arctic passages and resources; US, Russia, and China competing for access, sovereignty, and influence in polar regions"
+    },
+    {
+      "name": "Globalization Cycles",
+      "explanation": "Globalization follows historical cycles: first wave (1815-1914), deglobalization (1920s-1950s), second wave (1950s-2010s), current slowbalization (2010s-). Each wave generates winners and losers whose political reactions shape the next phase"
+    },
+    {
+      "name": "Weaponised Interdependence",
+      "explanation": "Using asymmetric economic interdependence as a coercive instrument; states that occupy central network positions (in trade, finance, technology) can threaten exclusion to coerce others"
+    },
+    {
+      "name": "Strategic Autonomy",
+      "explanation": "Capacity of a state or bloc to act independently in foreign and security policy without excessive dependence on external actors; central concept in EU geopolitical debate post-Ukraine"
+    }
+  ],
+  "distinctions": [
+    {
+      "a": "Cold War (Bipolarity)",
+      "b": "Contemporary Multipolar Dynamics",
+      "difference": "Cold War: bipolar, ideological competition, nuclear deterrence, clear rules; Contemporary: multipolar, economic-technological competition, multiple dimensions (military, cyber, economic), higher risk of miscalculation"
+    },
+    {
+      "a": "Geopolitics",
+      "b": "Geoeconomics",
+      "difference": "Geopolitics: power competition through territory, military, and strategic geography; Geoeconomics: power competition through economic tools — trade, investment, sanctions, supply chains — as substitutes for or complements to military force"
+    },
+    {
+      "a": "Slowbalization",
+      "b": "Deglobalization",
+      "difference": "Slowbalization: globalisation continues but at a much slower pace, with rising friction; Deglobalization: active reversal of integration as seen in the interwar period (1920s-1940s)"
+    },
+    {
+      "a": "Washington Consensus",
+      "b": "Beijing Consensus",
+      "difference": "Washington Consensus: free markets, privatisation, fiscal discipline, liberal democracy as paired goals; Beijing Consensus: state-led development, political authoritarianism compatible with rapid growth, no liberal democratic conditionality"
+    }
+  ],
+  "examples": [
+    "US-China strategic competition in the Indo-Pacific",
+    "Russian use of gas exports as geopolitical leverage over Europe",
+    "Arctic resource competition and the Northern Sea Route",
+    "Belt and Road Initiative infrastructure projects across Asia, Africa, and Europe",
+    "US export controls on advanced semiconductors to China",
+    "EU debate on strategic autonomy following Russia's 2022 invasion of Ukraine",
+    "China declaring itself a 'near-Arctic state' despite having no Arctic coastline",
+    "Populist rise in Europe and US linked to distributional losers of globalisation"
+  ],
+  "keywords": [
+    "Geopolitics",
+    "Multipolarity",
+    "Great Power Competition",
+    "Geoeconomics",
+    "BRI",
+    "Arctic",
+    "Energy Security",
+    "Sphere of Influence",
+    "Slowbalization",
+    "Techno-nationalism",
+    "Critical Geopolitics",
+    "Decoupling",
+    "Strategic Autonomy",
+    "Revisionist Powers"
+  ],
+  "questions": [
+    {
+      "id": "geo-001",
+      "session": "2",
+      "type": "mcq_not_correct",
+      "question": "Regarding the definition and scope of geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Geopolitics studies how geography, territory, and spatial factors influence international relations",
+        "b": "Traditional geopolitics emphasises how geographic characteristics shape a state's foreign policy",
+        "c": "Critical geopolitics examines how geography is used symbolically and politically",
+        "d": "Geopolitics is a sub-field of economics that focuses exclusively on trade route competition"
+      },
+      "correct": "d",
+      "explanation": "Geopolitics is not a sub-field of economics. It sits between International Relations and Geography, studying how spatial and geographic factors shape political power and global competition. Geoeconomics (a related concept) addresses economic dimensions but is a distinct field."
+    },
+    {
+      "id": "geo-002",
+      "session": "2",
+      "type": "mcq_not_correct",
+      "question": "Regarding theories of international relations relevant to geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Realism holds that international politics is a struggle for power among self-interested states",
+        "b": "Liberalism believes that cooperation through institutions can reduce conflict between states",
+        "c": "Geopolitics is generally considered closer to the realist perspective, emphasising territory and power",
+        "d": "Realism argues that international institutions are the primary mechanism for maintaining global order"
+      },
+      "correct": "d",
+      "explanation": "It is Liberalism (not Realism) that sees international institutions as primary mechanisms for order. Realism is sceptical of institutions and argues states act in self-interest regardless of institutional constraints — military power and balance of power are the realist stabilisers."
+    },
+    {
+      "id": "geo-003",
+      "session": "2",
+      "type": "mcq_not_correct",
+      "question": "Regarding hard power and soft power, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Hard power refers to the use of direct force — military power, coercion, and sanctions",
+        "b": "Soft power operates through indirect influence — culture, diplomacy, and economic attraction",
+        "c": "States use hard and soft power to contest 'territories of power' such as trade routes and natural resources",
+        "d": "Soft power is universally more effective than hard power in achieving geopolitical objectives"
+      },
+      "correct": "d",
+      "explanation": "Neither hard nor soft power is universally superior — their effectiveness depends on context, actors, and objectives. Many geopolitical outcomes require a combination of both. Claiming one is always superior oversimplifies state strategy."
+    },
+    {
+      "id": "geo-004",
+      "session": "1",
+      "type": "mcq_not_correct",
+      "question": "Regarding the return of geopolitics as a concept and discipline, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Geopolitics as a discipline declined in the post-WWII era partly due to its association with Nazi and fascist thought",
+        "b": "The term geopolitics has become increasingly popular in recent decades as great power competition intensified",
+        "c": "The revival of geopolitical thinking reflects the return of territorial competition and power politics",
+        "d": "The renewed interest in geopolitics confirms that geography is the sole determinant of international outcomes"
+      },
+      "correct": "d",
+      "explanation": "Geography shapes but does not solely determine outcomes — agency, ideology, technology, and institutions also matter. Geopolitics helps explain international dynamics but does not produce mechanical, deterministic results."
+    },
+    {
+      "id": "geo-005",
+      "session": "4",
+      "type": "mcq_not_correct",
+      "question": "Regarding imperial geopolitics and classical geopolitical thinkers, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Imperial geopolitics describes how great powers sought to extend territorial control and influence globally",
+        "b": "Mackinder argued that control of the Eurasian 'Heartland' was key to global power",
+        "c": "Sea power theorist Mahan argued that naval supremacy was critical to great power status",
+        "d": "Imperial geopolitical thinking had no lasting influence on 20th or 21st century international competition"
+      },
+      "correct": "d",
+      "explanation": "Imperial geopolitical thinking has had enduring influence. The logic of controlling strategic chokepoints, trade routes, and resource-rich territories directly informs contemporary competition in the Arctic, South China Sea, and Middle East."
+    },
+    {
+      "id": "geo-006",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding post-WWI geopolitics and German Geopolitik, which of the following statements is NOT correct?",
+      "options": {
+        "a": "WWI cancelled several continental empires: the German, Austro-Hungarian, Ottoman, and Russian",
+        "b": "The multipolar situation following WWI was stable due to the effective functioning of the League of Nations",
+        "c": "Revanchist Germany and expansionist Japan developed new geopolitical strategies to justify territorial expansion",
+        "d": "The concept of Lebensraum (vital space) was central to German geopolitical thinking in the interwar period"
+      },
+      "correct": "b",
+      "explanation": "The post-WWI order was inherently unstable. The League of Nations was weak — the US never joined, and revisionist powers (Germany, Japan) actively sought to overturn the settlement. The multipolar situation was 'bounded to quick destabilisation.'"
+    },
+    {
+      "id": "geo-007",
+      "session": "6",
+      "type": "mcq_not_correct",
+      "question": "Regarding the Cold War geopolitical order, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The Cold War was characterised by a bipolar structure with the US and USSR as the two superpowers",
+        "b": "Nuclear deterrence — the threat of mutually assured destruction — played a central stabilising role",
+        "c": "The Cold War involved only direct military confrontation between the US and USSR",
+        "d": "Proxy wars in regions such as Korea, Vietnam, and Angola were part of Cold War competition"
+      },
+      "correct": "c",
+      "explanation": "The Cold War was notable for the absence of direct military confrontation between the superpowers, precisely because of nuclear deterrence. Competition occurred through proxy wars, ideological rivalry, the space race, arms race, and economic competition — not direct warfare."
+    },
+    {
+      "id": "geo-008",
+      "session": "8",
+      "type": "mcq_not_correct",
+      "question": "Regarding the post-Cold War international order, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The immediate post-Cold War period was characterised by US unipolarity and liberal internationalism",
+        "b": "Western states believed after the Cold War that geopolitics had been replaced by globalisation and cooperation",
+        "c": "Russia and China accepted permanent US unipolarity without seeking to revise the international order",
+        "d": "The return of great power competition in the 2010s challenged the assumptions of the post-Cold War liberal order"
+      },
+      "correct": "c",
+      "explanation": "Russia and China were always 'revisionist powers' seeking to revise the US-led liberal order. Russia's actions in Georgia (2008) and Ukraine (2014, 2022) and China's assertiveness in the South China Sea are clear evidence that neither accepted permanent US primacy."
+    },
+    {
+      "id": "geo-009",
+      "session": "8",
+      "type": "mcq_not_correct",
+      "question": "Regarding 21st century multipolarity, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Multipolarity refers to an international system with several major powers competing for influence",
+        "b": "Geopolitical instability increases when the cost of challenging the dominant power appears lower",
+        "c": "In a multipolar world, the degree of 'influence overlap' between major powers increases the risk of conflict",
+        "d": "A multipolar world is inherently more stable than a bipolar one because power is distributed more evenly"
+      },
+      "correct": "d",
+      "explanation": "There is no consensus that multipolarity is inherently more stable. Some scholars argue bipolarity was actually more stable (clearer rules, deterrence). Multipolarity can increase miscalculation risk because multiple actors have overlapping interests and influence zones."
+    },
+    {
+      "id": "geo-010",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding China's strategy to seize new frontiers of power (as analysed by Elizabeth Economy in Foreign Affairs), which of the following statements is NOT correct?",
+      "options": {
+        "a": "China pursues strategic dominance in emerging domains including AI, 5G infrastructure, and space",
+        "b": "China's strategy combines economic engagement abroad with domestic political control",
+        "c": "China's approach to global governance has fully converged with Western liberal democratic norms",
+        "d": "China has invested in influence over international institutions and global standard-setting processes"
+      },
+      "correct": "c",
+      "explanation": "China has not adopted Western liberal norms — it has actively challenged them and promoted alternative governance models. The 'Beijing Consensus' explicitly competes with the liberal internationalist order that the West has promoted since 1945."
+    },
+    {
+      "id": "geo-011",
+      "session": "10",
+      "type": "mcq_not_correct",
+      "question": "Regarding Arctic geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Climate change is opening new Arctic shipping routes including the Northern Sea Route",
+        "b": "The Arctic contains significant reserves of oil, gas, and minerals, making it a zone of resource competition",
+        "c": "Only Arctic coastal states (US, Russia, Canada, Norway, Denmark) have expressed strategic interest in the region",
+        "d": "Russia has invested heavily in militarising its Arctic presence and claiming extensive continental shelf rights"
+      },
+      "correct": "c",
+      "explanation": "China, despite having no Arctic coastline, has declared itself a 'near-Arctic state' and invested in Arctic research and BRI-linked shipping routes. Non-Arctic major powers see the region as strategically important for both resources and trade routes."
+    },
+    {
+      "id": "geo-012",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding outer space as a geopolitical arena, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Outer space is no longer governed solely by states — private actors now play an increasingly significant role",
+        "b": "Satellites provide critical infrastructure for both military operations and civilian economies",
+        "c": "The Outer Space Treaty of 1967 provides comprehensive and effective governance for all contemporary space activities",
+        "d": "Space has become an arena where major powers compete for supremacy in orbital capabilities and satellite systems"
+      },
+      "correct": "c",
+      "explanation": "The 1967 Treaty is widely considered inadequate for contemporary challenges including satellite militarisation, anti-satellite weapons (ASAT), orbital debris, and the explosion of private commercial space activities. Its governance framework predates the current realities."
+    },
+    {
+      "id": "geo-013",
+      "session": "12",
+      "type": "mcq_not_correct",
+      "question": "Regarding the geopolitics of rare earth and the energy transition, which of the following statements is NOT correct?",
+      "options": {
+        "a": "China controls a dominant share of rare earth production and processing, giving it significant strategic leverage",
+        "b": "The energy transition increases geopolitical dependence on critical minerals such as lithium, cobalt, and neodymium",
+        "c": "Transitioning to renewable energy eliminates all forms of resource-based geopolitical competition",
+        "d": "Control over critical mineral supply chains has become a major dimension of US-China strategic competition"
+      },
+      "correct": "c",
+      "explanation": "The energy transition shifts strategic dependencies from fossil fuels to critical minerals — it does not eliminate resource competition. Countries controlling rare earth and battery mineral supplies gain new geopolitical leverage equivalent to that of oil producers in the 20th century."
+    },
+    {
+      "id": "geo-014",
+      "session": "13",
+      "type": "mcq_not_correct",
+      "question": "Regarding the geopolitics of fossil fuels, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Fossil fuel wealth has historically enabled energy-exporting states to translate resources into political leverage",
+        "b": "The 'resource curse' refers to cases where resource wealth undermines institutional quality and long-term development",
+        "c": "Fossil fuel interdependence between producers and consumers is perfectly symmetrical in its power effects",
+        "d": "Russia used its gas exports to Europe as a geopolitical instrument, particularly vis-à-vis transit countries"
+      },
+      "correct": "c",
+      "explanation": "The interdependence is asymmetrical, not symmetrical. While consumers depend on supply, producers depend on export revenues. The side less able to absorb the shock of disruption holds less leverage, but the distribution of power varies by context. Russia's ability to cut gas supplies illustrates producer leverage."
+    },
+    {
+      "id": "geo-015",
+      "session": "14",
+      "type": "mcq_not_correct",
+      "question": "Regarding geoeconomics and the weaponisation of economic interdependence, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Geoeconomics refers to the use of economic tools as instruments of geopolitical power",
+        "b": "Trade sanctions, investment restrictions, and control of supply chains are examples of geoeconomic tools",
+        "c": "Geoeconomics represents a purely cooperative form of international relations with no coercive dimension",
+        "d": "Control over critical minerals and technology supply chains has become a major geoeconomic battleground"
+      },
+      "correct": "c",
+      "explanation": "Geoeconomics has a strongly coercive dimension. Economic tools — sanctions, export controls, market exclusion, currency manipulation — are used to punish, pressure, and constrain rivals. It is competitive and strategic, not purely cooperative."
+    },
+    {
+      "id": "geo-016",
+      "session": "15",
+      "type": "mcq_not_correct",
+      "question": "Regarding geopolitics and techno-nationalism, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Techno-nationalism refers to the use of technology policy for national security and competitive advantage",
+        "b": "The semiconductor industry has become a key battleground in US-China strategic competition",
+        "c": "Technological knowledge was once widely treated as a global public good that states deliberately kept separate from geopolitics",
+        "d": "US export controls on advanced chips and AI technology have no meaningful effect on the strategic balance"
+      },
+      "correct": "d",
+      "explanation": "US export controls on advanced semiconductors and AI chips are explicitly designed to constrain Chinese military and AI capabilities. Their strategic effect is significant — they delay Chinese access to frontier computing technology and force China to invest heavily in domestic substitution."
+    },
+    {
+      "id": "geo-017",
+      "session": "16",
+      "type": "mcq_not_correct",
+      "question": "Regarding China's Belt and Road Initiative (BRI), which of the following statements is NOT correct?",
+      "options": {
+        "a": "The BRI is a large-scale infrastructure investment programme spanning Asia, Africa, and Europe",
+        "b": "Critics argue the BRI creates economic dependencies that extend Chinese geopolitical influence",
+        "c": "The BRI focuses exclusively on maritime trade routes and has no land component",
+        "d": "The BRI represents a form of geoeconomic strategy combining infrastructure investment with political influence"
+      },
+      "correct": "c",
+      "explanation": "The BRI has both a maritime component (the 21st Century Maritime Silk Road) and a land component (the Silk Road Economic Belt). It explicitly covers overland routes through Central Asia and Europe as well as sea lanes through the Indian Ocean."
+    },
+    {
+      "id": "geo-018",
+      "session": "17",
+      "type": "mcq_not_correct",
+      "question": "Regarding the US National Security Strategy and great power competition, which of the following statements is NOT correct?",
+      "options": {
+        "a": "US NSS documents identify great power competition with China and Russia as primary strategic challenges",
+        "b": "The Indo-Pacific has become a central theatre in US strategic competition with China",
+        "c": "The US has abandoned its alliance system in favour of purely unilateral approaches to security",
+        "d": "US strategic thinking increasingly integrates economic and technological dimensions alongside military power"
+      },
+      "correct": "c",
+      "explanation": "The US has reinvested heavily in alliances as a key pillar of its competitive strategy — reinforcing NATO in response to Russia, and building new frameworks (QUAD, AUKUS) in the Indo-Pacific to counter China. Abandoning alliances would represent the opposite of the actual strategic direction."
+    },
+    {
+      "id": "geo-019",
+      "session": "18",
+      "type": "mcq_not_correct",
+      "question": "Regarding Critical Geopolitics as an academic approach, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Critical Geopolitics is concerned with how geographical representations and spatial narratives shape political discourse",
+        "b": "It examines how political actors use images of space and place to justify policy decisions",
+        "c": "Critical Geopolitics rejects any role for actual geography in shaping politics, focusing purely on discourse",
+        "d": "The symbolic meaning of locations — such as contested borders or capital cities — can be as politically significant as their physical characteristics"
+      },
+      "correct": "c",
+      "explanation": "Critical Geopolitics does not deny that geography shapes politics — it focuses on how geographic facts are constructed, narrated, and used. It complements rather than entirely replaces traditional geopolitics, adding a layer of discourse analysis."
+    },
+    {
+      "id": "geo-020",
+      "session": "19",
+      "type": "mcq_not_correct",
+      "question": "Regarding the EU's shift from geoeconomics towards geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The EU has historically prioritised economic integration and normative power over hard military capability",
+        "b": "Russia's 2022 invasion of Ukraine accelerated EU moves towards greater strategic autonomy and defence coordination",
+        "c": "The EU has fully transformed into a traditional geopolitical actor with military capacity equivalent to the United States",
+        "d": "The concept of 'open strategic autonomy' reflects the EU's attempt to maintain trade openness while reducing critical strategic dependencies"
+      },
+      "correct": "c",
+      "explanation": "The EU has moved towards greater geopolitical engagement but remains far from equivalent military capacity to the US. It is primarily an economic and normative power undergoing gradual geopolitical awakening, not a fully-formed traditional military great power."
+    },
+    {
+      "id": "geo-021",
+      "session": "20",
+      "type": "mcq_not_correct",
+      "question": "Regarding the role of ideology in contemporary geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The Cold War was fundamentally an ideological contest between Western liberal democracy and Soviet communism",
+        "b": "China promotes a 'Beijing Consensus' as an alternative development model to the Western Washington Consensus",
+        "c": "Ideological differences between liberal democracies and autocracies have no effect on their geopolitical alignment",
+        "d": "Whether geopolitics is driven primarily by power interests or by values remains an actively debated question in IR"
+      },
+      "correct": "c",
+      "explanation": "Ideological alignment does influence geopolitical alignment. Democracies tend to cluster in security arrangements and institutions, and autocracies show increasing coordination (e.g. Russia-China partnership). The debate is about degree, not whether ideology plays any role at all."
+    },
+    {
+      "id": "geo-022",
+      "session": "21",
+      "type": "mcq_not_correct",
+      "question": "Regarding the measurement of geopolitical risk, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Geopolitical risk indices attempt to quantify political instability, conflict probability, and policy uncertainty",
+        "b": "Firms operating globally must account for geopolitical risk in investment decisions and supply chain design",
+        "c": "Geopolitical risk is fully predictable using quantitative models, allowing accurate forecasting of conflicts",
+        "d": "The interaction between political risk, economic policy, and security events creates complex, interconnected risks"
+      },
+      "correct": "c",
+      "explanation": "Geopolitical risk is inherently difficult to predict with precision — major events like Russia's 2022 full-scale invasion of Ukraine were seen as low-probability by most risk models until shortly before. Quantitative indices help frame and monitor risk but cannot reliably forecast specific geopolitical events."
+    },
+    {
+      "id": "geo-023",
+      "session": "22",
+      "type": "mcq_not_correct",
+      "question": "Regarding geopolitics and business strategy, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Geopolitical fragmentation increases supply chain risk and operational uncertainty for multinational companies",
+        "b": "Firms operating in geopolitically contested markets face risks of sanctions, asset seizure, and sudden regulatory changes",
+        "c": "Companies can entirely insulate their operations from geopolitical risk through sufficient diversification",
+        "d": "The weaponisation of economic interdependence has forced firms to reconsider purely efficiency-driven globalisation strategies"
+      },
+      "correct": "c",
+      "explanation": "Diversification reduces but cannot eliminate geopolitical risk. Even highly diversified multinationals remain exposed to interstate conflicts, sanctions regimes, and sudden regulatory shifts. Complete insulation from geopolitics is not achievable for firms with global operations."
+    },
+    {
+      "id": "geo-024",
+      "session": "23",
+      "type": "mcq_not_correct",
+      "question": "Regarding critiques of geopolitical thinking, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Critics argue that geopolitical frameworks can oversimplify international relations by overemphasising geography",
+        "b": "The 'against geopolitics' perspective challenges deterministic readings of geography as destiny",
+        "c": "Critical scholars argue that geopolitical discourse can be used to justify imperialism and great power aggression",
+        "d": "All mainstream IR scholars agree that geopolitics provides a complete and sufficient explanation of world affairs"
+      },
+      "correct": "d",
+      "explanation": "Geopolitics is actively contested in academia. Liberals, constructivists, and critical theorists argue it is insufficient and overestimates the role of geography and power, while underweighting norms, institutions, ideas, and domestic politics."
+    },
+    {
+      "id": "geo-025",
+      "session": "24",
+      "type": "mcq_not_correct",
+      "question": "Regarding the historical cycles of globalisation discussed in 'From Globalisation to Fragmentation', which of the following statements is NOT correct?",
+      "options": {
+        "a": "Globalisation has followed cyclical patterns with periods of integration succeeded by slowbalization and deglobalisation",
+        "b": "The post-1990 wave of globalisation contributed to greater equality between countries but increased inequality within countries",
+        "c": "The slide towards 'slowbalization' from the 2010s has no historical precedent and represents an entirely novel phenomenon",
+        "d": "Rising populism in democratic countries has been linked to the distributional losers of economic globalisation"
+      },
+      "correct": "c",
+      "explanation": "The 2010s slowbalization has clear historical precedent. The late 19th/early 20th century showed a similar cycle: the first globalization wave (1815-1914) was followed by deglobalization in the interwar period (1920s-1950s). The current pattern mirrors this historical sequence."
+    },
+    {
+      "id": "geo-026",
+      "session": "24",
+      "type": "mcq_not_correct",
+      "question": "Regarding the 'multiple futures' scenarios presented in the final lecture, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Slowbalization is described as a suboptimal solution for everyone, but potentially a stable equilibrium",
+        "b": "The 'Two Worlds Apart' scenario of bloc division would be particularly damaging for developing countries",
+        "c": "The 'Rise of Stakeholder Geopolitics' scenario implies a return to purely realist, zero-sum competition",
+        "d": "Historical evidence shows that deglobalization and Armageddon scenarios are not merely theoretical — they have happened before"
+      },
+      "correct": "c",
+      "explanation": "'Stakeholder Geopolitics' is presented as a more cooperative scenario — the opposite of zero-sum realism. It implies actors recognising shared interests and managing competition through negotiation and institutions, in contrast to the purely realist dynamics that drive the other less optimistic scenarios."
+    },
+    {
+      "id": "geo-119",
+      "session": "3",
+      "type": "mcq_not_correct",
+      "question": "Regarding the geopolitical rivalry between Britain and Germany in the late 19th and early 20th centuries, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Germany's rapid industrialisation and naval build-up from the 1890s directly challenged British maritime supremacy",
+        "b": "Britain and Germany competed for colonies, naval dominance, and influence across Europe and globally",
+        "c": "Britain and Germany maintained an untroubled alliance throughout the late 19th century with no significant strategic tensions",
+        "d": "The Anglo-German naval arms race was a major driver of the tensions that contributed to WWI"
+      },
+      "correct": "c",
+      "explanation": "Britain and Germany were in growing strategic tension from the 1890s onwards. Germany's Weltpolitik under Kaiser Wilhelm II and the construction of a High Seas Fleet explicitly designed to challenge the Royal Navy created acute anxiety in Britain. The Anglo-German naval arms race — dreadnought competition — was one of the key drivers of the alliance system breakdown that led to WWI."
+    },
+    {
+      "id": "geo-120",
+      "session": "7",
+      "type": "mcq_not_correct",
+      "question": "Regarding the second wave of globalisation in the 1990s-2000s, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The 1990s-2000s saw rapid expansion of global trade, investment flows, and cross-border supply chains",
+        "b": "China's accession to the WTO in 2001 was a pivotal moment in the integration of the global economy",
+        "c": "The second wave of globalisation had no connection to US foreign policy or the liberal international order the US promoted",
+        "d": "The offshoring of manufacturing to low-cost countries created economic disruption for working-class communities in developed countries"
+      },
+      "correct": "c",
+      "explanation": "The second wave of globalisation was deeply connected to US foreign policy and the liberal international order. The US used its post-Cold War dominance to build international institutions (WTO, IMF conditionality), push open markets, and embed the Washington Consensus globally. China's WTO accession was explicitly supported by the US on the premise that economic integration would promote liberalisation. Globalisation was geopolitically constructed, not spontaneous."
+    },
+    {
+      "id": "geo-027",
+      "session": "1",
+      "type": "mcq_not_correct",
+      "question": "Regarding the post-WWII decline of geopolitics as an academic discipline, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Geopolitics fell out of favour partly because of its association with Nazi and fascist ideology",
+        "b": "Cold War strategic studies largely replaced geopolitics, using different vocabulary for similar concerns",
+        "c": "Geopolitics declined because the world became fully peaceful after 1945 with no further territorial disputes",
+        "d": "The term 'geopolitics' carried toxic connotations after Haushofer's role in providing intellectual cover for Nazism"
+      },
+      "correct": "c",
+      "explanation": "The world was far from peaceful after 1945 — the Cold War, Korea, Vietnam, decolonisation conflicts, and dozens of proxy wars followed. Geopolitics declined not because of peace but because its intellectual associations with fascism made the term politically radioactive. Cold War thinkers used different language (containment, deterrence, grand strategy) for similar analyses."
+    },
+    {
+      "id": "geo-028",
+      "session": "1",
+      "type": "mcq_not_correct",
+      "question": "Regarding the drivers of the contemporary revival of geopolitical thinking, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The return of great power competition between the US, China, and Russia has made geopolitical analysis more relevant",
+        "b": "The erosion of the post-Cold War liberal international order has prompted renewed focus on power politics",
+        "c": "Geopolitics has revived because globalisation successfully resolved all interstate conflicts in the 1990s–2000s",
+        "d": "Russia's 2008 Georgia war and 2014 Crimea annexation signalled the return of territorial competition"
+      },
+      "correct": "c",
+      "explanation": "Globalisation did not resolve interstate conflicts — it coincided with a period of reduced great power war but left underlying power competition intact. The revival of geopolitics reflects precisely the failure of liberal optimism: territorial conquest (Crimea, Ukraine), assertive maritime claims (South China Sea), and arms competition all demonstrate that geography and power politics never went away."
+    },
+    {
+      "id": "geo-029",
+      "session": "1",
+      "type": "mcq_not_correct",
+      "question": "Regarding the concept of 'territories of power' in geopolitical analysis, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Territories of power include maritime domains such as straits, sea lanes, and exclusive economic zones",
+        "b": "In the contemporary context, cyberspace and outer space are increasingly treated as geopolitical territories",
+        "c": "Territories of power are exclusively physical land territories controlled by nation-states",
+        "d": "Control of strategic chokepoints such as the Strait of Hormuz or the Taiwan Strait constitutes a form of territorial power"
+      },
+      "correct": "c",
+      "explanation": "Territories of power extend far beyond physical land. Contemporary geopolitics encompasses maritime zones, airspace, cyberspace, outer space, and undersea cable infrastructure. The struggle for control over these non-land domains is a defining feature of 21st-century geopolitical competition."
+    },
+    {
+      "id": "geo-030",
+      "session": "1",
+      "type": "mcq_not_correct",
+      "question": "Regarding the relationship between geopolitics and globalisation, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Economic globalisation and geopolitical competition coexisted during the 1990s and 2000s",
+        "b": "The 2010s saw growing tension between the logic of open global markets and the logic of strategic competition",
+        "c": "Geopolitics and globalisation are permanently incompatible forces that cannot coexist in the same international system",
+        "d": "Weaponised interdependence shows how globalisation's economic linkages can be turned into geopolitical tools"
+      },
+      "correct": "c",
+      "explanation": "Geopolitics and globalisation are not permanently incompatible — the 1990s–2000s showed they can coexist, with states pursuing both deep economic integration and strategic competition simultaneously. The concept of weaponised interdependence demonstrates that globalisation's linkages become instruments of geopolitical power rather than replacements for it."
+    },
+    {
+      "id": "geo-031",
+      "session": "2",
+      "type": "mcq_not_correct",
+      "question": "Regarding the origins of geopolitics as an academic discipline, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Geopolitics as a formal academic field emerged in the late 19th and early 20th centuries",
+        "b": "Key early contributors included Rudolf Kjellén (who coined the term), Halford Mackinder, and Friedrich Ratzel",
+        "c": "Geopolitics was first developed as an academic discipline at the University of Chicago during the Cold War",
+        "d": "Early geopolitics was closely connected to the political and strategic concerns of European imperial powers"
+      },
+      "correct": "c",
+      "explanation": "Geopolitics was not a Cold War American invention. The term was coined by Swedish political scientist Rudolf Kjellén around 1899. The field was developed in Europe — Friedrich Ratzel in Germany, Halford Mackinder in Britain, Karl Haushofer in Germany — in the context of imperial competition. Cold War American strategists used different vocabulary (containment, deterrence) while drawing on similar geographic logic."
+    },
+    {
+      "id": "geo-032",
+      "session": "2",
+      "type": "mcq_not_correct",
+      "question": "Regarding the core concepts and jargon of geopolitical analysis, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Geopolitical analysis examines how space, time, culture, and politics interact to shape power",
+        "b": "The concept of 'space' in geopolitics refers to geographic and political territory, not merely outer space",
+        "c": "Geopolitical analysis treats geography as a static backdrop with no dynamic interaction with culture or politics",
+        "d": "Temporal context matters in geopolitics — the same geographic feature can carry different strategic significance in different eras"
+      },
+      "correct": "c",
+      "explanation": "Geopolitics does not treat geography as a static backdrop. Space, time, and culture interact dynamically: the Arctic became strategically significant because of climate change (time); the Heartland's importance shifts with technology (railways changed it, airpower changed it further); cultural and ideological factors shape how geographic facts are interpreted politically."
+    },
+    {
+      "id": "geo-033",
+      "session": "3",
+      "type": "mcq_not_correct",
+      "question": "Regarding the British Empire's geopolitical strategy in the 19th century, which of the following statements is NOT correct?",
+      "options": {
+        "a": "British global dominance was built on naval supremacy and control of key maritime trade routes",
+        "b": "Britain's strategy relied on a large professional continental army to project power across Europe",
+        "c": "The Royal Navy protected British trade routes and enabled the projection of power across the global empire",
+        "d": "Britain pursued a policy of 'splendid isolation' — avoiding permanent continental alliances while maintaining naval supremacy"
+      },
+      "correct": "b",
+      "explanation": "British power was fundamentally naval, not continental. Britain consistently avoided maintaining a large standing army and preferred to use its navy and financial power, subsidising continental allies (Prussia, Austria) to fight land wars on its behalf. This 'offshore balancing' strategy was central to British grand strategy throughout the 19th century."
+    },
+    {
+      "id": "geo-034",
+      "session": "3",
+      "type": "mcq_not_correct",
+      "question": "Regarding the nature of 19th-century international order, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The 19th century is characterised as a period of apparent multipolarity with several competing great powers",
+        "b": "The Concert of Europe (post-1815) represented an attempt to manage great power competition and avoid hegemonic war",
+        "c": "Britain was the dominant but not unchallenged power — Germany, Russia, France, and Austria-Hungary also competed",
+        "d": "The 19th century international order was a unipolar system with Britain as the unchallenged hegemon across all dimensions"
+      },
+      "correct": "d",
+      "explanation": "The 19th century was multipolar, not unipolar. While Britain was the leading naval and commercial power, it was not hegemonic across all dimensions. Germany led in industrial production by the 1890s; Russia dominated in land forces; France competed for colonial influence. The balance of power was managed through diplomacy and the Concert of Europe."
+    },
+    {
+      "id": "geo-035",
+      "session": "3",
+      "type": "mcq_not_correct",
+      "question": "Regarding the logic of 19th-century colonial expansion, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Colonial expansion was driven by a combination of economic, strategic, and ideological motivations",
+        "b": "Control of strategic naval bases and coaling stations was a key geopolitical objective of colonial powers",
+        "c": "Colonial expansion was driven exclusively by humanitarian motives — the 'civilising mission' — with no economic component",
+        "d": "Access to raw materials and markets in colonial territories provided significant economic advantage to European powers"
+      },
+      "correct": "c",
+      "explanation": "Colonial expansion was driven by multiple overlapping motivations: economic (raw materials, markets, labour), strategic (naval bases, denial of resources to rivals), prestige, and ideological justifications (the 'civilising mission' or 'white man's burden'). Treating it as purely humanitarian ignores the extractive economic logic that was central to how empires actually operated."
+    },
+    {
+      "id": "geo-036",
+      "session": "3",
+      "type": "mcq_not_correct",
+      "question": "Regarding the structural shift from 19th-century multipolarity to post-WWII bipolarity, which of the following statements is NOT correct?",
+      "options": {
+        "a": "WWI and WWII destroyed the European-centred multipolar order of the 19th century",
+        "b": "The US and USSR emerged as superpowers with a qualitatively different scale of power than previous great powers",
+        "c": "Post-WWII bipolarity represented a continuation of the 19th-century balance of power with two new leading states",
+        "d": "Nuclear weapons created a fundamentally new strategic logic that had no parallel in 19th-century great power competition"
+      },
+      "correct": "c",
+      "explanation": "Post-WWII bipolarity was a qualitative structural break, not a continuation. The US and USSR possessed nuclear weapons (absent from 19th-century competition), wielded ideological programmes with global appeal (liberalism vs communism), and organised blocs in entirely new ways (NATO, Warsaw Pact). The 19th-century Concert managed competition among roughly comparable powers; bipolarity was a categorically different system."
+    },
+    {
+      "id": "geo-037",
+      "session": "4",
+      "type": "mcq_not_correct",
+      "question": "Regarding Halford Mackinder's Heartland theory, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Mackinder argued that control of the Eurasian interior (the 'Heartland') was the key to world dominance",
+        "b": "His famous formulation: 'Who rules the Heartland commands the World-Island; who rules the World-Island commands the world'",
+        "c": "Mackinder identified the Western European coastal nations as the 'pivot area' of global strategic importance",
+        "d": "Mackinder's theory explained British strategic concern about any power dominating the Eurasian landmass"
+      },
+      "correct": "c",
+      "explanation": "Mackinder identified the Eurasian interior — roughly corresponding to Russia and Central Asia — as the pivot/Heartland, not Western European coastal nations. The coastal 'Rimland' was the outer crescent. The theory was designed to warn Britain about the danger of a land power dominating the Heartland and potentially challenging British sea power."
+    },
+    {
+      "id": "geo-038",
+      "session": "4",
+      "type": "mcq_not_correct",
+      "question": "Regarding Alfred Thayer Mahan's sea power theory, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Mahan argued that naval supremacy was the decisive factor in great power competition",
+        "b": "He emphasised control of sea lanes, chokepoints, and the ability to project power through maritime dominance",
+        "c": "Mahan's ideas influenced US naval expansion and contributed to the construction of the Panama Canal",
+        "d": "Mahan argued that land power and continental dominance were superior to sea power for achieving global hegemony"
+      },
+      "correct": "d",
+      "explanation": "Mahan argued precisely the opposite — that sea power was superior to land power for achieving global dominance. His 'The Influence of Sea Power upon History' (1890) made the case that control of the seas was the decisive factor. This directly contradicted Mackinder's land-power thesis and provided intellectual foundations for US and British naval expansion."
+    },
+    {
+      "id": "geo-039",
+      "session": "4",
+      "type": "mcq_not_correct",
+      "question": "Regarding Karl Haushofer's concept of Lebensraum ('vital space'), which of the following statements is NOT correct?",
+      "options": {
+        "a": "Lebensraum argued that states require geographic expansion to accommodate growing populations and secure resources",
+        "b": "Haushofer had personal connections with Rudolf Hess and his ideas were used to legitimise Nazi territorial claims",
+        "c": "The concept of Lebensraum was entirely original to Haushofer and had no precedent in earlier geographic thinking",
+        "d": "Haushofer drew on Friedrich Ratzel's earlier concept of the state as a living organism requiring space to grow"
+      },
+      "correct": "c",
+      "explanation": "Lebensraum was not Haushofer's original invention — he developed ideas from Friedrich Ratzel's political geography (Politische Geographie, 1897), which treated states as organic entities competing for space. Haushofer systematised and politicised Ratzel's concepts, adapting them into a programme for German expansionism that directly fed into Nazi ideology."
+    },
+    {
+      "id": "geo-040",
+      "session": "4",
+      "type": "mcq_not_correct",
+      "question": "Regarding Nicholas Spykman's 'Rimland' concept, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Spykman modified Mackinder's framework by arguing that the Rimland (coastal regions) was more important than the Heartland",
+        "b": "Spykman's formulation: 'Who controls the Rimland rules Eurasia; who rules Eurasia controls the destinies of the world'",
+        "c": "Spykman's Rimland theory provided intellectual foundations for the US Cold War policy of containment",
+        "d": "Spykman agreed with Mackinder that the Eurasian interior was strategically more important than its coastal periphery"
+      },
+      "correct": "d",
+      "explanation": "Spykman explicitly inverted Mackinder. Where Mackinder saw the Heartland (interior) as decisive, Spykman argued the Rimland — the coastal margins of Eurasia including Western Europe, the Middle East, South and East Asia — was the critical zone. Containing Soviet power in the Rimland became the geographic logic of US Cold War containment strategy."
+    },
+    {
+      "id": "geo-041",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding the Treaty of Versailles and its consequences, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The Treaty imposed significant reparations, territorial losses, and a 'war guilt' clause on Germany",
+        "b": "German resentment of Versailles contributed to political radicalisation and the eventual rise of Nazi revanchism",
+        "c": "The Treaty was accepted with broad German consent as a fair settlement of WWI responsibilities",
+        "d": "The loss of territories such as Alsace-Lorraine and German colonies fuelled nationalist grievances in the interwar period"
+      },
+      "correct": "c",
+      "explanation": "The Treaty of Versailles was deeply resented across the German political spectrum — it was widely seen as a 'Diktat' (imposed peace) rather than a negotiated settlement. The war guilt clause (Article 231), reparations, and territorial losses became central grievances exploited by nationalist and ultimately Nazi politics. There was no broad German consent."
+    },
+    {
+      "id": "geo-042",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding German Geopolitik and its relationship to National Socialism, which of the following statements is NOT correct?",
+      "options": {
+        "a": "German Geopolitik provided academic legitimation for Nazi expansion by supplying geographic arguments for territorial claims",
+        "b": "Karl Haushofer had personal and professional connections with Rudolf Hess, a senior Nazi official",
+        "c": "German Geopolitik was a purely neutral academic discipline that was misappropriated by the Nazis without any connection to the field's own logic",
+        "d": "Concepts like Lebensraum and pan-regional spheres of influence were used to justify German expansion into Eastern Europe"
+      },
+      "correct": "c",
+      "explanation": "German Geopolitik was not a neutral academic discipline misappropriated from outside. Its leading figures including Haushofer actively promoted expansionist ideas and participated in Nazi intellectual life. While Haushofer's relationship with Nazism was complex (his son was executed for involvement in the July 1944 plot), the intellectual content of Geopolitik directly supported territorial expansion."
+    },
+    {
+      "id": "geo-043",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding Japan's expansionism in the interwar period, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Japan's expansion was driven by resource scarcity — Japan lacked domestic oil, iron ore, and other critical materials",
+        "b": "Japan sought to establish a 'Greater East Asia Co-Prosperity Sphere' under Japanese dominance",
+        "c": "Japan's expansion was entirely motivated by anticommunism and was welcomed by Western powers as a bulwark against the USSR",
+        "d": "Japan's military expansion in Manchuria (1931) and China (1937) preceded its Pacific confrontation with the US"
+      },
+      "correct": "c",
+      "explanation": "Japan's expansionism was primarily resource-driven and power-seeking, not solely anticommunist. While Japan did fight the USSR (Nomonhan/Khalkhin Gol, 1939) and was part of the Anti-Comintern Pact, Western powers were not welcoming of Japanese expansion — the League of Nations condemned the Manchuria invasion and the US imposed oil embargoes precisely to constrain Japanese expansion."
+    },
+    {
+      "id": "geo-044",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding the instability of the interwar multipolar order, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The post-WWI multipolar system proved inherently unstable, collapsing into WWII within approximately 20 years",
+        "b": "The League of Nations failed to enforce collective security against revisionist powers",
+        "c": "The interwar period demonstrated that multipolarity with revisionist great powers is a recipe for conflict",
+        "d": "The Washington Naval Treaties and Locarno Agreements successfully stabilised the multipolar system and prevented WWII"
+      },
+      "correct": "d",
+      "explanation": "Neither the Washington Naval Treaties nor Locarno prevented WWII — they were temporary measures that collapsed under the pressure of revisionist expansionism. Japan withdrew from naval treaties; Germany remilitarised in violation of Versailles. The course describes the post-WWI multipolar situation as 'bounded to quick destabilisation' — and WWII broke out only 20 years after the peace settlement."
+    },
+    {
+      "id": "geo-045",
+      "session": "6",
+      "type": "mcq_not_correct",
+      "question": "Regarding NATO's formation and purpose, which of the following statements is NOT correct?",
+      "options": {
+        "a": "NATO was established in 1949 as a collective defence alliance binding the US to European security",
+        "b": "NATO's Article 5 commits members to treat an attack on one as an attack on all",
+        "c": "NATO was designed as a temporary organisation to be dissolved once the Berlin Crisis of 1948-49 was resolved",
+        "d": "NATO outlasted the Cold War and continued expanding eastward after 1991"
+      },
+      "correct": "c",
+      "explanation": "NATO was not designed as a temporary crisis-response organisation. It was conceived as a permanent security architecture to deter Soviet aggression in Europe. Its durability is demonstrated by its continued expansion and relevance after the Cold War ended — it has grown from 12 to 32 members and remains active well into the 21st century."
+    },
+    {
+      "id": "geo-046",
+      "session": "6",
+      "type": "mcq_not_correct",
+      "question": "Regarding nuclear deterrence and the stability of Cold War bipolarity, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Mutually assured destruction (MAD) created a deterrence relationship that prevented direct US-USSR military conflict",
+        "b": "Nuclear deterrence operated through the credible threat of catastrophic retaliation, making direct superpower war extremely costly",
+        "c": "Nuclear deterrence prevented all military conflicts globally, including wars in Korea, Vietnam, and Afghanistan",
+        "d": "The stability-instability paradox suggests that nuclear deterrence at the strategic level enabled more limited conflicts at lower levels"
+      },
+      "correct": "c",
+      "explanation": "Nuclear deterrence prevented direct US-USSR military confrontation but did not prevent proxy wars. Korea (1950-53), Vietnam (1955-75), and Afghanistan (1979-89) were all major military conflicts during the nuclear era. The stability-instability paradox specifically explains this: strategic nuclear stability paradoxically enabled conventional and proxy wars below the nuclear threshold."
+    },
+    {
+      "id": "geo-047",
+      "session": "6",
+      "type": "mcq_not_correct",
+      "question": "Regarding the nature of Cold War bipolarity, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The Cold War order was characterised by unprecedented hostility between superpowers that never resulted in direct conflict",
+        "b": "Bipolarity created relatively clear rules about spheres of influence that reduced the risk of accidental escalation",
+        "c": "The Cold War was a purely bilateral affair — all other nations were passive objects of superpower competition with no agency",
+        "d": "The approximately 50-year Cold War order, despite its tensions, proved more durable than the interwar multipolar system"
+      },
+      "correct": "c",
+      "explanation": "The Non-Aligned Movement (1961, founding members including India, Yugoslavia, Egypt) showed that many states exercised significant agency and refused to be passive objects of superpower competition. Cuba, China, and several Middle Eastern states also pursued independent courses that forced superpower adaptation. Bipolarity shaped but did not wholly determine the choices of smaller powers."
+    },
+    {
+      "id": "geo-048",
+      "session": "6",
+      "type": "mcq_not_correct",
+      "question": "Regarding Cold War proxy conflicts and their geopolitical logic, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Proxy wars allowed the US and USSR to compete for influence without risking direct military confrontation",
+        "b": "Both superpowers supported allied regimes and movements in conflicts across Asia, Africa, and Latin America",
+        "c": "Proxy conflicts were geopolitically irrelevant because they occurred only in peripheral regions of no strategic importance",
+        "d": "The Korean War (1950-53) was an early Cold War proxy conflict where US and Soviet/Chinese interests clashed indirectly"
+      },
+      "correct": "c",
+      "explanation": "Proxy conflicts were central to Cold War geopolitics, not peripheral. Korea, Vietnam, Angola, Mozambique, Nicaragua, and Afghanistan were all contested as geopolitically significant. Each was framed by the superpowers as either a 'domino' (US) or a liberation movement (USSR) — the logic of ideological and strategic competition extended globally, not just to 'core' areas."
+    },
+    {
+      "id": "geo-049",
+      "session": "7",
+      "type": "mcq_not_correct",
+      "question": "Regarding Francis Fukuyama's 'End of History' thesis, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Fukuyama argued that liberal democracy had won the ideological contest with communism after the Cold War",
+        "b": "The thesis anticipated convergence toward liberal democratic capitalism as the dominant form of governance",
+        "c": "Fukuyama predicted that geopolitical competition would intensify after 1989 as new ideological rivals emerged to challenge liberal democracy",
+        "d": "The 'End of History' framing was challenged by the subsequent rise of China, resurgent Russia, and political Islam as alternatives"
+      },
+      "correct": "c",
+      "explanation": "Fukuyama predicted the opposite of intensified competition — he argued history as ideological struggle had ended because liberal democracy had no remaining serious rival. His thesis is notable precisely because it expected convergence, not new challengers. The subsequent rise of China's authoritarian capitalism and Russia's revanchism directly falsified this expectation."
+    },
+    {
+      "id": "geo-050",
+      "session": "7",
+      "type": "mcq_not_correct",
+      "question": "Regarding post-1989 NATO expansion, which of the following statements is NOT correct?",
+      "options": {
+        "a": "NATO expanded eastward after 1991, admitting former Warsaw Pact states including Poland, Hungary, and the Czech Republic",
+        "b": "Russia consistently opposed NATO expansion as a threat to its security interests",
+        "c": "A formal, legally binding treaty committed the US and NATO never to expand eastward after German reunification",
+        "d": "The debate about whether informal assurances were made to the Soviet leadership about NATO expansion remains contested"
+      },
+      "correct": "c",
+      "explanation": "No formal, legally binding treaty committing NATO not to expand eastward was ever signed. The debate centres on informal discussions and verbal assurances during German reunification negotiations in 1990. These were political conversations, not treaty commitments — a distinction Russia disputes but Western governments maintain. The 1997 NATO-Russia Founding Act was the closest thing to a formal arrangement."
+    },
+    {
+      "id": "geo-051",
+      "session": "7",
+      "type": "mcq_not_correct",
+      "question": "Regarding the Washington Consensus and post-Cold War economic policy, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The Washington Consensus promoted free markets, privatisation, and fiscal discipline as the development model",
+        "b": "IMF and World Bank conditionality programmes applied Washington Consensus prescriptions across the developing world",
+        "c": "The Washington Consensus promoted state-led development, capital controls, and protectionism as its core policy tools",
+        "d": "The Washington Consensus is associated with the era of US-led liberal international order following the Cold War"
+      },
+      "correct": "c",
+      "explanation": "State-led development, capital controls, and protectionism are precisely what the Washington Consensus opposed. Its ten policy prescriptions (Williamson, 1989) included fiscal discipline, trade liberalisation, privatisation, deregulation, and property rights protection. These are associated with the Beijing Consensus, not the Washington Consensus."
+    },
+    {
+      "id": "geo-052",
+      "session": "7",
+      "type": "mcq_not_correct",
+      "question": "Regarding US unipolarity in the 1990s-2000s, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The 1990s represented an unprecedented moment of US dominance across military, economic, and cultural dimensions",
+        "b": "US unipolarity was used to expand liberal institutions globally — NATO, WTO, IMF — under American leadership",
+        "c": "US engagement with China, including supporting WTO accession, was premised on the belief that economic integration would promote political liberalisation",
+        "d": "US unipolarity permanently prevented the emergence of any rival great power, making China's rise impossible to explain"
+      },
+      "correct": "d",
+      "explanation": "US unipolarity did not permanently prevent great power emergence. The engagement strategy with China — including WTO accession (2001) — accelerated Chinese economic growth and technological development. US dominance provided a permissive environment for China's rise rather than blocking it. The 2007-8 financial crisis then accelerated the relative shift in power."
+    },
+    {
+      "id": "geo-053",
+      "session": "8",
+      "type": "mcq_not_correct",
+      "question": "Regarding the 2007-8 global financial crisis as a geopolitical turning point, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The crisis hit Western economies severely, undermining confidence in the Washington Consensus model",
+        "b": "China's continued strong growth through the crisis shifted relative perceptions of US and Chinese economic power",
+        "c": "The crisis had no geopolitical consequences and reinforced confidence in US-led liberal economic institutions",
+        "d": "The crisis contributed to a legitimacy deficit for Western-led multilateral institutions like the IMF and World Bank"
+      },
+      "correct": "c",
+      "explanation": "The 2007-8 crisis was geopolitically transformative, not reinforcing of the status quo. It exposed vulnerabilities in the US financial model, discredited Washington Consensus prescriptions, emboldened revisionist narratives about Western decline, and accelerated China's rise in relative terms. The G20 replacing the G7 as the primary forum for global economic governance was one institutional consequence."
+    },
+    {
+      "id": "geo-054",
+      "session": "8",
+      "type": "mcq_not_correct",
+      "question": "Regarding China's development model and its geopolitical implications, which of the following statements is NOT correct?",
+      "options": {
+        "a": "China's rapid development combined state direction with gradual market opening, diverging from Washington Consensus prescriptions",
+        "b": "China's economic rise translated into increased military spending and more assertive foreign policy after the mid-2000s",
+        "c": "China's development model required immediate privatisation and liberalisation of all sectors to succeed",
+        "d": "The Chinese model's success challenged the assumption that economic development requires liberal democratic political institutions"
+      },
+      "correct": "c",
+      "explanation": "China's model was explicitly state-directed, retaining state ownership in strategic sectors while gradually opening others to market forces. China's experience directly contradicted the Washington Consensus prescriptions of rapid privatisation and liberalisation. The Beijing Consensus emerged precisely as an alternative model showing that state capitalism could achieve rapid development without political democratisation."
+    },
+    {
+      "id": "geo-055",
+      "session": "8",
+      "type": "mcq_not_correct",
+      "question": "Regarding the rise of regional powers in the 21st century, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The relative decline of US unipolarity created space for regional powers to assert more autonomous foreign policies",
+        "b": "States such as Iran, Turkey, Saudi Arabia, and India have pursued increasingly independent strategies in their regions",
+        "c": "Regional powers in Asia and the Middle East have uniformly aligned with the US in balancing against China",
+        "d": "The multipolar shift involves not just China as a rival to the US but a wider diffusion of power to multiple regional actors"
+      },
+      "correct": "c",
+      "explanation": "Regional powers have pursued diverse hedging strategies rather than uniformly aligning with the US. India hedges between the US and Russia; Turkey pursues an autonomous course within NATO; Saudi Arabia and the UAE have cultivated economic relationships with China while maintaining US security ties. The multipolar diffusion of power means fewer states feel compelled to fully align with any single great power."
+    },
+    {
+      "id": "geo-056",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding China's strategy in multilateral institutions (as analysed by Elizabeth Economy), which of the following statements is NOT correct?",
+      "options": {
+        "a": "China has sought to increase its influence within existing international institutions like the UN system and IMF",
+        "b": "China created parallel institutions (AIIB, New Development Bank) to supplement its influence in global governance",
+        "c": "China has systematically withdrawn from multilateral institutions and opposes all forms of international cooperation",
+        "d": "China has pursued leadership positions in specialised UN agencies including the ITU, FAO, and ICAO"
+      },
+      "correct": "c",
+      "explanation": "China has done the opposite of withdrawing from multilateralism — it has strategically engaged with and shaped multilateral institutions. China simultaneously works within existing institutions (increasing IMF voting share, leading UN agencies) and creates alternative ones (AIIB, BRI). This is an inside-outside strategy, not withdrawal."
+    },
+    {
+      "id": "geo-057",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding China's push to dominate 5G infrastructure globally, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Huawei and ZTE became dominant global suppliers of 5G equipment through a combination of state subsidies and competitive pricing",
+        "b": "Western governments raised concerns that Chinese 5G equipment could provide Beijing with intelligence access or a kill switch over critical infrastructure",
+        "c": "5G infrastructure dominance is exclusively a commercial advantage with no geopolitical implications",
+        "d": "The US-led campaign to exclude Huawei from allied 5G networks reflects the intersection of technology and geopolitical competition"
+      },
+      "correct": "c",
+      "explanation": "5G infrastructure dominance has direct geopolitical implications. Who builds a country's 5G network potentially has access to data flows and the ability to disrupt communications. China's push through Huawei is part of its techno-nationalist strategy to set global standards and establish strategic leverage through infrastructure — explicitly a geopolitical, not merely commercial, objective."
+    },
+    {
+      "id": "geo-058",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding China's approach to technology acquisition and innovation, which of the following statements is NOT correct?",
+      "options": {
+        "a": "China has used multiple channels to acquire foreign technology including joint ventures, academic exchange, and corporate acquisitions",
+        "b": "Market access requirements forcing technology transfer were a significant mechanism of Chinese technology acquisition",
+        "c": "China relies exclusively on domestic R&D for all technological development, never seeking to acquire foreign knowledge",
+        "d": "Made in China 2025 reflected China's ambition to achieve dominance in 10 strategic technology sectors"
+      },
+      "correct": "c",
+      "explanation": "China has used a wide range of technology acquisition channels beyond domestic R&D: mandatory technology transfer through joint venture requirements, strategic acquisition of foreign technology companies, academic and research talent programmes, and intelligence operations. This multi-channel approach is why the US imposed restrictions on Chinese investment in technology companies and academic cooperation."
+    },
+    {
+      "id": "geo-059",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding China's governance model and its international promotion, which of the following statements is NOT correct?",
+      "options": {
+        "a": "China promotes its development model as an alternative for countries seeking growth without liberal democratic conditionality",
+        "b": "China has used platforms like the UN Human Rights Council to defend state sovereignty against Western human rights interventionism",
+        "c": "China explicitly demands that all BRI partner countries adopt the Chinese one-party political system as a condition for infrastructure financing",
+        "d": "The Beijing Consensus contrasts with the Washington Consensus by separating economic development from democratic governance requirements"
+      },
+      "correct": "c",
+      "explanation": "China does not require adoption of its political system as an explicit condition for BRI or other economic cooperation — this is one feature that distinguishes it from Western development aid with governance conditionality. China promotes non-interference in internal political affairs, which is itself an ideological position. Many authoritarian governments find this 'no strings' approach attractive precisely because it imposes no political requirements."
+    },
+    {
+      "id": "geo-060",
+      "session": "10",
+      "type": "mcq_not_correct",
+      "question": "Regarding the Northern Sea Route (NSR) and its strategic significance, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The Northern Sea Route connects Europe and Asia through Arctic waters north of Russia, potentially shortening shipping distances significantly",
+        "b": "Climate change and melting Arctic ice have made the NSR more navigable, increasing its attractiveness as a commercial route",
+        "c": "The Northern Sea Route is already fully operational year-round, providing a reliable alternative to the Suez Canal for most shippers",
+        "d": "Russia seeks to control and profit from the NSR, treating it as a national waterway and charging transit fees"
+      },
+      "correct": "c",
+      "explanation": "The NSR remains seasonal and operationally challenging — it requires icebreaker escort for much of the year, carries high insurance costs, lacks adequate rescue and port infrastructure, and is only navigable without icebreaker assistance for a limited summer window. While growing in use, it is not a year-round reliable alternative to the Suez Canal, which handles far greater volumes."
+    },
+    {
+      "id": "geo-061",
+      "session": "10",
+      "type": "mcq_not_correct",
+      "question": "Regarding Arctic sovereignty claims and governance, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The five Arctic coastal states — Russia, Canada, US, Norway, and Denmark (via Greenland) — have overlapping continental shelf claims",
+        "b": "Russia has invested heavily in Arctic militarisation including reopening Cold War-era Arctic bases",
+        "c": "All Arctic sovereignty disputes have been resolved through the Arctic Council and no further claims are pending",
+        "d": "The UN Convention on the Law of the Sea (UNCLOS) provides the framework for adjudicating Arctic continental shelf claims"
+      },
+      "correct": "c",
+      "explanation": "Arctic sovereignty disputes are not resolved. Russia's extended continental shelf claim over the Lomonosov Ridge is disputed by Canada and Denmark. The CLCS (Commission on the Limits of the Continental Shelf) process is ongoing. China, while not an Arctic state, also contests aspects of Arctic governance and has interests in the region as a 'near-Arctic state.'"
+    },
+    {
+      "id": "geo-062",
+      "session": "10",
+      "type": "mcq_not_correct",
+      "question": "Regarding China's role in Arctic geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "China has designated itself a 'near-Arctic state' despite having no Arctic coastline",
+        "b": "China has invested in Arctic research stations, icebreakers, and has pursued scientific cooperation in the region",
+        "c": "China has no interest in the Arctic because its geographic distance makes any involvement logistically impossible",
+        "d": "China sees the Arctic as part of a 'Polar Silk Road' extension of the Belt and Road Initiative"
+      },
+      "correct": "c",
+      "explanation": "China has been actively and deliberately pursuing Arctic interests despite its geographic distance — investing in research stations, purchasing icebreakers, securing observer status in the Arctic Council, and framing Arctic involvement as part of its BRI 'Polar Silk Road.' China's interests are resource access, shipping route development, and strategic positioning, none of which are logistically impossible from China."
+    },
+    {
+      "id": "geo-063",
+      "session": "10",
+      "type": "mcq_not_correct",
+      "question": "Regarding Arctic resource competition, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The Arctic is estimated to contain approximately 30% of the world's undiscovered natural gas reserves",
+        "b": "Melting Arctic ice is making previously inaccessible hydrocarbon and mineral deposits more reachable",
+        "c": "All major Arctic oil and gas reserves have already been extracted, so resource competition is no longer a driver of Arctic geopolitics",
+        "d": "Arctic resource development creates tensions between economic opportunity for Arctic states and environmental concerns"
+      },
+      "correct": "c",
+      "explanation": "Arctic resource development is in its early stages, not complete. Estimates suggest the Arctic holds ~30% of undiscovered global gas and ~13% of undiscovered oil. As ice retreats, these become more accessible and economically viable. Resource competition is a growing, not past, driver of Arctic geopolitical interest — particularly as fossil fuel demand persists."
+    },
+    {
+      "id": "geo-064",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding anti-satellite (ASAT) weapons and space security, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Russia, China, the US, and India have all tested anti-satellite weapons capable of destroying satellites in orbit",
+        "b": "ASAT tests create space debris that can threaten other satellites and the International Space Station",
+        "c": "The 1967 Outer Space Treaty explicitly prohibits the development and testing of anti-satellite weapons",
+        "d": "Targeting an adversary's satellites in conflict would disrupt GPS, communications, intelligence, and financial systems simultaneously"
+      },
+      "correct": "c",
+      "explanation": "The Outer Space Treaty of 1967 prohibits placing weapons of mass destruction in orbit and bans military installations on celestial bodies — but it does not explicitly prohibit ASAT weapons. This is a major governance gap. All four countries mentioned have conducted ASAT tests in breach of no specific treaty obligation, though India's 2019 test was widely condemned for the debris it created."
+    },
+    {
+      "id": "geo-065",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding the role of private actors in space geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "SpaceX's Starlink constellation has provided Ukraine with critical satellite communications during the war with Russia",
+        "b": "Private space companies like SpaceX, Amazon, and OneWeb are launching thousands of satellites, transforming the orbital environment",
+        "c": "Private sector space actors are completely separate from state power and have no geopolitical implications",
+        "d": "The commercialisation of space has blurred the line between civilian and military space infrastructure"
+      },
+      "correct": "c",
+      "explanation": "The Starlink-Ukraine example demonstrates that private space assets are deeply entangled with state power and geopolitics. SpaceX provided Ukraine with a decisive communications advantage — a private company became a significant military-strategic actor. When Elon Musk reportedly restricted Starlink coverage near Crimea, it demonstrated the geopolitical power of private space infrastructure operators."
+    },
+    {
+      "id": "geo-066",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding satellite navigation systems as geopolitical tools, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Multiple countries have developed independent satellite navigation systems to reduce dependence on US-operated GPS",
+        "b": "Russia (GLONASS), China (BeiDou), and the EU (Galileo) all operate independent navigation constellations",
+        "c": "GPS is the only functioning satellite navigation system globally, as all other systems remain experimental",
+        "d": "Independent navigation systems allow states to maintain military and commercial precision capabilities without relying on potential adversaries"
+      },
+      "correct": "c",
+      "explanation": "GPS is far from the only functioning navigation system. Russia's GLONASS has been operational since the Soviet era; China's BeiDou reached global coverage in 2020; the EU's Galileo is operational; India's NavIC covers the subcontinent. These systems were explicitly developed to reduce dependence on US-controlled GPS, which the US can theoretically degrade or deny to adversaries."
+    },
+    {
+      "id": "geo-067",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding the governance of outer space, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The 1967 Outer Space Treaty prohibits placing nuclear weapons or other WMD in Earth orbit",
+        "b": "The Outer Space Treaty designates outer space as the 'province of all mankind' and prohibits national appropriation",
+        "c": "The 1967 Outer Space Treaty provides comprehensive and fully adequate governance for all 21st-century space activities including commercial operations, debris, and ASAT weapons",
+        "d": "The proliferation of commercial satellites and ASAT capabilities has created significant governance gaps in the existing space law framework"
+      },
+      "correct": "c",
+      "explanation": "The 1967 Treaty is widely regarded as wholly inadequate for contemporary space realities. It predates commercial space, orbital debris problems, ASAT weapons, lunar resource extraction, and the explosion of private actors. It does not address debris, does not prohibit ASAT, and its provisions on 'non-appropriation' are increasingly contested by companies and states seeking to profit from space resources."
+    },
+    {
+      "id": "geo-068",
+      "session": "12",
+      "type": "mcq_not_correct",
+      "question": "Regarding China's dominance in rare earth production and processing, which of the following statements is NOT correct?",
+      "options": {
+        "a": "China controls a dominant share (roughly 60-85%) of global rare earth mining and an even higher share of processing",
+        "b": "China has demonstrated willingness to use rare earth export restrictions as a geopolitical tool, as against Japan in 2010",
+        "c": "Rare earths are so widely distributed globally that China's dominance could be easily and quickly substituted",
+        "d": "Rare earth elements are critical inputs for electric vehicles, wind turbines, defence electronics, and semiconductor manufacturing"
+      },
+      "correct": "c",
+      "explanation": "While rare earths are found in many locations globally, the processing infrastructure is the bottleneck — China dominates rare earth chemical processing even more than mining. Developing alternative mining and processing capacity requires years of investment and permitting. The 2010 Japan episode showed that China can impose severe short-term supply disruptions even if long-term substitution is possible."
+    },
+    {
+      "id": "geo-069",
+      "session": "12",
+      "type": "mcq_not_correct",
+      "question": "Regarding critical minerals for the energy transition, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Lithium is concentrated in the 'Lithium Triangle' of Chile, Argentina, and Bolivia, plus significant deposits in Australia",
+        "b": "Cobalt, essential for lithium-ion batteries, is predominantly mined in the Democratic Republic of Congo",
+        "c": "Critical minerals for the energy transition are evenly distributed globally, creating no new geopolitical dependencies",
+        "d": "The geographic concentration of critical minerals creates new strategic vulnerabilities analogous to oil dependence in the fossil fuel era"
+      },
+      "correct": "c",
+      "explanation": "Critical minerals are among the most geographically concentrated resources. Lithium: three countries supply ~80% of global production; Cobalt: DRC produces ~70%; Rare earths: China processes ~85%. This concentration is, if anything, higher than oil, creating significant new dependencies for countries pursuing electrification without domestic mineral resources."
+    },
+    {
+      "id": "geo-070",
+      "session": "12",
+      "type": "mcq_not_correct",
+      "question": "Regarding the energy transition and its effect on fossil fuel producers, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The energy transition creates long-term structural challenges for petrostates dependent on oil and gas revenues",
+        "b": "The concept of 'petrostates vs electrostates' captures the diverging geopolitical positions of fossil fuel vs mineral-rich states",
+        "c": "The global energy transition eliminates all geopolitical leverage of fossil fuel producing states immediately upon adoption of renewables",
+        "d": "Some petrostates are attempting to diversify their economies ahead of declining fossil fuel demand (e.g. Saudi Vision 2030)"
+      },
+      "correct": "c",
+      "explanation": "The transition is gradual — fossil fuels remain the dominant energy source globally and will for decades. Petrostates retain significant leverage during the transition period, and events like the 2022 energy crisis showed how rapidly supply disruptions re-expose dependency. The transition shifts the long-term trajectory but does not immediately eliminate fossil fuel geopolitical leverage."
+    },
+    {
+      "id": "geo-071",
+      "session": "12",
+      "type": "mcq_not_correct",
+      "question": "Regarding Western policy responses to critical mineral supply chain risks, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The US Inflation Reduction Act (IRA) included incentives for domestic critical mineral production and processing",
+        "b": "'Friend-shoring' refers to redirecting supply chains toward geopolitically aligned partner countries",
+        "c": "All Western governments responded to critical mineral risks by nationalising foreign-owned mines and mineral assets",
+        "d": "The EU's Critical Raw Materials Act aimed to reduce European dependence on single-source critical mineral suppliers"
+      },
+      "correct": "c",
+      "explanation": "Nationalisation of foreign mineral assets has not been the Western response strategy. Western governments have used incentives (IRA subsidies), trade agreements, investment facilitation with partner countries (friend-shoring), strategic stockpiling, and R&D for material substitution. Nationalising foreign assets would breach trade agreements and undermine the rule-of-law principles Western governments promote."
+    },
+    {
+      "id": "geo-072",
+      "session": "13",
+      "type": "mcq_not_correct",
+      "question": "Regarding the 1973 Arab oil embargo, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The embargo was triggered by US and Dutch support for Israel during the Yom Kippur War",
+        "b": "The embargo created three simultaneous crises: geopolitical, energy market, and US domestic political (Watergate)",
+        "c": "The 1973 embargo was universally applied against all Western nations without distinction",
+        "d": "The Arab OPEC oil embargo formally ended on March 18, 1974"
+      },
+      "correct": "c",
+      "explanation": "The embargo was targeted, not universal. Arab OPEC members specifically targeted the US and Netherlands for their pro-Israel stance while other countries received different treatment. This selective application demonstrated how energy exports can be used as a targeted geopolitical weapon rather than a blunt instrument applied indiscriminately."
+    },
+    {
+      "id": "geo-073",
+      "session": "13",
+      "type": "mcq_not_correct",
+      "question": "Regarding the US shale revolution and its geopolitical consequences, which of the following statements is NOT correct?",
+      "options": {
+        "a": "By December 2018, shale gas accounted for approximately 70% of US natural gas production",
+        "b": "The shale revolution made the US the world's largest oil and natural gas producer by the mid-2010s",
+        "c": "The shale revolution had no effect on US foreign policy because domestic energy production is irrelevant to geopolitics",
+        "d": "US shale production pressured both Saudi Arabia (oil) and Russia (gas), altering the global energy balance"
+      },
+      "correct": "c",
+      "explanation": "The shale revolution had profound geopolitical consequences. Energy independence reduced US dependence on Gulf states, enabling the 'Pivot to Asia' without fear of retaliatory energy cutoffs. US LNG exports allowed European allies to reduce Russian gas dependence. Saudi Arabia's market share strategy (2014 oil price collapse) was partly aimed at making US shale uneconomical. Energy production is deeply intertwined with geopolitics."
+    },
+    {
+      "id": "geo-074",
+      "session": "13",
+      "type": "mcq_not_correct",
+      "question": "Regarding EU dependence on Russian natural gas before 2022, which of the following statements is NOT correct?",
+      "options": {
+        "a": "In 2021, the EU imported approximately 155 billion cubic metres of gas from Russia, representing about 40% of EU supply",
+        "b": "The 'Wandel durch Handel' (change through trade) paradigm held that economic integration would moderate Russia's behaviour",
+        "c": "EU gas dependence on Russia created no geopolitical vulnerability because energy trade is always mutually beneficial",
+        "d": "After Russia's 2022 invasion, Norway accounted for ~30% of EU pipeline gas imports while the US supplied ~50% of EU LNG"
+      },
+      "correct": "c",
+      "explanation": "EU gas dependence on Russia was a significant geopolitical vulnerability, as the 2022 energy crisis demonstrated. Russia weaponised gas supplies by cutting pipeline flows, triggering energy price spikes across Europe. The assumption of mutual benefit proved wrong — Russia was willing to accept economic damage from lost revenues to use energy as strategic leverage. 'Wandel durch Handel' collapsed as a policy paradigm."
+    },
+    {
+      "id": "geo-075",
+      "session": "13",
+      "type": "mcq_not_correct",
+      "question": "Regarding the energy trilemma concept, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The energy trilemma identifies three competing goals: energy security, energy equity (affordability/access), and sustainability",
+        "b": "Pursuing maximum energy security (domestic fossil fuels) may conflict with sustainability goals",
+        "c": "The energy trilemma holds that any well-designed energy policy can fully achieve all three goals simultaneously without trade-offs",
+        "d": "The tension between the three goals means energy policy requires explicit prioritisation and acceptance of trade-offs"
+      },
+      "correct": "c",
+      "explanation": "The trilemma framework explicitly recognises that the three goals are in fundamental tension — achieving all three fully simultaneously is not possible. Maximum security (domestic coal/gas) conflicts with sustainability; cheapest energy (equity) often means fossil fuels; rapid decarbonisation (sustainability) can hurt affordability and challenge supply security during transition. Policy requires choosing priorities."
+    },
+    {
+      "id": "geo-076",
+      "session": "14",
+      "type": "mcq_not_correct",
+      "question": "Regarding the concept of weaponised interdependence, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Weaponised interdependence refers to using asymmetric economic linkages as instruments of coercion",
+        "b": "States occupying central 'hub' positions in global networks (trade, finance, technology) can threaten to exclude others",
+        "c": "Weaponised interdependence is most effective when economic dependence is symmetrical between the two parties",
+        "d": "The US use of dollar-denominated financial systems to impose sanctions is a key example of weaponised interdependence"
+      },
+      "correct": "c",
+      "explanation": "Weaponised interdependence works through asymmetry, not symmetry. The party that is more central to the network (and whose exclusion the other can less afford) holds leverage. Symmetrical dependence actually reduces coercive capacity because both sides face equivalent pain from disruption. The theory (Farrell & Newman) specifically stresses asymmetric network positions as the source of coercive power."
+    },
+    {
+      "id": "geo-077",
+      "session": "14",
+      "type": "mcq_not_correct",
+      "question": "Regarding dollar dominance and its geopolitical significance, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The US dollar's role as the world's primary reserve currency gives the US unique geopolitical leverage",
+        "b": "Control of SWIFT and dollar clearing allows the US to impose secondary sanctions affecting non-US financial actors",
+        "c": "Dollar dominance is a purely economic phenomenon with no geopolitical implications for states or firms",
+        "d": "Russia and China have taken steps to develop alternative payment systems to reduce dollar dependence"
+      },
+      "correct": "c",
+      "explanation": "Dollar dominance is a primary geopolitical tool. The US can exclude any country or financial institution from dollar clearing, effectively cutting it off from global trade. Secondary sanctions extend this power to non-US firms that do business with sanctioned entities. This is why states like Russia and China are actively developing alternatives (CIPS, bilateral currency swap lines) to reduce their exposure to US financial coercion."
+    },
+    {
+      "id": "geo-078",
+      "session": "14",
+      "type": "mcq_not_correct",
+      "question": "Regarding the use of economic sanctions as geoeconomic tools, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Economic sanctions seek to change target state behaviour through economic pressure rather than military force",
+        "b": "The US-led sanctions regime against Russia following the 2022 invasion was the broadest Western sanctions package in history",
+        "c": "Academic research consistently shows that sanctions always achieve their political objectives within a short timeframe",
+        "d": "Secondary sanctions can affect third-country firms that do business with sanctioned entities, extending US reach beyond its borders"
+      },
+      "correct": "c",
+      "explanation": "The academic literature is actually quite sceptical about sanctions effectiveness. Studies suggest that sanctions achieve their stated political objectives only in a minority of cases, particularly when targeted states can access alternatives (China-Russia trade expansion post-2022) or are willing to absorb significant economic pain. Sanctions impose costs but rarely force policy reversals by determined authoritarian states."
+    },
+    {
+      "id": "geo-079",
+      "session": "14",
+      "type": "mcq_not_correct",
+      "question": "Regarding geoeconomics and classical free trade economics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Classical free trade theory (Ricardo) argues that open trade benefits all parties through comparative advantage",
+        "b": "Geoeconomics prioritises strategic and distributional effects of trade over aggregate efficiency gains",
+        "c": "Geoeconomics and classical free trade economics are fully compatible — both support open markets as the optimal state policy",
+        "d": "The geoeconomic perspective justifies industrial policy, export controls, and investment restrictions that classical economics would oppose"
+      },
+      "correct": "c",
+      "explanation": "Geoeconomics directly challenges classical free trade economics. Where free trade theory argues that open markets maximise welfare for all parties, geoeconomics argues that the strategic and distributional effects of who controls which industries, supply chains, and technologies matter as much as aggregate efficiency. Geoeconomic logic justifies subsidising strategic sectors, restricting technology exports, and blocking foreign acquisitions — all of which classical economics would consider welfare-reducing."
+    },
+    {
+      "id": "geo-080",
+      "session": "15",
+      "type": "mcq_not_correct",
+      "question": "Regarding Taiwan's TSMC and its geopolitical significance, which of the following statements is NOT correct?",
+      "options": {
+        "a": "TSMC manufactures the vast majority of the world's most advanced semiconductor chips (below 5nm)",
+        "b": "TSMC's concentration in Taiwan makes it a central flashpoint in US-China strategic competition",
+        "c": "Advanced semiconductor manufacturing capacity is evenly distributed globally, making TSMC's Taiwan location strategically irrelevant",
+        "d": "A Chinese seizure of TSMC would deliver critical technology advantage while denying it to Western defence and technology industries"
+      },
+      "correct": "c",
+      "explanation": "Advanced semiconductor manufacturing is extremely concentrated, not distributed. TSMC alone produces ~90% of chips below 7nm; Samsung produces most of the rest. Neither the US, EU, nor Japan currently has competitive capacity at the leading edge. This extreme concentration makes Taiwan's semiconductor industry — and the geopolitical question of Taiwan's status — central to 21st-century technology competition."
+    },
+    {
+      "id": "geo-081",
+      "session": "15",
+      "type": "mcq_not_correct",
+      "question": "Regarding the US CHIPS and Science Act (2022), which of the following statements is NOT correct?",
+      "options": {
+        "a": "The CHIPS Act provided approximately $52 billion in direct subsidies to incentivise semiconductor manufacturing in the United States",
+        "b": "The CHIPS Act represents a significant adoption of industrial policy in contradiction to free market economic principles",
+        "c": "The CHIPS Act was designed to reduce US dependence on Asian semiconductor manufacturing for strategic national security reasons",
+        "d": "The CHIPS Act's primary purpose was to reduce corporate taxes for technology companies operating abroad"
+      },
+      "correct": "d",
+      "explanation": "The CHIPS Act was not primarily a tax cut — it was direct industrial policy: subsidies and incentives to build semiconductor fabs on US soil. Companies like TSMC, Intel, and Samsung received federal subsidies to construct US manufacturing facilities. Its purpose was explicitly geostrategic: reducing dependence on Asian (particularly Taiwanese) chip production for national security reasons."
+    },
+    {
+      "id": "geo-082",
+      "session": "15",
+      "type": "mcq_not_correct",
+      "question": "Regarding artificial intelligence and geopolitical competition, which of the following statements is NOT correct?",
+      "options": {
+        "a": "AI capability has become a central dimension of US-China strategic competition, alongside conventional and nuclear military power",
+        "b": "The US imposed export controls restricting China's access to advanced AI chips (Nvidia H100, A100) for national security reasons",
+        "c": "AI is geopolitically neutral because algorithms can be freely shared across borders without strategic consequences",
+        "d": "Military applications of AI — autonomous weapons, intelligence analysis, logistics optimisation — create direct national security stakes"
+      },
+      "correct": "c",
+      "explanation": "AI is far from geopolitically neutral. Advanced AI requires high-performance chips (subject to US export controls), massive data (raising sovereignty questions), and specialised talent (subject to visa restrictions). The military applications — autonomous weapons, surveillance, cyber operations, decision-support — make AI a core national security technology. The US explicitly cites AI as a primary reason for semiconductor export controls against China."
+    },
+    {
+      "id": "geo-083",
+      "session": "15",
+      "type": "mcq_not_correct",
+      "question": "Regarding technology standards as a dimension of geopolitical competition, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Who sets technical standards for emerging technologies (5G, AI, IoT) gains commercial advantage and can shape who benefits from the technology",
+        "b": "China has been actively pursuing leadership positions in international standards-setting bodies including the ITU",
+        "c": "Technical standards are purely engineering decisions with no commercial or geopolitical implications",
+        "d": "The contest over 5G standards involved both technical and political dimensions, with Western countries concerned about Chinese dominance"
+      },
+      "correct": "c",
+      "explanation": "Technical standards have profound commercial and geopolitical implications. Setting the standard for a technology determines which products are compatible, which companies win market share, and who can be excluded. Chinese leadership in ITU standards for video compression (HEVC alternatives) and 5G network architecture directly translates into commercial advantages for Chinese firms and potential strategic leverage over networks built to Chinese specifications."
+    },
+    {
+      "id": "geo-084",
+      "session": "16",
+      "type": "mcq_not_correct",
+      "question": "Regarding the 'debt trap diplomacy' critique of BRI, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The debt trap hypothesis argues that China deliberately designs BRI loans to be unpayable, enabling seizure of strategic assets",
+        "b": "The Hambantota port in Sri Lanka is frequently cited as an example of debt-for-equity swap under Chinese pressure",
+        "c": "Academic research has fully confirmed that debt trap diplomacy is China's systematic and deliberate strategy across all BRI projects",
+        "d": "Many researchers argue that BRI debt problems reflect poor project selection and governance rather than deliberate entrapment"
+      },
+      "correct": "c",
+      "explanation": "Academic research has not confirmed debt trap diplomacy as a systematic deliberate strategy. Studies by AidData, Johns Hopkins, and others find that BRI problems often reflect poor project planning, corruption, and local political decisions rather than a coordinated Chinese entrapment strategy. While some cases (Hambantota) show concerning patterns, the evidence for a deliberate system-wide debt trap strategy is contested."
+    },
+    {
+      "id": "geo-085",
+      "session": "16",
+      "type": "mcq_not_correct",
+      "question": "Regarding the geographic scope of the Belt and Road Initiative, which of the following statements is NOT correct?",
+      "options": {
+        "a": "BRI has both a land component (Silk Road Economic Belt) and a maritime component (21st Century Maritime Silk Road)",
+        "b": "BRI projects span Asia, Africa, Latin America, and extend into Europe including EU member states",
+        "c": "The BRI operates exclusively within Asia and has no presence in African or European countries",
+        "d": "Greece's Piraeus port and multiple Central/Eastern European countries have participated in Chinese BRI-related investment"
+      },
+      "correct": "c",
+      "explanation": "BRI extends well beyond Asia — it explicitly covers Africa (major infrastructure investments in many countries), Europe (Piraeus port, the former 17+1 format with Central/Eastern European countries), and Latin America. The maritime silk road connects Chinese ports through the Indian Ocean to East Africa and Europe. BRI is a truly global infrastructure strategy."
+    },
+    {
+      "id": "geo-086",
+      "session": "16",
+      "type": "mcq_not_correct",
+      "question": "Regarding Western alternatives to the BRI, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The EU's Global Gateway programme (€300 billion) was explicitly designed as a quality alternative to BRI-style investment",
+        "b": "The G7's Partnership for Global Infrastructure and Investment (PGII) represents a coordinated Western response to Chinese connectivity initiatives",
+        "c": "Western democracies have made no attempt to develop competitive infrastructure investment alternatives to counter BRI",
+        "d": "Japan's Quality Infrastructure Initiative also competes with BRI by emphasising transparency and environmental/labour standards"
+      },
+      "correct": "c",
+      "explanation": "Western governments have developed multiple competitive responses to BRI: the EU's Global Gateway (€300bn), the G7's PGII, the US-Japan-Australia Blue Dot Network, and Japan's Quality Infrastructure Initiative. All explicitly position themselves as transparent, governance-compliant alternatives to BRI. The claim that no response exists is factually wrong."
+    },
+    {
+      "id": "geo-087",
+      "session": "16",
+      "type": "mcq_not_correct",
+      "question": "Regarding BRI governance and contract terms, which of the following statements is NOT correct?",
+      "options": {
+        "a": "BRI contracts have been criticised for confidentiality clauses preventing public disclosure of terms",
+        "b": "Some BRI agreements have included provisions for Chinese arbitration rather than international dispute resolution",
+        "c": "BRI project agreements are fully transparent public documents that comply with all international best practices in development finance",
+        "d": "The lack of BRI transparency contrasts with standards set by multilateral development banks like the World Bank and ADB"
+      },
+      "correct": "c",
+      "explanation": "BRI contracts are frequently criticised for opacity, not transparency. AidData's research found that many BRI loan agreements contain confidentiality clauses, collateralisation provisions (pledging sovereign assets), and dispute resolution terms favouring China. This diverges significantly from World Bank or ADB standards, which require public disclosure, environmental/social safeguards, and internationally recognised dispute resolution."
+    },
+    {
+      "id": "geo-088",
+      "session": "17",
+      "type": "mcq_not_correct",
+      "question": "Regarding AUKUS and Indo-Pacific security architecture, which of the following statements is NOT correct?",
+      "options": {
+        "a": "AUKUS is a trilateral security partnership between Australia, the United Kingdom, and the United States",
+        "b": "A central element of AUKUS is the transfer of nuclear-powered submarine technology to Australia",
+        "c": "AUKUS is primarily a trade agreement focused on digital technology and market access",
+        "d": "AUKUS represents a significant US and UK strategic commitment to Australia's conventional deterrence capability in the Indo-Pacific"
+      },
+      "correct": "c",
+      "explanation": "AUKUS is explicitly a security pact, not a trade agreement. Its headline commitment is the transfer of nuclear-powered submarine technology — allowing Australia to field submarines with far greater range and stealth than conventional diesel-electric boats. It also covers advanced capabilities in AI, quantum, and cyber. It is directly aimed at the Indo-Pacific maritime balance vis-à-vis China."
+    },
+    {
+      "id": "geo-089",
+      "session": "17",
+      "type": "mcq_not_correct",
+      "question": "Regarding the Quadrilateral Security Dialogue (QUAD), which of the following statements is NOT correct?",
+      "options": {
+        "a": "The QUAD comprises the United States, Japan, Australia, and India",
+        "b": "India's participation in the QUAD is notable given its historically non-aligned foreign policy tradition",
+        "c": "The QUAD is a formal military alliance with a binding mutual defence treaty equivalent to NATO's Article 5",
+        "d": "The QUAD focuses on security cooperation across the Indo-Pacific including maritime security, technology, and supply chains"
+      },
+      "correct": "c",
+      "explanation": "The QUAD is not a formal alliance — it has no binding mutual defence treaty. It is a security forum and policy coordination mechanism. India in particular has resisted formalisation into a military alliance. This distinguishes it from NATO and reflects India's preference for maintaining strategic autonomy while cooperating with partners on specific shared interests."
+    },
+    {
+      "id": "geo-090",
+      "session": "17",
+      "type": "mcq_not_correct",
+      "question": "Regarding US policy toward Taiwan, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The US maintains a 'One China Policy' acknowledging (but not endorsing) the Chinese position that Taiwan is part of China",
+        "b": "The Taiwan Relations Act (1979) commits the US to provide Taiwan with defensive arms",
+        "c": "The US has a formal treaty commitment to defend Taiwan with military force in the event of a Chinese invasion",
+        "d": "US 'strategic ambiguity' on Taiwan defence is deliberately maintained to deter both Chinese aggression and Taiwanese unilateral independence declaration"
+      },
+      "correct": "c",
+      "explanation": "The US does not have a formal treaty commitment to defend Taiwan — the 1979 Taiwan Relations Act provides for arms sales but deliberately stops short of a binding defence guarantee. 'Strategic ambiguity' means the US neither confirms nor denies it would intervene militarily. This ambiguity is intentional: it deters China from assuming the US won't intervene while discouraging Taiwan from declaring independence assuming the US will."
+    },
+    {
+      "id": "geo-091",
+      "session": "17",
+      "type": "mcq_not_correct",
+      "question": "Regarding the integration of economic and technological tools in US national security strategy, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Contemporary US strategy integrates economic, technological, and military tools as complementary instruments of competition",
+        "b": "Export controls on advanced semiconductors are explicitly framed in US NSS documents as a national security tool",
+        "c": "US national security strategy treats economic and technological competition as entirely separate from military strategy",
+        "d": "The integration of investment screening (CFIUS), export controls, and alliance coordination reflects the whole-of-government approach to great power competition"
+      },
+      "correct": "c",
+      "explanation": "Post-2017 US National Security Strategy explicitly treats economic competition, technology, and military power as integrated and inseparable. The concept of 'integrated deterrence' (Biden era) and 'America First' economic nationalism (Trump era) both, in different ways, link economic and technological tools to security strategy. CFIUS investment screening, export controls, and sanctions are all explicitly national security instruments."
+    },
+    {
+      "id": "geo-092",
+      "session": "18",
+      "type": "mcq_not_correct",
+      "question": "Regarding the founding intellectual traditions of Critical Geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Critical Geopolitics draws on poststructuralist theory and discourse analysis rather than traditional power-politics frameworks",
+        "b": "Key figures include Gearóid Ó Tuathail (Gerard Toal), Simon Dalby, and John Agnew",
+        "c": "Critical Geopolitics emerged from the University of Chicago School of Economics and focuses on rational-choice models of spatial competition",
+        "d": "Critical Geopolitics is concerned with how geographic knowledge and spatial representations are produced and politically deployed"
+      },
+      "correct": "c",
+      "explanation": "Critical Geopolitics has no connection to the Chicago School of Economics. It emerged from political geography and draws on poststructuralism, discourse theory, and critical social science. Ó Tuathail, Dalby, and Agnew developed it as a critique of both traditional geopolitics and international relations, asking how geographic representations are constructed rather than treating them as natural facts."
+    },
+    {
+      "id": "geo-093",
+      "session": "18",
+      "type": "mcq_not_correct",
+      "question": "Regarding the distinction between 'formal,' 'practical,' and 'popular' geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "'Formal' geopolitics refers to academic and intellectual discourse about space and international relations",
+        "b": "'Practical' geopolitics refers to the geographical reasoning embedded in foreign policy and state discourse",
+        "c": "'Popular' geopolitics examines how geographic ideas are reproduced through media, film, and popular culture",
+        "d": "Critical Geopolitics argues that formal, practical, and popular geopolitics always produce identical representations of the same geographic realities"
+      },
+      "correct": "d",
+      "explanation": "Critical Geopolitics specifically shows that different registers of geopolitical discourse (academic, policy, popular) produce different and often contradictory representations of the same geographic and political realities. Policymakers use different geographic narratives than academics; media representations may differ from both. Analysing these differences is a core method of Critical Geopolitics."
+    },
+    {
+      "id": "geo-094",
+      "session": "18",
+      "type": "mcq_not_correct",
+      "question": "Regarding the symbolic dimension of contested spaces in geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "How a contested territory is named and classified (e.g. 'occupied' vs 'integrated') carries significant political and legal implications",
+        "b": "The symbolic meaning of locations such as Jerusalem, Crimea, or Taiwan shapes international legitimacy debates",
+        "c": "Critical Geopolitics demonstrates that the symbolic and representational dimensions of territory are politically irrelevant — only physical control matters",
+        "d": "Spatial representations in political discourse can normalise or delegitimise territorial claims"
+      },
+      "correct": "c",
+      "explanation": "Critical Geopolitics directly challenges this claim — it argues that symbolic and representational dimensions are politically significant, not irrelevant. How spaces are named, mapped, and described in political discourse shapes which claims are seen as legitimate. The debate over whether Crimea is 'Russian' or 'occupied Ukrainian' territory has concrete political and legal consequences even though physical control is not in dispute."
+    },
+    {
+      "id": "geo-095",
+      "session": "18",
+      "type": "mcq_not_correct",
+      "question": "Regarding maps as political documents, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Map projections systematically distort the relative size of geographic features, and different projections serve different purposes and political narratives",
+        "b": "Choices about naming, border drawing, and inclusion/exclusion in maps reflect and reinforce power relations",
+        "c": "Maps in geopolitical analysis are neutral technical documents that accurately capture objective geographic reality without political content",
+        "d": "The political power of maps is demonstrated by historical examples like colonial border-drawing in Africa and the Middle East"
+      },
+      "correct": "c",
+      "explanation": "Maps are never politically neutral — this is a foundational insight of Critical Geopolitics. Projection choice (Mercator inflates northern territories), boundary lines (Berlin Conference's African borders), naming conventions, and what is shown or omitted all reflect political choices. Colonial cartography is a classic case: maps were instruments of territorial claim and legitimation, not neutral geographic records."
+    },
+    {
+      "id": "geo-096",
+      "session": "19",
+      "type": "mcq_not_correct",
+      "question": "Regarding EU defence spending and military capability before and after 2022, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Before 2022, most EU NATO members spent less than the 2% of GDP NATO defence spending target",
+        "b": "Germany's 'Zeitenwende' (historic turning point) declaration in 2022 marked a major reversal of its post-WWII defence restraint",
+        "c": "EU member states collectively exceeded US defence spending before Russia's 2022 invasion of Ukraine",
+        "d": "The post-2022 period saw significant increases in European defence budgets and announcements of new military capability investments"
+      },
+      "correct": "c",
+      "explanation": "The US massively outspent European NATO members before 2022. The US accounted for roughly 70% of NATO's total defence spending. Most EU NATO members were below 2% of GDP. This asymmetry was a persistent source of US-Europe friction (burden-sharing debates). The EU collectively spent far less than the US, not more."
+    },
+    {
+      "id": "geo-097",
+      "session": "19",
+      "type": "mcq_not_correct",
+      "question": "Regarding the EU concept of 'open strategic autonomy,' which of the following statements is NOT correct?",
+      "options": {
+        "a": "Strategic autonomy refers to the EU's capacity to act independently in foreign and security policy when necessary",
+        "b": "The 'open' qualifier signals that strategic autonomy is not isolationism — the EU remains committed to open trade and partnerships",
+        "c": "Strategic autonomy means the EU seeks to decouple entirely from the US and pursue a fully independent geopolitical path",
+        "d": "Strategic autonomy involves reducing critical dependencies in defence, technology, and energy while maintaining international cooperation"
+      },
+      "correct": "c",
+      "explanation": "'Open strategic autonomy' is explicitly not about decoupling from the US or the West. The EU frames it as enhancing its capacity to act independently in specific circumstances while remaining embedded in its trans-Atlantic and multilateral partnerships. It is about selective de-risking of critical dependencies (Russian gas, Chinese critical inputs) rather than broad decoupling."
+    },
+    {
+      "id": "geo-098",
+      "session": "19",
+      "type": "mcq_not_correct",
+      "question": "Regarding 'Wandel durch Handel' (change through trade) as a foreign policy paradigm, which of the following statements is NOT correct?",
+      "options": {
+        "a": "'Wandel durch Handel' is a German concept premised on the idea that economic integration would moderate authoritarian behaviour",
+        "b": "The paradigm was applied to both Russia and China, expecting that trade and investment ties would incentivise political moderation",
+        "c": "'Wandel durch Handel' proved entirely correct in both the Russian and Chinese cases, with both states liberalising as predicted",
+        "d": "Russia's 2022 invasion of Ukraine exposed the fundamental failure of 'Wandel durch Handel' as a policy framework"
+      },
+      "correct": "c",
+      "explanation": "The paradigm failed in both cases. Russia did not moderate — it invaded Ukraine despite deep economic integration with Europe. China did not liberalise — political repression intensified under Xi Jinping despite economic opening. These twin failures have fundamentally discredited the 'Wandel durch Handel' paradigm and driven the shift toward strategic autonomy and de-risking."
+    },
+    {
+      "id": "geo-099",
+      "session": "19",
+      "type": "mcq_not_correct",
+      "question": "Regarding the EU's post-2022 energy diversification from Russian gas, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The EU rapidly accelerated LNG import capacity and diversified suppliers away from Russia after the 2022 invasion",
+        "b": "By 2023, the US had become the largest supplier of LNG to the European Union",
+        "c": "The EU replaced all Russian gas imports with alternative supplies within 90 days with no disruption to energy markets",
+        "d": "Norway expanded its role as the EU's largest pipeline gas supplier following the reduction of Russian flows"
+      },
+      "correct": "c",
+      "explanation": "The energy diversification was a major and painful multi-year effort, not a 90-day seamless transition. It involved energy rationing, record-high gas prices, emergency LNG terminal construction, fuel switching, demand reduction, and significant economic cost. The disruption was severe — European gas prices reached record highs in 2022. Diversification was achieved but at substantial cost over years, not 90 days."
+    },
+    {
+      "id": "geo-100",
+      "session": "20",
+      "type": "mcq_not_correct",
+      "question": "Regarding the ideological divide between liberal democracies and autocracies in contemporary geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Contemporary great power competition has an ideological dimension alongside the material power competition",
+        "b": "China and Russia both challenge aspects of the liberal international order, though for different reasons and through different means",
+        "c": "Ideological alignment between states is irrelevant to geopolitical alliances — states only align on the basis of material interests",
+        "d": "Democracies show a tendency to cluster in security alliances (NATO, QUAD, AUKUS) while authoritarian states coordinate separately"
+      },
+      "correct": "c",
+      "explanation": "Ideology does influence geopolitical alignment, even if it is not the sole determinant. Democratic peace theory shows democracies rarely fight each other. The NATO alliance is composed entirely of democracies. China and Russia coordinate on defending state sovereignty against Western human rights norms — an ideological convergence. Values and interests interact rather than ideology being irrelevant."
+    },
+    {
+      "id": "geo-101",
+      "session": "20",
+      "type": "mcq_not_correct",
+      "question": "Regarding democratic peace theory, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Democratic peace theory holds that liberal democracies rarely go to war with each other",
+        "b": "The empirical record shows very few if any wars between consolidated liberal democracies in the modern era",
+        "c": "Democratic peace theory predicts that democracies never go to war with any country, including authoritarian states",
+        "d": "Liberals argue that shared democratic institutions and norms create mutual restraint between democratic states"
+      },
+      "correct": "c",
+      "explanation": "Democratic peace theory is specifically a dyadic claim — democracies rarely fight each other — not a universal claim that democracies avoid war altogether. Democracies have frequently fought authoritarian states: Vietnam, Korea, Iraq, Afghanistan, Libya. The theory does not predict pacifism toward non-democracies, only relative peace in democratic-democratic dyads."
+    },
+    {
+      "id": "geo-102",
+      "session": "20",
+      "type": "mcq_not_correct",
+      "question": "Regarding China's promotion of its governance model, which of the following statements is NOT correct?",
+      "options": {
+        "a": "China actively promotes its development model as an alternative that separates economic growth from liberal democratic conditionality",
+        "b": "China has used the UN Human Rights Council to defend state sovereignty against Western human rights interventionism",
+        "c": "China presents its governance model as universally superior to all others and has imposed it as a condition for all economic partnerships",
+        "d": "The attractiveness of the Beijing Consensus for some developing country governments lies in its 'no political strings' approach"
+      },
+      "correct": "c",
+      "explanation": "China does not impose its political system as a condition for economic partnerships — this is precisely the feature that distinguishes the Beijing Consensus from the Washington Consensus. China's pitch is explicitly non-interventionist: development finance without political or governance conditionality. Imposing its system would undermine this competitive advantage relative to Western development institutions."
+    },
+    {
+      "id": "geo-103",
+      "session": "20",
+      "type": "mcq_not_correct",
+      "question": "Regarding the Russia-China partnership and its ideological basis, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Russia and China have developed a 'comprehensive strategic partnership' since the 2010s",
+        "b": "Both Russia and China share an interest in challenging US-led liberal international order and promoting 'multipolarity'",
+        "c": "Russia and China form a formal ideological alliance based on shared communist ideology, equivalent to the Cold War Warsaw Pact",
+        "d": "Despite cooperation, Russia and China have significant differences in interests and no formal military alliance"
+      },
+      "correct": "c",
+      "explanation": "Russia is no longer communist — it is a nationalist authoritarian state with an Orthodox-Christian identity project. China is communist in party structure but has embraced capitalism. Their partnership is pragmatic and anti-hegemonic (against US dominance) rather than ideologically unified. They have no formal military alliance — the relationship is explicitly termed a 'partnership,' not an alliance, and significant mutual suspicions persist."
+    },
+    {
+      "id": "geo-104",
+      "session": "21",
+      "type": "mcq_not_correct",
+      "question": "Regarding the construction of the Geopolitical Risk (GPR) index by Caldara and Iacoviello, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The GPR index is constructed by counting newspaper articles containing geopolitical risk keywords as a share of total news coverage",
+        "b": "The index tracks terms related to wars, terrorism, military tensions, nuclear weapons, and sanctions in major international newspapers",
+        "c": "The GPR index is based on surveys of business executives asking them to rate current geopolitical risk levels",
+        "d": "The GPR index allows historical comparison of geopolitical risk levels going back to 1900"
+      },
+      "correct": "c",
+      "explanation": "The GPR index uses automated text analysis of newspaper coverage, not surveys. This methodology allows historical backcasting (newspapers are archived) and provides a more systematic, less subjective measure than executive surveys. The survey-based approach is used in other risk indices (like Business Environment Risk Intelligence) but not in the Caldara-Iacoviello GPR index."
+    },
+    {
+      "id": "geo-105",
+      "session": "21",
+      "type": "mcq_not_correct",
+      "question": "Regarding the impact of geopolitical risk on financial markets and investment, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Elevated geopolitical risk typically increases uncertainty, raising the risk premium demanded by investors",
+        "b": "Oil prices tend to spike during major geopolitical crises involving oil-producing regions",
+        "c": "Academic research shows that geopolitical risk has no measurable impact on stock markets, investment flows, or commodity prices",
+        "d": "The onset of major conflicts typically causes flight to safe-haven assets such as gold, US Treasuries, and the Swiss franc"
+      },
+      "correct": "c",
+      "explanation": "The academic literature, including Caldara and Iacoviello's own work, shows significant and measurable effects of geopolitical risk on economic variables. Elevated GPR is associated with lower investment, reduced economic activity, higher commodity price volatility, and equity market stress. The development of the GPR index was motivated precisely by the observed economic impact of geopolitical events."
+    },
+    {
+      "id": "geo-106",
+      "session": "21",
+      "type": "mcq_not_correct",
+      "question": "Regarding the predictability of geopolitical events using quantitative models, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Quantitative geopolitical risk models can identify elevated risk environments but generally cannot predict specific events with precision",
+        "b": "Russia's full-scale invasion of Ukraine in February 2022 was assigned a high probability by most risk forecasting models months in advance",
+        "c": "Black swan events — high-impact, low-probability geopolitical shocks — are by definition difficult to forecast quantitatively",
+        "d": "The limits of geopolitical forecasting reflect the genuine unpredictability of human political decisions under uncertainty"
+      },
+      "correct": "b",
+      "explanation": "Most risk models significantly underestimated the probability of a full-scale Russian invasion of Ukraine until very shortly before it occurred. This is the classic example of geopolitical forecasting failure: even with satellite intelligence and diplomatic signals, the specific timing and scale were misjudged. This demonstrates that elevated risk environments (which models detected) do not reliably translate into accurate event prediction."
+    },
+    {
+      "id": "geo-107",
+      "session": "21",
+      "type": "mcq_not_correct",
+      "question": "Regarding the distinction between country risk and geopolitical risk, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Country risk encompasses domestic political instability, economic policy risk, and regulatory uncertainty within a single country",
+        "b": "Geopolitical risk specifically concerns interstate conflict, military tensions, and international political dynamics",
+        "c": "Country risk and geopolitical risk are identical concepts that always move together and require no separate analytical frameworks",
+        "d": "A country can have elevated geopolitical risk (external military threat) while having stable domestic institutions and low country risk"
+      },
+      "correct": "c",
+      "explanation": "Country risk and geopolitical risk are related but analytically distinct. Taiwan has stable domestic institutions and governance (low country risk) but extremely high geopolitical risk (Chinese military threat). Conversely, many developing countries have high country risk (corruption, political instability) but relatively low geopolitical risk (no external military threat). Treating them as identical misses important dimensions of risk analysis."
+    },
+    {
+      "id": "geo-108",
+      "session": "22",
+      "type": "mcq_not_correct",
+      "question": "Regarding 'friend-shoring' as a corporate supply chain strategy, which of the following statements is NOT correct?",
+      "options": {
+        "a": "'Friend-shoring' refers to redirecting supply chains toward suppliers in geopolitically aligned or trusted countries",
+        "b": "Friend-shoring accepts higher costs in exchange for reduced geopolitical risk and supply chain vulnerability",
+        "c": "Friend-shoring represents the same logic as efficiency-maximising globalisation, simply applied to a new set of suppliers",
+        "d": "Friend-shoring is a response to the realisation that pure cost-efficiency optimisation ignores geopolitical and supply security considerations"
+      },
+      "correct": "c",
+      "explanation": "Friend-shoring represents a fundamentally different logic from efficiency-maximising globalisation. Traditional globalisation sought lowest-cost suppliers regardless of political context; friend-shoring explicitly sacrifices some efficiency for geopolitical security. The selection criterion changes from cost to political alignment and supply reliability. These are competing logics, not equivalent approaches applied to different supplier sets."
+    },
+    {
+      "id": "geo-109",
+      "session": "22",
+      "type": "mcq_not_correct",
+      "question": "Regarding secondary sanctions and their extraterritorial impact on business, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Secondary sanctions threaten non-US companies with exclusion from US markets if they transact with sanctioned entities",
+        "b": "European companies faced compliance obligations under US Iran sanctions even though EU governments objected to their extraterritorial reach",
+        "c": "Secondary sanctions apply only within US territory and have no effect on companies or transactions outside the United States",
+        "d": "The extraterritorial reach of US financial power through dollar clearing gives US sanctions an effectiveness beyond US jurisdiction"
+      },
+      "correct": "c",
+      "explanation": "Secondary sanctions have explicitly extraterritorial reach — they affect non-US companies operating entirely outside the US. European banks, Asian trading companies, and multinationals have faced severe penalties for Iran, Russia, and Cuba-related transactions that violated US sanctions law. This extraterritoriality is controversial in international law but effective in practice because of dollar clearing dominance."
+    },
+    {
+      "id": "geo-110",
+      "session": "22",
+      "type": "mcq_not_correct",
+      "question": "Regarding geopolitical risks for Western firms operating in China, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Western firms in China face potential regulatory discrimination and market access restrictions if geopolitical tensions escalate",
+        "b": "Firms with supply chains touching Xinjiang face reputational and compliance risks related to forced labour legislation",
+        "c": "Operating in China presents only standard commercial risks equivalent to any other large emerging market with no geopolitical dimension",
+        "d": "A rapid deterioration in US-China relations could expose Western firms to asset freezes, regulatory action, or market exclusion in China"
+      },
+      "correct": "c",
+      "explanation": "China presents distinctively elevated geopolitical risk beyond standard commercial risk. The risk of being caught between US-China sanctions regimes (operating in China while maintaining US compliance), supply chain exposure to Xinjiang forced labour legislation, potential Chinese retaliation against Western firms in any conflict scenario, and the specific risk of technology transfer requirements — all represent geopolitical risks with no analogue in standard emerging market country risk."
+    },
+    {
+      "id": "geo-111",
+      "session": "22",
+      "type": "mcq_not_correct",
+      "question": "Regarding the trade-off between supply chain efficiency and resilience, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Just-in-time supply chain management maximises efficiency but creates vulnerability to supply disruptions",
+        "b": "Resilient supply chains require redundancy, inventory buffers, and multi-sourcing that add cost compared to lean systems",
+        "c": "Companies can achieve both maximum supply chain efficiency and maximum resilience simultaneously without any trade-off",
+        "d": "COVID-19 and geopolitical fragmentation exposed the vulnerabilities of efficiency-maximising global supply chains"
+      },
+      "correct": "c",
+      "explanation": "Efficiency and resilience are in fundamental tension — this is a core insight of supply chain risk management. Efficiency requires minimising inventory (just-in-time), single-sourcing for economies of scale, and locating production where costs are lowest. Resilience requires the opposite: buffer stocks, multiple suppliers, geographic diversification. These trade-offs cannot be eliminated; they must be managed through explicit prioritisation."
+    },
+    {
+      "id": "geo-112",
+      "session": "23",
+      "type": "mcq_not_correct",
+      "question": "Regarding critiques of geographic determinism in geopolitics, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Critics of geopolitical determinism argue that geography shapes but does not determine international outcomes",
+        "b": "The 'against geopolitics' perspective holds that agency, norms, technology, and ideas also shape international politics",
+        "c": "Critics of geopolitics argue that geography has absolutely no relevance to international relations and should be entirely discarded",
+        "d": "Geographic factors can be overcome, circumvented, or transformed — as technology, economic integration, and institutions all demonstrate"
+      },
+      "correct": "c",
+      "explanation": "The critique targets determinism — the idea that geography mechanically determines outcomes — not geographic relevance entirely. Critics argue geography is one factor among many; they do not claim it has no relevance. The Netherlands' geography (coastal, rivers) clearly shapes its history and international role, but the Netherlands is not 'determined' to have any particular foreign policy by its geography."
+    },
+    {
+      "id": "geo-113",
+      "session": "23",
+      "type": "mcq_not_correct",
+      "question": "Regarding the agency of small and middle powers in geopolitical analysis, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Small states can exercise significant influence through control of strategic chokepoints, resources, or specialized capabilities",
+        "b": "Middle powers can shape outcomes through coalition-building, multilateral diplomacy, and norm entrepreneurship",
+        "c": "In a world of great power competition, small and middle powers have no meaningful agency and are entirely passive objects of great power politics",
+        "d": "Singapore's geopolitical position controlling the Malacca Strait gives it leverage disproportionate to its size"
+      },
+      "correct": "c",
+      "explanation": "Small and middle powers exercise real agency. Singapore leverages its chokepoint position for economic and diplomatic influence. Qatar uses gas wealth and media (Al Jazeera) for outsized influence. Zelensky's Ukraine mobilised international support in ways that defied pure power-politics calculations. Geopolitical frameworks that focus exclusively on great powers miss how smaller actors shape outcomes."
+    },
+    {
+      "id": "geo-114",
+      "session": "23",
+      "type": "mcq_not_correct",
+      "question": "Regarding constructivism as a critique of geopolitical realism, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Constructivism argues that ideas, norms, and identity shape state behaviour beyond material factors like territory and military power",
+        "b": "Constructivists point to how international norms (like the non-use of chemical weapons) shape state behaviour even without enforcement",
+        "c": "Constructivism fully agrees with geopolitical realism that material power (territory, resources, military) is the sole determinant of international outcomes",
+        "d": "The constructivist concept of 'security communities' explains why NATO members do not plan for war with each other despite differences in power"
+      },
+      "correct": "c",
+      "explanation": "Constructivism is a direct challenge to materialist realism. Where realism argues that material power determines behaviour, constructivism argues that shared identities, norms, and understandings structure international relations in ways that material calculations alone cannot explain. The EU is the constructivist paradigm case: economically and militarily capable states that have constructed a security community where war among members is inconceivable."
+    },
+    {
+      "id": "geo-115",
+      "session": "23",
+      "type": "mcq_not_correct",
+      "question": "Regarding the use of geopolitical discourse to legitimise imperialism, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Classical geopolitical thinkers like Haushofer provided intellectual frameworks that were used to justify Nazi expansionism",
+        "b": "19th-century geopolitical reasoning helped normalise colonial expansion as a natural expression of state geographic needs",
+        "c": "All geopolitical thinkers throughout history have been critics of imperialism who used geographic analysis to expose injustice",
+        "d": "Critical Geopolitics emerged partly as a response to the ways in which geographic discourse has been used to legitimate great power domination"
+      },
+      "correct": "c",
+      "explanation": "Classical geopolitical thinkers were largely imperialists themselves, not critics of imperialism. Mahan celebrated Anglo-Saxon naval power and American imperialism; Mackinder justified British global presence; Haushofer explicitly legitimised German expansion. The critique of geopolitics as a tool of imperial justification is one of the founding motivations of Critical Geopolitics as a sub-field."
+    },
+    {
+      "id": "geo-116",
+      "session": "24",
+      "type": "mcq_not_correct",
+      "question": "Regarding the 'crashing apps' metaphor used in the final lecture, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The metaphor describes simultaneous failures across multiple domains of the post-Cold War order",
+        "b": "The 'crashing apps' include: technology governance, international institutions, cultural norms, IR rules, geopolitical order, and political systems",
+        "c": "The 'crashing apps' metaphor refers exclusively to failures in digital technology sectors and Silicon Valley business models",
+        "d": "The simultaneous nature of these failures across domains makes the current period particularly turbulent and difficult to manage"
+      },
+      "correct": "c",
+      "explanation": "The 'crashing apps' metaphor is a broad systemic metaphor about multiple simultaneous failures across all dimensions of the global order — not a narrow reference to digital technology. The 'apps' crashing simultaneously include: technology (from common good to global threat), institutions (Washington Consensus in crisis), culture (cosmopolitan to localism), IR (return of zero-sum competition), geopolitics (hegemony to multipolar assertiveness), and political systems (rise of populism and autocracy)."
+    },
+    {
+      "id": "geo-117",
+      "session": "24",
+      "type": "mcq_not_correct",
+      "question": "Regarding the four future scenarios presented in the final lecture, which of the following statements is NOT correct?",
+      "options": {
+        "a": "'Slowbalization' is presented as suboptimal for everyone but potentially a stable equilibrium",
+        "b": "'Two Worlds Apart' (bloc division) is described as particularly damaging for developing countries caught between blocs",
+        "c": "The 'Rise of Stakeholder Geopolitics' scenario represents a return to Cold War-style ideological bloc competition",
+        "d": "Historical evidence is cited to show that 'Armageddon' scenarios are not theoretical — deglobalization and global conflict have occurred before"
+      },
+      "correct": "c",
+      "explanation": "'Stakeholder Geopolitics' is the most optimistic scenario — it represents managed competition through negotiation and recognition of shared interests. It is the opposite of Cold War bloc competition. Cold War-style bloc division is captured by the 'Two Worlds Apart' scenario. Stakeholder Geopolitics implies actors accepting rules-based competition rather than zero-sum confrontation."
+    },
+    {
+      "id": "geo-118",
+      "session": "24",
+      "type": "mcq_not_correct",
+      "question": "Regarding globalization's distributional effects on equality, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The second wave of globalization contributed to convergence between countries — developing nations grew faster than developed ones",
+        "b": "Within countries, globalization's gains were concentrated and its losses distributed — particularly among lower-skilled workers in rich countries",
+        "c": "Globalization produced greater equality both between countries AND within countries simultaneously in most cases",
+        "d": "The political backlash against globalization — populism, protectionism — is linked to the 'within country' inequality it generated"
+      },
+      "correct": "c",
+      "explanation": "Globalization's effects on equality were divergent, not uniformly positive. Between countries: convergence (reduced inequality — developing nations caught up). Within countries: divergence (increased inequality — the top benefited most while lower-skilled workers in rich countries faced wage stagnation and deindustrialisation). This between/within distinction is crucial for understanding why globalization generated a populist backlash even as global poverty fell."
+    }
+  ]
+}

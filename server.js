@@ -223,7 +223,8 @@ async function getUserId(username) {
 const userKeysCache = new Map(); // username → { anthropic_key, openai_key }
 
 async function getUserKeys(username) {
-  if (userKeysCache.has(username)) return userKeysCache.get(username);
+  const cached = userKeysCache.get(username);
+  if (cached && (cached.anthropic_key || cached.openai_key)) return cached;
   const { data } = await supabase.from('users').select('anthropic_key, openai_key').eq('username', username).single();
   const keys = { anthropic_key: data?.anthropic_key || '', openai_key: data?.openai_key || '' };
   userKeysCache.set(username, keys);

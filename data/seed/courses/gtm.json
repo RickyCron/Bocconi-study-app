@@ -1,0 +1,712 @@
+{
+  "id": "gtm",
+  "name": "Go-To-Market Strategies for Startups",
+  "exam_date": "18 May 2026, 11:30 am",
+  "exam_format": "23 MCQ questions + group project + video pitch",
+  "sessions": [
+    {
+      "id": "1-3",
+      "title": "The Business Idea",
+      "topics": [
+        "Introduction & business opportunity identification",
+        "Business Model Canvas & Lean Startup approach",
+        "From business idea to business plan"
+      ],
+      "slides": [
+        {"title": "Sessions 1–3 Slides", "file": "GTM/BP Sessions 1-3.pdf"}
+      ]
+    },
+    {
+      "id": "5-8",
+      "title": "Market Analysis",
+      "topics": [
+        "Market analysis introduction & gathering information",
+        "Sales forecasting",
+        "Analysis of purchase and consumption process"
+      ],
+      "slides": [
+        {"title": "Sessions 5–7 Slides", "file": "GTM/BP Sessions 5-7.pdf"},
+        {"title": "Sessions 7–9 Slides", "file": "GTM/BP 2025 Sessions 7-9 (1).pdf"}
+      ]
+    },
+    {
+      "id": "9-10",
+      "title": "Customer Behavior & Demand",
+      "topics": [
+        "Customer behavior & demand analysis",
+        "Sales forecasting exercises"
+      ],
+      "slides": [
+        {"title": "Sessions 7–9 Slides", "file": "GTM/BP 2025 Sessions 7-9 (1).pdf"}
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Competitor Analysis",
+      "topics": [
+        "Competitive environment analysis",
+        "Identifying competitors and competitive dynamics"
+      ],
+      "slides": [
+        {"title": "Sessions 11–13 Slides", "file": "GTM/BP Sessions 11-13.pdf"}
+      ]
+    },
+    {
+      "id": "12-13",
+      "title": "Value Proposition & Structure",
+      "topics": [
+        "Value proposition definition",
+        "Value curve & structure choices",
+        "Building a value curve"
+      ],
+      "slides": [
+        {"title": "Sessions 11–13 Slides", "file": "GTM/BP Sessions 11-13.pdf"},
+        {"title": "Session 13: Platforms & Pitching", "file": "GTM/Session 13_platforms and pitching.pdf"}
+      ]
+    },
+    {
+      "id": "14-23",
+      "title": "Financial Forecasts & Pitching",
+      "topics": [
+        "TEV (Total Economic Value): reference price + positive/negative performance differentials",
+        "Pro-forma income statement: revenues, variable costs, fixed costs, EBITDA, depreciation, EBIT, interest expenses, EBT, income taxes, net income",
+        "Interest expenses on bank overdraft: calculated on AVERAGE balance = (opening + closing) / 2 × rate",
+        "Income taxes: corporate rate applied to taxable income; losses carried forward offset future profits",
+        "Revenue models: top-down (market × penetration × ARPU), bottom-up (units × price × capacity), multi-source, subscription with churn",
+        "Fixed vs variable costs: variable scale with volume (raw materials, commissions, packaging, delivery); fixed do not (rent, depreciation, insurance, salaries on long-term contracts)",
+        "Pro-forma balance sheet: accounts receivable (revenues × DSO/360 × (1+VAT) for domestic, no VAT for export), inventory (cost × DIO/12), accounts payable (purchases × DPO/360 × (1+VAT))",
+        "SSP (staff severance pay) fund: accumulates each year, reduced by retirements",
+        "VAT position: output VAT on revenues minus input VAT on costs and investments = net payable or receivable",
+        "Net fixed assets: gross assets minus accumulated depreciation",
+        "Working capital: operating current assets (AR + inventory + VAT receivable + operating cash) minus operating current liabilities (AP + tax payable + SSP fund); bank loans are FINANCIAL not operating",
+        "Invested capital: working capital + net fixed assets",
+        "Financial needs from operations: WC + NFA - EBIT (EBIT self-finances; subtract it)",
+        "Shareholders equity: common stock + retained earnings + net income - dividends",
+        "Net financial debt: bank overdraft + long-term loans - cash equivalents; operating cash excluded",
+        "Break-even point: fixed costs / (price - variable cost per unit)",
+        "SuperBike and BBike case studies for income statement and balance sheet practice",
+        "Casavo case: profitability and pro-forma financial statements"
+      ],
+      "slides": [
+        {"title": "Session 14: Financial Forecasts & Pro Forma Income Statement", "file": "GTM/Session 14_financial forecasts and pro forma income statement.pdf"},
+        {"title": "Session 16: Pro Forma Balance Sheet & Financial Need Assessment", "file": "GTM/Session 16_Pro forma balance sheet and financial need assessment.pdf"},
+        {"title": "Session 17–18: Short-Term Debt Assessment", "file": "GTM/Session 17-18_Short term debt assessment.pdf"},
+        {"title": "Session 19: BBike Comments & BEP", "file": "GTM/Session 19_BBike comments_and_BEP.pdf"},
+        {"title": "Session 20–22: How to Raise Money & Pitch Competition", "file": "GTM/Session 20-22_How to raise money_pitch competition.pdf"}
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Business Model",
+      "definition": "The logic of how a company creates, delivers, and captures value; describes organizational structure and operational logic"
+    },
+    {
+      "term": "Business Model Canvas",
+      "definition": "A strategic management template with 9 building blocks: customer segments, value propositions, channels, customer relationships, revenue streams, key resources, key activities, key partnerships, and cost structure"
+    },
+    {
+      "term": "Lean Startup Approach",
+      "definition": "Methodology emphasizing rapid prototyping, validated learning, and iterative design to test business assumptions with minimum viable product (MVP)"
+    },
+    {
+      "term": "Value Proposition",
+      "definition": "The unique set of benefits and advantages that a company offers to its customers; answers why a customer should buy from this company"
+    },
+    {
+      "term": "Market Analysis",
+      "definition": "Comprehensive examination of market size, structure, growth potential, customer segments, and competitive landscape"
+    },
+    {
+      "term": "Market Segmentation",
+      "definition": "Process of dividing market into distinct groups of customers with different needs, preferences, or behaviors"
+    },
+    {
+      "term": "Target Market",
+      "definition": "Specific customer segment(s) that a company focuses on and aims to serve"
+    },
+    {
+      "term": "Positioning",
+      "definition": "The way a company wants to be perceived by target customers relative to competitors"
+    },
+    {
+      "term": "Sales Forecasting",
+      "definition": "Process of estimating future sales volume and revenue based on historical data, market trends, and demand drivers"
+    },
+    {
+      "term": "Competitive Analysis",
+      "definition": "Systematic evaluation of competitor strategies, strengths, weaknesses, and market positioning"
+    },
+    {
+      "term": "Break-even Point",
+      "definition": "The sales volume or revenue level at which total revenues equal total costs, resulting in zero profit/loss"
+    },
+    {
+      "term": "Pro-forma Financial Statements",
+      "definition": "Projected financial statements (income statement, balance sheet, cash flow) based on assumptions about future performance"
+    },
+    {
+      "term": "Financial Feasibility",
+      "definition": "Assessment of whether a business idea can generate sufficient revenue and cash flow to cover costs and provide returns"
+    },
+    {
+      "term": "Business Pitch",
+      "definition": "Concise, persuasive presentation of a business idea designed to attract investors or secure funding"
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Business Idea to Business Plan Journey",
+      "explanation": "Multi-stage process from identifying opportunities through systematic analysis to executable plan. Involves idea generation, model development, market research, competitive analysis, value definition, financial projections, and pitch preparation"
+    },
+    {
+      "name": "New Venture Roadmap",
+      "explanation": "Comprehensive framework showing three main phases: Concept (business idea + BMC), Analysis (market analysis, competitor analysis, customer behavior), and Implementation (value proposition, structure choices, financial forecasting). Includes Blue Ocean Strategy and Lean Startup approaches"
+    },
+    {
+      "name": "Sources of Business Opportunities",
+      "explanation": "Trends (scientific/technical advances, socio-demographic changes, resource constraints, regulatory changes); unsolved problems and marketplace gaps. Success requires scanning environment, learning from failures, understanding business economics"
+    },
+    {
+      "name": "Demand Estimation Methods",
+      "explanation": "Techniques to estimate market size and potential including qualitative (expert opinion, market research) and quantitative (pivot tables, Google Trends, statistical analysis) approaches using tools like UnComtrade, Passport databases"
+    },
+    {
+      "name": "Financial Analysis Framework",
+      "explanation": "Evaluation of business feasibility through pro-forma statements, including income projection, balance sheet, cash flow analysis. Uses break-even analysis and scenario planning to assess profitability and financial viability"
+    },
+    {
+      "name": "Value Curve",
+      "explanation": "Visual representation of how a company's value proposition compares to competitors across key factors. Used to identify differentiation opportunities and competitive advantage. Part of Blue Ocean Strategy framework"
+    }
+  ],
+  "distinctions": [
+    {
+      "a": "Innovation vs Imitation",
+      "b": "Different business success approaches",
+      "difference": "Many profitable businesses are not particularly innovative; highly successful businesses balance innovation and imitation; radical innovations can create new markets"
+    },
+    {
+      "a": "Technology Push",
+      "b": "Demand Pull",
+      "difference": "Technology-driven opportunities face unpredictable market timing and adoption; demand-driven innovations respond to identified customer needs and are more predictable"
+    },
+    {
+      "a": "Tangible vs Intangible Assets",
+      "b": "Sources of competitive advantage",
+      "difference": "Tangible: physical resources, infrastructure; Intangible: brand, relationships, knowledge, networks"
+    }
+  ],
+  "examples": [
+    "JetHR startup case - CEO Marco Ogiengo",
+    "Motorola DynaTAC cell phone (1983) - first portable handset, 30min talk time, 10 hours recharge, $3,995 price",
+    "Cell phone market prediction (1987) - McKinsey predicted 9% UK penetration maximum, vastly underestimated actual adoption",
+    "Fax machine adoption curve - shows S-curve pattern of technology adoption with long introduction phase then sudden growth",
+    "SuperBike case study - financial statements and feasibility analysis example",
+    "Casavo case - profitability and financial statements (CEO Giorgio Tinacci)"
+  ],
+  "keywords": [
+    "Business Model Canvas",
+    "Lean Startup",
+    "Value Proposition",
+    "Market Segmentation",
+    "Competitive Analysis",
+    "Sales Forecasting",
+    "Break-even",
+    "Pro-forma",
+    "Financial Feasibility",
+    "Pitch"
+  ],
+  "questions": [
+    {
+      "id": "gtm-001",
+      "session": "1-3",
+      "type": "mcq_not_correct",
+      "question": "Regarding the Business Model Canvas (BMC), which of the following statements is NOT correct?",
+      "options": {
+        "a": "The BMC consists of nine building blocks that describe how a company creates, delivers, and captures value",
+        "b": "Value Proposition sits at the centre connecting the customer-facing side to the infrastructure side",
+        "c": "The BMC was developed by Eric Ries as a core component of the Lean Startup methodology",
+        "d": "Revenue Streams and Cost Structure are both included as building blocks of the BMC"
+      },
+      "correct": "c",
+      "explanation": "The BMC was developed by Alexander Osterwalder (in 'Business Model Generation'), not by Eric Ries. Eric Ries developed the separate but complementary Lean Startup methodology."
+    },
+    {
+      "id": "gtm-002",
+      "session": "1-3",
+      "type": "mcq_not_correct",
+      "question": "Regarding the Lean Startup approach, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The core cycle is Build-Measure-Learn",
+        "b": "A Minimum Viable Product tests the riskiest assumptions with minimal resources",
+        "c": "A 'pivot' means a structured course correction when evidence shows the current approach is not working",
+        "d": "Lean Startup requires a complete, detailed business plan to be finalised before any product development begins"
+      },
+      "correct": "d",
+      "explanation": "Lean Startup explicitly rejects requiring a complete plan before development. It argues traditional planning is based on untested assumptions. Start small, test fast, learn, iterate."
+    },
+    {
+      "id": "gtm-003",
+      "session": "1-3",
+      "type": "mcq_not_correct",
+      "question": "Regarding sources of business opportunities, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Scientific and technological advances can create new business opportunities by enabling previously impossible solutions",
+        "b": "Socio-demographic changes (e.g. ageing populations) create new patterns of demand",
+        "c": "A business opportunity only exists when it involves radical, first-of-its-kind innovation",
+        "d": "Regulatory changes can open or close market opportunities for new ventures"
+      },
+      "correct": "c",
+      "explanation": "Many highly successful businesses are built on intelligent imitation or incremental improvement rather than radical innovation. The key is identifying genuine unmet needs and executing well — not necessarily being first."
+    },
+    {
+      "id": "gtm-004",
+      "session": "5-8",
+      "type": "mcq_not_correct",
+      "question": "Regarding market segmentation, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Segmentation divides potential customers into groups with similar needs or characteristics",
+        "b": "A useful segment must be measurable, accessible, and large enough to be profitable",
+        "c": "Demographic, psychographic, geographic, and behavioural criteria can all be used for segmentation",
+        "d": "All identified market segments must be targeted with an identical marketing mix to ensure consistency"
+      },
+      "correct": "d",
+      "explanation": "The whole point of segmentation is to allow differentiated targeting. Different segments typically require different value propositions and marketing mixes tailored to their specific characteristics."
+    },
+    {
+      "id": "gtm-005",
+      "session": "5-8",
+      "type": "mcq_not_correct",
+      "question": "Regarding sales forecasting methods, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Qualitative methods such as expert opinion are useful when historical data is limited or unavailable",
+        "b": "Quantitative methods rely on historical data and statistical techniques to project future sales",
+        "c": "The 'top-down' approach estimates sales by starting from total market size and applying a penetration assumption",
+        "d": "A sales forecast should always be a single-point prediction to give investors a clear target"
+      },
+      "correct": "d",
+      "explanation": "Robust forecasting uses scenario analysis — best case, base case, worst case — rather than a single-point prediction. This acknowledges uncertainty and gives a more honest picture to investors and decision-makers."
+    },
+    {
+      "id": "gtm-006",
+      "session": "12-13",
+      "type": "mcq_not_correct",
+      "question": "Regarding value propositions and the value curve, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A value curve maps a company's offering against competitors across key competitive factors",
+        "b": "Blue Ocean Strategy seeks to create uncontested market space by redefining competitive factors",
+        "c": "A strong value proposition must explain why the target customer should prefer this offering over alternatives",
+        "d": "Every company must create an entirely new product category to build a sustainable competitive advantage"
+      },
+      "correct": "d",
+      "explanation": "Competitive advantage does not require category creation. It can be built through superior execution, brand, cost leadership, customer relationships, or incremental innovation. Many successful companies excel through intelligent imitation."
+    },
+    {
+      "id": "gtm-007",
+      "session": "14+",
+      "type": "mcq_not_correct",
+      "question": "Regarding break-even analysis, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The break-even point is reached when total revenues equal total costs",
+        "b": "Break-even analysis requires distinguishing between fixed and variable costs",
+        "c": "Below the break-even point the company operates at a loss; above it, it earns a profit",
+        "d": "A lower break-even point always signals a superior business model regardless of other factors"
+      },
+      "correct": "d",
+      "explanation": "A lower break-even point does not universally signal a better model. It must be weighed against margin per unit, total market size, and growth potential. A business might accept a higher break-even in exchange for higher margins or market share."
+    },
+    {
+      "id": "gtm-008",
+      "session": "14+",
+      "type": "mcq_not_correct",
+      "question": "Regarding pro-forma financial statements for a new venture, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Pro-forma statements are projected financials based on assumptions about future performance",
+        "b": "The income statement projects revenues, costs, and resulting profit or loss over a period",
+        "c": "Cash flow projections are unnecessary for a new venture if the income statement shows a profit",
+        "d": "Scenario analysis (best/base/worst case) makes financial projections more robust and credible"
+      },
+      "correct": "c",
+      "explanation": "A profitable income statement does not mean a business has healthy cash flow. Timing differences between revenues and expenses can cause a profitable business to run out of cash. Cash flow projections are essential for any new venture."
+    },
+    {
+      "id": "gtm-009",
+      "session": "1-3",
+      "type": "mcq_best",
+      "question": "Which of the following BEST describes the difference between Technology Push and Demand Pull as sources of business opportunity?",
+      "options": {
+        "a": "Technology Push starts from an identified customer need; Demand Pull starts from a new technology",
+        "b": "Technology Push is driven by a new technology seeking applications; Demand Pull responds to identified customer needs",
+        "c": "Technology Push is always more profitable; Demand Pull is always faster to market",
+        "d": "There is no meaningful distinction — both approaches follow the same commercialisation process"
+      },
+      "correct": "b",
+      "explanation": "Technology Push: a new technology exists and entrepreneurs seek problems it can solve — timing is unpredictable, adoption curves can be very long. Demand Pull: identified market needs drive innovation — more predictable uptake because the problem is proven."
+    },
+    {
+      "id": "gtm-fin-001",
+      "session": "14-23",
+      "type": "mcq_calc",
+      "question": "A startup develops a smart home speaker. The next-best alternative is priced at €150. Performance differentials: superior sound quality +€45, voice assistant integration +€30, smaller product range –€20, no screen display –€15, longer warranty +€10. What is the TEV?",
+      "options": {
+        "a": "€150",
+        "b": "€185",
+        "c": "€200",
+        "d": "€250"
+      },
+      "correct": "c",
+      "explanation": "TEV = reference price + all differentials (positive and negative). TEV = €150 + €45 + €30 – €20 – €15 + €10 = €200. Distractor d) sums only the positive differentials and misses the negatives. Distractor b) omits the warranty differential."
+    },
+    {
+      "id": "gtm-fin-002",
+      "session": "14-23",
+      "type": "mcq_calc",
+      "question": "A fitness app targets a market of 5,000,000 potential users. It expects a penetration rate of 2% and an average annual revenue per user (ARPU) of €50. What is the estimated annual revenue?",
+      "options": {
+        "a": "€500,000",
+        "b": "€5,000,000",
+        "c": "€50,000,000",
+        "d": "€250,000"
+      },
+      "correct": "b",
+      "explanation": "Customers = 5,000,000 × 2% = 100,000. Revenue = 100,000 × €50 = €5,000,000. Distractor c) forgets to apply the penetration rate (5,000,000 × €50). Distractor a) applies 2% to ARPU instead of market size. Top-down sizing: always apply penetration rate to total market first, then multiply by ARPU."
+    },
+    {
+      "id": "gtm-fin-003",
+      "session": "14-23",
+      "type": "mcq_calc",
+      "question": "A SaaS startup has three tiers at year-end of Year 1: Basic (2,000 subscribers, €15/month, 20% churn), Pro (500 subscribers, €40/month, 10% churn), Enterprise (200 subscribers, €50/month, 10% churn). No new subscribers in Year 2. What is the total annual revenue in Year 2?",
+      "options": {
+        "a": "€504,000",
+        "b": "€612,000",
+        "c": "€720,000",
+        "d": "€51,000"
+      },
+      "correct": "b",
+      "explanation": "Retained after churn: Basic = 2,000 × 0.80 = 1,600; Pro = 500 × 0.90 = 450; Enterprise = 200 × 0.90 = 180. Annual revenue: Basic = 1,600 × €15 × 12 = €288,000; Pro = 450 × €40 × 12 = €216,000; Enterprise = 180 × €50 × 12 = €108,000. Total = €612,000. Distractor c) ignores churn entirely. Distractor d) calculates one month only."
+    },
+    {
+      "id": "gtm-fin-004",
+      "session": "14-23",
+      "type": "mcq_calc",
+      "question": "A startup has no bank debt at the beginning of Year 1. By year-end, its bank overdraft is €60,000. The interest rate is 4%. What are the interest expenses for Year 1?",
+      "options": {
+        "a": "€2,400",
+        "b": "€1,200",
+        "c": "€600",
+        "d": "€60"
+      },
+      "correct": "b",
+      "explanation": "Interest is calculated on the AVERAGE balance, not the year-end balance. Average overdraft = (€0 + €60,000) / 2 = €30,000. Interest = €30,000 × 4% = €1,200. Distractor a) incorrectly uses the year-end balance (€60,000 × 4% = €2,400). This is the most common exam mistake — always average opening and closing balances."
+    },
+    {
+      "id": "gtm-fin-005",
+      "session": "14-23",
+      "type": "mcq_calc",
+      "question": "A startup reports pre-tax income of –€40,000 in Year 1 and +€100,000 in Year 2. The corporate income tax rate is 24%. Accumulated losses from prior years can be carried forward. What is the income tax due in Year 2?",
+      "options": {
+        "a": "€24,000",
+        "b": "€14,400",
+        "c": "€0",
+        "d": "€9,600"
+      },
+      "correct": "b",
+      "explanation": "Year 1 loss of €40,000 is carried forward. Taxable basis in Year 2 = €100,000 – €40,000 = €60,000. Tax = €60,000 × 24% = €14,400. Distractor a) ignores the loss carry-forward and taxes the full €100,000. Distractor c) wrongly assumes the loss fully eliminates tax. Loss carry-forward: accumulated losses from prior years reduce the taxable income of the first profitable year."
+    },
+    {
+      "id": "gtm-fin-006",
+      "session": "14-23",
+      "type": "mcq_calc",
+      "question": "A company has annual domestic revenues of €600,000, DSO of 30 days, 360 working days, and a VAT rate of 20%. What is the Accounts Receivable balance?",
+      "options": {
+        "a": "€50,000",
+        "b": "€60,000",
+        "c": "€72,000",
+        "d": "€48,000"
+      },
+      "correct": "b",
+      "explanation": "AR = Revenues × (DSO / working days) × (1 + VAT rate). AR = €600,000 × (30/360) × 1.20 = €50,000 × 1.20 = €60,000. VAT is included because customers pay the gross (VAT-inclusive) invoice. Distractor a) omits VAT. Distractor c) applies VAT twice. For EXPORT revenues, there is NO VAT multiplier (exports are zero-rated)."
+    },
+    {
+      "id": "gtm-fin-007",
+      "session": "14-23",
+      "type": "mcq_calc",
+      "question": "Using ONLY the relevant data below, calculate the Working Capital. Accounts receivable: €72,000; Raw material inventory: €40,000; Operating cash: €5,000; Accounts payable: €60,000; SSP fund: €100; Bank overdraft: €8,000.",
+      "options": {
+        "a": "€56,900",
+        "b": "€64,900",
+        "c": "€48,900",
+        "d": "€62,000"
+      },
+      "correct": "a",
+      "explanation": "Working Capital = Operating current assets – Operating current liabilities. Operating current assets: AR (€72,000) + Inventory (€40,000) + Operating cash (€5,000) = €117,000. Operating current liabilities: AP (€60,000) + SSP fund (€100) = €60,100. WC = €117,000 – €60,100 = €56,900. CRITICAL: The bank overdraft is a FINANCIAL liability, not an operating one — exclude it from working capital."
+    },
+    {
+      "id": "gtm-fin-008",
+      "session": "14-23",
+      "type": "mcq_calc",
+      "question": "A company has Working Capital of €50,000, Net Fixed Assets of €800,000, and Operating Profit (EBIT) of €200,000. What are the Financial Needs from Operating Activities?",
+      "options": {
+        "a": "€650,000",
+        "b": "€1,050,000",
+        "c": "€600,000",
+        "d": "€750,000"
+      },
+      "correct": "a",
+      "explanation": "Financial Needs = WC + NFA – EBIT. FN = €50,000 + €800,000 – €200,000 = €650,000. EBIT is SUBTRACTED because it represents internal self-financing — the business generates this profit internally, reducing how much external finance it needs. Distractor b) adds EBIT instead of subtracting. Distractor c) omits Working Capital."
+    },
+    {
+      "id": "gtm-010",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding competitive analysis for a new venture, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Direct competitors offer similar products or services targeting the same customer segments",
+        "b": "Indirect competitors satisfy the same customer need through a different product or service",
+        "c": "A startup with no direct competitors faces no competitive risk and should not conduct competitive analysis",
+        "d": "Understanding competitor strengths and weaknesses helps define a more defensible positioning"
+      },
+      "correct": "c",
+      "explanation": "The absence of direct competitors does not eliminate competitive risk. Indirect competitors, substitutes, and the threat of future entrants all pose competitive challenges. No competitive analysis is a serious planning error."
+    },
+    {
+      "id": "gtm-011",
+      "session": "1-3",
+      "type": "mcq_not_correct",
+      "question": "Regarding the relationship between a business idea and a business plan, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A business plan translates a business idea into a structured document covering market, strategy, operations, and financials",
+        "b": "The business plan serves both as an internal working tool and an external communication document for investors",
+        "c": "A business plan replaces the need for customer validation — once written, the plan makes customer testing unnecessary",
+        "d": "Business plan assumptions should evolve iteratively as market data and customer feedback refine the original hypothesis"
+      },
+      "correct": "c",
+      "explanation": "A business plan does not replace customer validation. Lean Startup methodology emphasises that assumptions in the business plan must be tested through minimum viable products (MVPs) and customer feedback. Writing a detailed plan before customer validation is a classic startup failure mode — it produces a well-documented wrong answer."
+    },
+    {
+      "id": "gtm-012",
+      "session": "5-8",
+      "type": "mcq_not_correct",
+      "question": "Regarding top-down vs bottom-up market sizing, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Top-down sizing starts from total market size and applies penetration assumptions to estimate addressable revenue",
+        "b": "Bottom-up sizing builds from operational inputs: capacity, pricing, volume, and conversion rates",
+        "c": "Bottom-up is generally more credible with investors because it is grounded in operational assumptions",
+        "d": "Top-down and bottom-up methods always produce identical estimates and can be used interchangeably"
+      },
+      "correct": "d",
+      "explanation": "Top-down (market × penetration × ARPU) and bottom-up (units × price × capacity) start from different inputs and produce different estimates. Best practice is to use both and check whether results are in the same order of magnitude — large divergences signal flawed assumptions. They are complementary checks, not equivalent methods."
+    },
+    {
+      "id": "gtm-013",
+      "session": "5-8",
+      "type": "mcq_not_correct",
+      "question": "Regarding primary vs secondary market research, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Secondary research uses existing data sources (industry reports, census data, trade associations) at relatively low cost",
+        "b": "Primary research generates new data directly from customers through surveys, interviews, or observation",
+        "c": "Secondary research is always more accurate and reliable than primary research for startup market analysis",
+        "d": "Primary research is particularly valuable for validating assumptions about customer behaviour and willingness to pay"
+      },
+      "correct": "c",
+      "explanation": "Secondary research is not always more accurate — it may be outdated, use different market definitions, or fail to capture the specific niche a startup targets. Primary research, while more expensive, yields directly relevant and current data. Startups should combine both: secondary for context and sizing, primary for customer validation."
+    },
+    {
+      "id": "gtm-014",
+      "session": "5-8",
+      "type": "mcq_not_correct",
+      "question": "Regarding the analysis of the purchase and consumption process, which of the following statements is NOT correct?",
+      "options": {
+        "a": "In B2B markets, the influencer, decision-maker, buyer, and user are often different people within the same organisation",
+        "b": "Mapping each stage of the customer journey identifies potential barriers and key moments of influence",
+        "c": "The purchase process analysis has no relevance to channel strategy or pricing decisions",
+        "d": "Understanding purchase triggers helps startups time their marketing and sales interventions more effectively"
+      },
+      "correct": "c",
+      "explanation": "Purchase process analysis directly shapes channel and pricing strategy. Knowing whether purchase is influenced by IT, decided by the CFO, and used by operations determines which channels to use and how to price (per user vs enterprise licence). Ignoring the purchase process produces misaligned go-to-market execution."
+    },
+    {
+      "id": "gtm-015",
+      "session": "9-10",
+      "type": "mcq_not_correct",
+      "question": "Regarding customer behaviour and demand drivers, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Understanding why customers buy (motivations), what they buy (choices), and how they buy (process) shapes the entire marketing strategy",
+        "b": "Customer behaviour analysis distinguishes between functional benefits (what the product does) and emotional benefits (how it makes customers feel)",
+        "c": "Demand for a product is entirely independent of price — lowering price has no effect on purchase rates",
+        "d": "Identifying trigger events that initiate a purchase process helps startups time marketing and sales interventions effectively"
+      },
+      "correct": "c",
+      "explanation": "Demand is not independent of price — price elasticity is a fundamental concept. For most products, lower prices increase demand. Understanding price sensitivity is critical for startup revenue modelling and pricing strategy. A sales forecast that ignores the price-demand relationship will be structurally wrong."
+    },
+    {
+      "id": "gtm-016",
+      "session": "9-10",
+      "type": "mcq_not_correct",
+      "question": "Regarding the conversion funnel in sales forecasting, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A conversion funnel tracks progression of potential customers from awareness through consideration to purchase",
+        "b": "Conversion rates at each funnel stage are key inputs for bottom-up demand forecasting",
+        "c": "A high drop-off at the consideration stage typically indicates a lead generation problem rather than a value proposition issue",
+        "d": "Improving conversion at a specific funnel stage has multiplier effects on overall revenue projections"
+      },
+      "correct": "c",
+      "explanation": "Drop-off at consideration (prospects evaluating but not converting) typically indicates a value proposition, pricing, or competitive alternative problem — not a lead generation problem. Lead generation affects the top of funnel; consideration drop-off affects the middle. Misdiagnosing the stage wastes resources on the wrong fix."
+    },
+    {
+      "id": "gtm-017",
+      "session": "9-10",
+      "type": "mcq_not_correct",
+      "question": "Regarding subscription revenue models and churn in sales forecasting, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Monthly churn rate is the percentage of existing subscribers who cancel in a given month",
+        "b": "High churn requires continuous customer acquisition just to maintain a flat subscriber base, increasing unit economics pressure",
+        "c": "In a subscription model, revenue depends on both new customer acquisition AND retention of existing customers",
+        "d": "Churn is only relevant for consumer subscription products — B2B subscription contracts never experience customer loss"
+      },
+      "correct": "d",
+      "explanation": "Churn affects B2B subscription businesses equally. B2B customers terminate contracts when products underperform, budgets are cut, or competitors improve. B2B churn may be lower due to switching costs and longer contracts, but it is never zero. Assuming no churn in B2B subscription forecasts will dramatically overstate revenue projections."
+    },
+    {
+      "id": "gtm-018",
+      "session": "9-10",
+      "type": "mcq_not_correct",
+      "question": "Regarding sales forecast credibility with investors, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Presenting multiple scenarios (base, optimistic, pessimistic) is more credible than a single point forecast",
+        "b": "Explicitly stating forecast assumptions allows investors to assess their plausibility rather than just the output numbers",
+        "c": "A forecast projecting 50% market penetration in year one for a new product is realistic for an innovative offering",
+        "d": "Sensitivity analysis shows how revenue projections change under different penetration, churn, and conversion assumptions"
+      },
+      "correct": "c",
+      "explanation": "50% market penetration in year one is almost never realistic — even highly successful products rarely achieve this. Startups projecting hockey-stick adoption in their base case lose credibility with experienced investors. Realistic first-year penetration is typically 0.1–5% depending on market dynamics. Overly optimistic forecasts signal poor market understanding."
+    },
+    {
+      "id": "gtm-019",
+      "session": "9-10",
+      "type": "mcq_not_correct",
+      "question": "Regarding demand analysis methods before product launch, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Willingness-to-pay research helps identify the optimal price point and the proportion of customers at each price level",
+        "b": "Surveys and conjoint analysis are common tools for estimating demand at different price points",
+        "c": "Demand analysis before launch is meaningless — only post-launch data reveals true customer behaviour",
+        "d": "Testing prototypes or MVPs with real customers provides more reliable demand signals than purely hypothetical surveys"
+      },
+      "correct": "c",
+      "explanation": "Pre-launch demand analysis is not meaningless — it is essential for go/no-go decisions and initial financial modelling. While actual purchase data is most reliable, well-designed surveys, conjoint studies, and prototype testing provide meaningful directional signals. Dismissing all pre-launch research would make startup investment decisions entirely blind."
+    },
+    {
+      "id": "gtm-028",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding identifying competitors in a new market, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Competitive analysis should map both current competitors and potential future entrants who may enter if the market grows",
+        "b": "A startup should assess competitors across product features, pricing, target segments, and distribution channels",
+        "c": "A competitor that currently serves a different geography poses no competitive threat to a startup's domestic launch",
+        "d": "Understanding competitor weaknesses reveals positioning opportunities where the startup can deliver superior value"
+      },
+      "correct": "c",
+      "explanation": "Geographic separation does not eliminate competitive threat — international competitors can enter new markets, especially in digital businesses. A startup that dismisses foreign competitors may be blindsided when they expand, acquire local players, or partner with distributors. Competitive maps should include both current and potential future entrants."
+    },
+    {
+      "id": "gtm-020",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding Porter's Five Forces applied to startup competitive analysis, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The framework analyses industry attractiveness across: rivalry, threat of new entrants, substitutes, buyer power, and supplier power",
+        "b": "High buyer bargaining power reduces industry profitability and pricing power for suppliers",
+        "c": "The threat of substitutes is irrelevant for startups because only direct competitors affect their market position",
+        "d": "High barriers to entry (scale, IP, switching costs) are generally favourable for incumbents already inside the market"
+      },
+      "correct": "c",
+      "explanation": "The threat of substitutes is highly relevant for startups. Customers have alternatives beyond direct competitors — they may solve the same problem with a different product, a manual process, or simply do without. A startup ignoring substitutes may price too high (customers switch to substitutes) or fail to communicate differentiation from alternative solutions."
+    },
+    {
+      "id": "gtm-021",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding competitive advantage sustainability for startups, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A startup's initial competitive advantage can erode if competitors replicate its product or undercut prices",
+        "b": "Network effects, switching costs, and proprietary data create structural advantages that are harder to replicate",
+        "c": "A sustainable competitive advantage requires building barriers that prevent or slow competitor imitation",
+        "d": "First-mover advantage always guarantees long-term market leadership regardless of subsequent competitor actions"
+      },
+      "correct": "d",
+      "explanation": "First-mover advantage is not a permanent guarantee of market leadership. Many first movers failed while fast followers with better execution won. First-mover advantage depends on whether the startup can build structural barriers during its head-start period — without them, late entrants with more resources can overtake."
+    },
+    {
+      "id": "gtm-022",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding strategic group mapping in competitor analysis, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Strategic group maps position competitors on two key dimensions such as price vs quality or geography vs product breadth",
+        "b": "Identifying white spaces on a map reveals positioning opportunities with potentially lower direct competition",
+        "c": "A startup should always position itself in the most densely populated strategic group to maximise market validation",
+        "d": "Strategic groups within an industry often have different profitability levels and competitive dynamics"
+      },
+      "correct": "c",
+      "explanation": "Positioning in the most densely populated group maximises competition, not market validation. A crowded strategic group indicates intense rivalry and compressed margins. Strategic group mapping is partly a tool for identifying less contested positioning spaces — differentiated niches with lower head-on competition and better margin potential."
+    },
+    {
+      "id": "gtm-023",
+      "session": "12-13",
+      "type": "mcq_not_correct",
+      "question": "Regarding Total Economic Value (TEV) and reference pricing, which of the following statements is NOT correct?",
+      "options": {
+        "a": "TEV = reference price + positive performance differentials – negative performance differentials",
+        "b": "Positive differentials are attributes where the offering outperforms the reference product, justifying a premium",
+        "c": "Negative differentials are areas where the offering underperforms, requiring a discount relative to the reference",
+        "d": "If a product's TEV equals the reference price, it should be priced above the reference to maximise revenue"
+      },
+      "correct": "d",
+      "explanation": "If TEV equals the reference price, the product offers no net advantage — pricing above reference would deter rational buyers. Pricing should sit between cost (to be profitable) and TEV (to give the customer an incentive to switch). Pricing at TEV captures all value for the seller but leaves the customer indifferent, making switching unlikely."
+    },
+    {
+      "id": "gtm-024",
+      "session": "12-13",
+      "type": "mcq_not_correct",
+      "question": "Regarding the value curve and the four actions framework, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A value curve plots relative performance on the industry's key competitive factors",
+        "b": "The four actions framework asks: which factors to eliminate, reduce, raise, and create",
+        "c": "Differentiation requires outperforming the industry average on ALL competitive factors simultaneously",
+        "d": "Reducing features customers don't value while raising those they care about can create both differentiation and cost advantage"
+      },
+      "correct": "c",
+      "explanation": "Differentiation does not require outperforming on every factor — this would be both expensive and strategically incoherent. Effective differentiation involves deliberate trade-offs: eliminating or reducing factors that add cost but don't drive preference, while raising or creating factors that matter most. Trying to win on everything typically produces mediocrity on all dimensions."
+    },
+    {
+      "id": "gtm-025",
+      "session": "12-13",
+      "type": "mcq_not_correct",
+      "question": "Regarding value proposition design and customer segmentation, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A value proposition must address specific customer jobs, pains, and gains — not generic product features",
+        "b": "Different customer segments may require distinct value propositions even for the same underlying product",
+        "c": "A single universal value proposition effectively addresses all customer segments for any product",
+        "d": "Designing the value proposition requires understanding the customer's current alternative, not just their stated needs"
+      },
+      "correct": "c",
+      "explanation": "A single universal value proposition rarely works across diverse segments. SMEs and large enterprises have different pain points, budgets, and decision processes for the same product. Segmentation-specific value propositions — tailored to each target segment's jobs, pains, and gains — consistently outperform generic messaging that tries to be relevant to everyone."
+    },
+    {
+      "id": "gtm-026",
+      "session": "12-13",
+      "type": "mcq_not_correct",
+      "question": "Regarding monetisation model and competitive strategy, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The revenue model choice (subscription, transactional, freemium, licensing) affects LTV, CAC, and cash flow profile",
+        "b": "A freemium model requires the free tier to be genuinely useful to drive adoption volume for conversion",
+        "c": "Subscription models generate predictable recurring revenue but require continuous value delivery to prevent churn",
+        "d": "The monetisation model is irrelevant to competitive strategy — only product features determine competitive position"
+      },
+      "correct": "d",
+      "explanation": "Monetisation model is a core element of competitive strategy. Subscription creates switching costs and recurring revenue; freemium drives virality; licensing enables scale without delivery cost. Competitors with different monetisation models effectively compete on different terms — a subscription incumbent vs a transactional challenger have fundamentally different customer relationships and unit economics."
+    }
+  ]
+}

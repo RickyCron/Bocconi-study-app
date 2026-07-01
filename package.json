@@ -1,5 +1,5 @@
 {
-  "name": "bocconi-study-app",
+  "name": "study-app",
   "version": "1.0.0",
   "description": "AI-powered study app for Bocconi exams",
   "main": "server.js",

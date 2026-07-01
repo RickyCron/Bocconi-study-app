@@ -1,0 +1,849 @@
+{
+  "id": "ibm",
+  "name": "International Business & Management",
+  "exam_date": "27 May 2026 (morning)",
+  "exam_format": "MCQ (16 core + up to 8 additional questions)",
+  "sessions": [
+    {
+      "id": "1",
+      "title": "Course Introduction & Globalization Drivers",
+      "topics": [
+        "Course overview",
+        "Drivers of globalization and international business"
+      ],
+      "slides": [
+        {"title": "Session 1: Course Rules & Globalization Drivers", "file": "IBM/30215 session 1 COURSE RULES and GLOBALIZATION DRIVERS(1) (1).pdf"}
+      ]
+    },
+    {
+      "id": "3",
+      "title": "International Business Strategy",
+      "topics": [
+        "Global strategy formulation and entry modes"
+      ],
+      "slides": [
+        {"title": "Session 3", "file": "IBM/30215 session 3.pdf"}
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Market Entry Strategies",
+      "topics": [
+        "Exporting, licensing, FDI, joint ventures"
+      ],
+      "slides": [
+        {"title": "Session 4", "file": "IBM/30215 session 4.pdf"}
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Cultural Adaptation",
+      "topics": [
+        "Cultural differences and management adaptation"
+      ],
+      "slides": [
+        {"title": "Session 5: Adaptation & Cultural Differences", "file": "IBM/30215 session 5 ADAPTATION AND CULTURAL DIFFERENCES (1).pdf"}
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Cross-cultural Management",
+      "topics": [
+        "Working across cultures; organizational adaptation"
+      ],
+      "slides": [
+        {"title": "Session 7: Adaptation", "file": "IBM/30215 session 7 2026 adaptation (1).pdf"}
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Competitive Advantage",
+      "topics": [
+        "Sources of competitive advantage in international context"
+      ],
+      "slides": [
+        {"title": "Session 8", "file": "IBM/30215 session 8 ASSIGNMENT 3(1).pdf"}
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Strategic Competitive Advantage",
+      "topics": [
+        "Building sustainable competitive advantage globally"
+      ],
+      "slides": [
+        {"title": "Session 9: Sources of Competitive Advantage", "file": "IBM/30215 session 9 sources of competitive advantage.pdf"}
+      ]
+    },
+    {
+      "id": "11-12",
+      "title": "International Operations",
+      "topics": [
+        "Global supply chains, international management structures"
+      ],
+      "slides": [
+        {"title": "Sessions 11–12", "file": "IBM/30215 sessions 11_12.pdf"}
+      ]
+    },
+    {
+      "id": "13-14",
+      "title": "Emerging Markets & Global Strategies",
+      "topics": [
+        "Emerging market strategies, global value chains"
+      ],
+      "slides": [
+        {"title": "Sessions 13–14", "file": "IBM/30215 sessions 13_14 (1).pdf"}
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Globalization",
+      "definition": "Process of increasing interconnection and integration of economies, societies, and cultures across countries through trade, investment, technology, and cultural exchange"
+    },
+    {
+      "term": "Foreign Direct Investment (FDI)",
+      "definition": "Investment by a company in business operations in another country; involves ownership and control of assets abroad"
+    },
+    {
+      "term": "Joint Venture",
+      "definition": "Business arrangement where two or more companies share ownership, management, and profits; common market entry strategy"
+    },
+    {
+      "term": "Licensing",
+      "definition": "Agreement allowing another company to produce and sell a company's product, technology, or brand in exchange for royalty fees"
+    },
+    {
+      "term": "Exporting",
+      "definition": "Selling products manufactured domestically to foreign markets; simplest form of international business"
+    },
+    {
+      "term": "Competitive Advantage",
+      "definition": "Unique capabilities, resources, or features that enable a company to outperform competitors and create superior value for customers"
+    },
+    {
+      "term": "Cultural Dimensions",
+      "definition": "Framework for understanding cultural differences across countries (Hofstede model: power distance, individualism/collectivism, uncertainty avoidance, masculinity/femininity)"
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Globalization Drivers",
+      "explanation": "Factors enabling international business expansion: technological advancement, trade liberalization, reduced transportation costs, capital mobility, standardization of consumer preferences"
+    },
+    {
+      "name": "Market Entry Modes",
+      "explanation": "Strategic options for entering foreign markets: exporting (low control/risk), licensing/franchising (moderate risk), joint ventures (shared control), wholly-owned subsidiaries (high control/risk)"
+    },
+    {
+      "name": "Cultural Adaptation",
+      "explanation": "Modifying products, services, marketing, and management practices to align with local cultural preferences, values, and business practices"
+    },
+    {
+      "name": "Sources of International Competitive Advantage",
+      "explanation": "Resources and capabilities providing advantage in global markets: technology, brand, cost efficiency, supply chain excellence, innovation, talent, location advantages"
+    },
+    {
+      "name": "Global Value Chain",
+      "explanation": "Network of activities and organizations involved in designing, producing, marketing, and delivering a product or service across multiple countries"
+    }
+  ],
+  "distinctions": [
+    {
+      "a": "Global Strategy",
+      "b": "Multidomestic Strategy",
+      "difference": "Global: standardized products/marketing across markets, cost efficiency focus; Multidomestic: customized for each local market, responsiveness focus"
+    },
+    {
+      "a": "High Context Culture",
+      "b": "Low Context Culture",
+      "difference": "High context: communication depends on context and relationship (Asia, Middle East); Low context: explicit communication, direct (US, Western Europe)"
+    }
+  ],
+  "examples": [
+    "Danone: business units defined by product type (dairy, medical nutrition, water) — illustrates BU classification criteria",
+    "Wal-Mart in Germany: failure due to cultural distance — service design (greeters, employee practices) not adapted to German culture; illustrates cultural barrier to internationalisation",
+    "IKEA in China: globally 'low' prices were not low for Chinese customers due to income differences — illustrates economic distance",
+    "Jollibee Foods (Philippines restaurant chain): adapts menus and services to local market needs — illustrates multidomestic strategy",
+    "Philips-Matsushita case: different BUs require different strategies — no single global or multidomestic strategy applies to the whole company; discussed in class as example of strategy differentiation by BU",
+    "CATL (Chinese battery producer): opened factory in Germany to serve existing client BMW — illustrates market-seeking + resource-seeking FDI motivation",
+    "Porter's Diamond framework: factor conditions, demand conditions, related and supporting industries, firm strategy/structure/rivalry, chance, government — these six elements explain country-specific advantages",
+    "Wal-Mart China: stores located mainly in eastern (coastal, wealthier) part of country — illustrates need to assess foreign markets at REGIONAL rather than country level",
+    "Path dependence: managers' inability to change 'the way we've always done things' — discussed in relation to adaptation to foreign markets",
+    "Global Mindset: three elements are Empathy, Engagement, Ethics (NOT Environment)",
+    "Arbitrage: delocalization of production activities to a foreign country/region with the lowest production costs — NOT the same as franchising or FDI",
+    "Rapid entry matrix: high market potential + high firm ability to exploit = rapid entry recommended",
+    "Liability of foreignness: inherent disadvantage of being a foreign firm — reason why companies must assess whether their competitive superiority exceeds local incumbents before entering",
+    "Hierarchical organisation: clear chain of command, high formalization, high HQ decision-making importance"
+  ],
+  "keywords": [
+    "Globalization",
+    "FDI",
+    "Market Entry",
+    "Cultural Adaptation",
+    "Competitive Advantage",
+    "Global Strategy",
+    "Emerging Markets",
+    "Value Chain"
+  ],
+  "questions": [
+    {
+      "id": "ibm-001",
+      "session": "1",
+      "type": "mcq_not_correct",
+      "question": "Regarding the drivers of globalisation, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Reduction in transportation and communication costs has facilitated global business expansion",
+        "b": "Trade liberalisation through agreements like GATT/WTO has reduced barriers to international trade",
+        "c": "Globalisation has led to complete standardisation of consumer preferences across all countries",
+        "d": "Advances in digital technology have enabled companies to coordinate operations across multiple countries more efficiently"
+      },
+      "correct": "c",
+      "explanation": "Globalisation has NOT led to complete standardisation of consumer preferences. Significant cultural, regulatory, and taste differences persist across markets — which is precisely why adaptation strategies exist. This is the central tension the course explores: global integration vs. local responsiveness."
+    },
+    {
+      "id": "ibm-002",
+      "session": "4",
+      "type": "mcq_not_correct",
+      "question": "Regarding market entry modes, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Exporting involves selling domestically produced goods to foreign markets and carries relatively low resource commitment",
+        "b": "Licensing allows a foreign company to use intellectual property in exchange for royalty payments",
+        "c": "A wholly-owned subsidiary gives the firm maximum control but requires the highest resource commitment and risk",
+        "d": "Joint ventures always guarantee equal ownership between the two parties"
+      },
+      "correct": "d",
+      "explanation": "Joint ventures do not always involve equal ownership. Equity splits can vary widely (e.g. 51/49, 60/40) depending on negotiations, local regulations, and the relative bargaining power of partners. Many countries have regulations that affect allowable ownership structures for foreign investors."
+    },
+    {
+      "id": "ibm-003",
+      "session": "4",
+      "type": "mcq_not_correct",
+      "question": "Regarding the choice of market entry mode, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Higher control entry modes (e.g. wholly-owned subsidiary) generally involve higher risk and resource commitment",
+        "b": "The optimal entry mode depends on factors including market size, competitive intensity, and regulatory environment",
+        "c": "Once a market entry mode is chosen, it should never be changed regardless of how market conditions evolve",
+        "d": "Foreign Direct Investment (FDI) involves ownership of business assets in a foreign country"
+      },
+      "correct": "c",
+      "explanation": "Entry modes can and should evolve as market conditions change and as the company develops local knowledge. Many companies use a progressive commitment strategy — beginning with exporting, then licensing, then eventually FDI — as they learn the market and build confidence."
+    },
+    {
+      "id": "ibm-004",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding Hofstede's cultural dimensions framework, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Power Distance measures the degree to which less powerful members of society accept and expect unequal power distribution",
+        "b": "Individualism vs. Collectivism describes whether people prioritise personal goals or group interests",
+        "c": "Uncertainty Avoidance measures a society's tolerance for ambiguity and unknown situations",
+        "d": "Hofstede's framework proves that all individuals from a given country share identical cultural values"
+      },
+      "correct": "d",
+      "explanation": "Hofstede's dimensions are national averages and tendencies — they describe cultural patterns at the group level, not deterministic rules for every individual. There is significant variation within any national culture, and the framework should be used as a guide, not a stereotype."
+    },
+    {
+      "id": "ibm-005",
+      "session": "5-7",
+      "type": "mcq_not_correct",
+      "question": "Regarding cultural adaptation in international business, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Adaptation involves modifying products, services, or marketing to align with local cultural preferences",
+        "b": "High-context cultures rely heavily on implicit communication, relationships, and context",
+        "c": "Low-context cultures prefer explicit, direct communication with less reliance on unspoken cues",
+        "d": "Cultural adaptation is always more profitable than standardisation, regardless of industry or context"
+      },
+      "correct": "d",
+      "explanation": "The choice between adaptation and standardisation involves genuine trade-offs. Standardisation achieves economies of scale and brand consistency; adaptation achieves local relevance. Neither is universally superior — the optimal balance depends on the industry, product type, and degree of cross-market consumer similarity."
+    },
+    {
+      "id": "ibm-006",
+      "session": "8-9",
+      "type": "mcq_not_correct",
+      "question": "Regarding sources of competitive advantage in international markets, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Tangible resources include physical assets, financial resources, and production capacity",
+        "b": "Intangible resources such as brand reputation and knowledge are often harder to imitate",
+        "c": "A Global Value Chain distributes activities across countries to exploit location-specific advantages",
+        "d": "A company that has competitive advantage in its home market will automatically succeed internationally without adaptation"
+      },
+      "correct": "d",
+      "explanation": "Home market success does not guarantee international success. Different competitive environments, customer needs, regulations, and cultural contexts mean that home-market advantages often need to be re-evaluated and adapted. Many companies have failed internationally despite domestic dominance."
+    },
+    {
+      "id": "ibm-007",
+      "session": "3",
+      "type": "mcq_not_correct",
+      "question": "Regarding global strategy vs. multidomestic strategy, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A global strategy emphasises standardisation and cost efficiency across markets",
+        "b": "A multidomestic strategy emphasises local responsiveness with customised offerings per market",
+        "c": "The transnational model attempts to achieve both global efficiency and local responsiveness simultaneously",
+        "d": "Global strategy is always superior because it achieves the maximum possible economies of scale"
+      },
+      "correct": "d",
+      "explanation": "Global strategy's standardisation advantage is only valuable if markets are sufficiently similar. In industries with strong local preferences, regulatory differences, or cultural specificity, a multidomestic or transnational approach may generate better returns despite higher costs."
+    },
+    {
+      "id": "ibm-008",
+      "session": "1",
+      "type": "mcq_not_correct",
+      "question": "Regarding Foreign Direct Investment (FDI), which of the following statements is NOT correct?",
+      "options": {
+        "a": "Horizontal FDI involves replicating the company's home-country activities in a foreign market",
+        "b": "Vertical FDI involves relocating different stages of the value chain to different countries",
+        "c": "FDI always results in the acquirer gaining majority ownership of the foreign entity",
+        "d": "Market-seeking, resource-seeking, and efficiency-seeking are recognised motivations for FDI"
+      },
+      "correct": "c",
+      "explanation": "FDI does not always require majority ownership. Minority stakes, strategic alliances with equity involvement, and various partnership structures all constitute FDI. The defining characteristic is a lasting interest in and significant influence over a foreign enterprise — not necessarily majority control."
+    },
+    {
+      "id": "ibm-mock-007",
+      "session": "5",
+      "type": "mcq_correct",
+      "question": "In the case of 'Wal-Mart in Germany', the firm's inability to design a service sufficiently appealing to local customers is an example of a barrier to internationalisation created by:",
+      "options": {
+        "a": "Cultural distance",
+        "b": "Administrative distance",
+        "c": "Geographical distance",
+        "d": "Economic distance"
+      },
+      "correct": "a",
+      "explanation": "Wal-Mart's failure in Germany was primarily due to cultural distance. Practices that worked in the US (greeters, forced employee chants, restrictions on workplace relationships) conflicted with German cultural norms. Customers and employees rejected these practices. Cultural distance = differences in values, norms, and expected behaviours."
+    },
+    {
+      "id": "ibm-mock-009",
+      "session": "5",
+      "type": "mcq_correct",
+      "question": "For IKEA in China, globally 'low' prices were not that 'low' for Chinese customers, mainly due to:",
+      "options": {
+        "a": "Administrative distance",
+        "b": "Economic distance",
+        "c": "Technological distance",
+        "d": "Language differences"
+      },
+      "correct": "b",
+      "explanation": "Economic distance: differences in purchasing power, income levels, and wealth between countries. IKEA's prices, set globally as 'affordable', were relatively expensive for average Chinese consumers given lower incomes. This is different from cultural distance (tastes) or administrative distance (regulations)."
+    },
+    {
+      "id": "ibm-mock-013",
+      "session": "3",
+      "type": "mcq_correct",
+      "question": "If Jollibee Foods (a family restaurant chain originating from Philippines) decided to adapt the menus and services of its restaurants located in several foreign markets to the local needs, its strategy would be:",
+      "options": {
+        "a": "Global",
+        "b": "Transnational",
+        "c": "Multidomestic",
+        "d": "International"
+      },
+      "correct": "c",
+      "explanation": "Multidomestic strategy: high local responsiveness, customised products/services per market, decentralised decision-making. Jollibee adapting menus to each local market = multidomestic. Global strategy = standardised product across markets. Transnational = combines global efficiency WITH local responsiveness simultaneously."
+    },
+    {
+      "id": "ibm-mock-014",
+      "session": "3",
+      "type": "mcq_correct",
+      "question": "Which example illustrates the definition of arbitrage as discussed in class?",
+      "options": {
+        "a": "Stipulation of an exclusive franchising agreement in a target market",
+        "b": "Foundation of a wholly owned subsidiary in a target market",
+        "c": "Delocalization of a part of the production activities of a firm to a foreign country/region with the lowest production costs",
+        "d": "Delocalization of production to a foreign country to improve delivery time to local clients in the same country"
+      },
+      "correct": "c",
+      "explanation": "Arbitrage (in Ghemawat's AAA framework) = exploiting differences across countries to gain advantage, typically by locating activities where they are cheapest. Moving production to the lowest-cost country is the classic arbitrage move. Option d) is about responsiveness (proximity to market), not cost arbitrage."
+    },
+    {
+      "id": "ibm-mock-017",
+      "session": "9",
+      "type": "mcq_correct",
+      "question": "According to Porter's 'Diamond' framework, the key factors of the external business context (country-specific advantages) impacting a firm's competitiveness on international markets include:",
+      "options": {
+        "a": "Factor conditions, industry structure, supporting industries, threat of substitutes, competition, entry barriers",
+        "b": "Buyers bargaining power, suppliers bargaining power, threat of substitutes, competition, and entry barriers",
+        "c": "Buyers bargaining power, suppliers bargaining power, threat of substitutes, competition, and government policies",
+        "d": "Factor conditions, industry structure, demand conditions, supporting industries, chance, and government policies"
+      },
+      "correct": "d",
+      "explanation": "Porter's Diamond (6 elements): (1) Factor conditions — skilled labour, infrastructure; (2) Demand conditions — sophisticated home demand; (3) Related and supporting industries; (4) Firm strategy, structure, and rivalry; (5) Chance; (6) Government. Options a/b/c describe Porter's Five Forces (industry rivalry model), which is a different framework."
+    },
+    {
+      "id": "ibm-mock-018",
+      "session": "4",
+      "type": "mcq_correct",
+      "question": "'Rapid entry' approach to foreign market entry is advised in case of:",
+      "options": {
+        "a": "Relatively high foreign market potential and relatively high ability of the firm to exploit it",
+        "b": "Relatively high foreign market potential and relatively low ability of the firm to exploit it",
+        "c": "Relatively low foreign market potential and relatively low ability of the firm to exploit it",
+        "d": "Relatively low foreign market potential and relatively high ability of the firm to exploit it"
+      },
+      "correct": "a",
+      "explanation": "Rapid entry matrix: high market potential (worth doing) × high firm ability to exploit it (can do it) → rapid/committed entry is justified. High potential + low ability → gradual entry or build capabilities first. Low potential regardless of ability → no urgency for rapid entry."
+    },
+    {
+      "id": "ibm-011",
+      "session": "1",
+      "type": "mcq_not_correct",
+      "question": "Regarding the drivers of international business expansion, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Reduction in trade barriers (tariffs, quotas) through WTO agreements has facilitated global trade expansion",
+        "b": "Digital technologies have reduced information asymmetries and coordination costs in international business",
+        "c": "All industries are equally exposed to globalisation forces — domestic-focused firms face the same internationalisation pressures as export-oriented ones",
+        "d": "The pursuit of lower-cost production locations is a key driver of FDI in manufacturing-intensive industries"
+      },
+      "correct": "c",
+      "explanation": "Industries vary significantly in their globalisation intensity. Capital-intensive manufacturing, technology, and financial services are highly globalised; personal services, construction, and locally regulated sectors are much less so. Stating that all industries are equally affected ignores the sector-specific nature of globalisation drivers and the importance of industry analysis in international strategy."
+    },
+    {
+      "id": "ibm-012",
+      "session": "1",
+      "type": "mcq_correct",
+      "question": "Which of the following correctly describes the concept of 'liability of foreignness'?",
+      "options": {
+        "a": "The legal obligation of foreign firms to pay higher tax rates than domestic companies",
+        "b": "The additional costs and disadvantages that foreign firms face compared to local competitors due to unfamiliarity with host-country market, institutions, and culture",
+        "c": "The requirement for foreign firms to use local suppliers in emerging markets",
+        "d": "The financial penalty imposed on firms that fail to adapt their products to local consumer preferences"
+      },
+      "correct": "b",
+      "explanation": "Liability of foreignness refers to the systemic disadvantages that firms face when operating outside their home market: unfamiliarity with local laws, culture, consumer behaviour, and business networks. Local firms do not bear these costs. Managing liability of foreignness is one of the central challenges of international business strategy."
+    },
+    {
+      "id": "ibm-013",
+      "session": "1",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes the difference between market-seeking and efficiency-seeking FDI?",
+      "options": {
+        "a": "Market-seeking FDI targets developed economies; efficiency-seeking FDI targets emerging markets exclusively",
+        "b": "Market-seeking FDI is driven by access to customers in the host country; efficiency-seeking FDI is driven by lower production costs or access to specialised resources in the host country",
+        "c": "Market-seeking FDI always involves acquisition of existing firms; efficiency-seeking FDI always involves greenfield investment",
+        "d": "Efficiency-seeking FDI is always more profitable than market-seeking FDI because it reduces costs"
+      },
+      "correct": "b",
+      "explanation": "Market-seeking FDI (example: CATL investing in Germany to supply BMW locally) is motivated by proximity to customers. Efficiency-seeking FDI (example: manufacturing relocation to lower-cost countries) is motivated by cost reduction. Both can involve acquisitions or greenfield, and occur in both developed and emerging markets."
+    },
+    {
+      "id": "ibm-014",
+      "session": "3",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes a 'global' international business strategy (as opposed to a 'multidomestic' or 'transnational' strategy)?",
+      "options": {
+        "a": "High local adaptation in each market, with each subsidiary operating independently to meet local needs",
+        "b": "Centralised operations with highly standardised products and processes across all markets, prioritising global efficiency over local responsiveness",
+        "c": "Full integration of local and global capabilities, simultaneously achieving high efficiency and high local responsiveness",
+        "d": "Avoidance of FDI, relying only on exporting to serve international markets"
+      },
+      "correct": "b",
+      "explanation": "Global strategy prioritises standardisation and central coordination for efficiency — one product, one process, one brand globally. Multidomestic strategy maximises local adaptation with autonomous subsidiaries. Transnational strategy attempts to achieve both simultaneously (the hardest to execute). The Jollibee case illustrates multidomestic: adapting menus per country rather than imposing a global standard."
+    },
+    {
+      "id": "ibm-015",
+      "session": "3",
+      "type": "mcq_not_correct",
+      "question": "Regarding the integration-responsiveness (I-R) framework in international business strategy, which of the following statements is NOT correct?",
+      "options": {
+        "a": "High integration pressures arise when global scale economies are significant and coordination of activities across markets is strategically important",
+        "b": "High responsiveness pressures arise when consumer tastes, regulations, or competitive conditions vary significantly across countries",
+        "c": "The integration-responsiveness framework argues that all firms should always maximise both integration and local responsiveness simultaneously",
+        "d": "A transnational strategy attempts to achieve both high integration and high responsiveness, but is operationally complex and difficult to implement"
+      },
+      "correct": "c",
+      "explanation": "The I-R framework describes a fundamental tension — maximising integration (global efficiency) conflicts with maximising responsiveness (local adaptation). Firms must make explicit trade-offs. The transnational strategy attempts to optimise both but is recognised as the hardest to execute. Claiming all firms should always maximise both ignores this inherent tension."
+    },
+    {
+      "id": "ibm-016",
+      "session": "4",
+      "type": "mcq_not_correct",
+      "question": "Regarding the choice between greenfield investment and acquisition as entry modes, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Greenfield investment gives the firm full control over design, culture, and processes but takes longer to generate revenue",
+        "b": "Acquisitions provide immediate market presence and an existing customer base but carry integration risk",
+        "c": "Greenfield investment is always preferable to acquisition because it avoids the cultural integration challenges that acquisitions entail",
+        "d": "The choice between greenfield and acquisition depends on speed-to-market requirements, available acquisition targets, and the value of existing local capabilities"
+      },
+      "correct": "c",
+      "explanation": "Neither mode is universally preferable. Greenfield investment is preferred when no suitable acquisition target exists, when the firm wants to implement its own processes and culture from scratch, or when local market entry timing is not urgent. Acquisitions are preferred when speed is critical, when local capabilities (brand, customer relationships, distribution) are valuable, and when integration risk is manageable."
+    },
+    {
+      "id": "ibm-017",
+      "session": "4",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes the main advantage of a joint venture (JV) over a wholly-owned subsidiary as a market entry mode?",
+      "options": {
+        "a": "JVs always generate higher profits than wholly-owned subsidiaries because costs are shared equally",
+        "b": "JVs give the entering firm complete control over all strategic and operational decisions in the host market",
+        "c": "JVs provide access to the local partner's market knowledge, distribution networks, regulatory relationships, and customer base, reducing the cost and risk of market entry",
+        "d": "JVs eliminate the need for any investment in the host market, as the local partner provides all required capital"
+      },
+      "correct": "c",
+      "explanation": "The key JV advantage is leveraging the local partner's market knowledge, government relationships, and established networks — reducing liability of foreignness. Trade-offs: the entering firm shares control and profits, and faces potential conflicts with the local partner over strategy. JVs do not eliminate investment (both partners contribute) and do not guarantee higher profits than WOS."
+    },
+    {
+      "id": "ibm-018",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding Hofstede's cultural dimensions and their business implications, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Power Distance measures the degree to which less powerful members of society accept hierarchical power distributions",
+        "b": "Uncertainty Avoidance measures a society's tolerance for ambiguity and willingness to take unstructured risks",
+        "c": "Individualism vs Collectivism reflects whether people define themselves primarily through personal identity or through group membership",
+        "d": "Hofstede's dimensions predict individual personality traits with high accuracy, enabling managers to anticipate how any specific person will behave"
+      },
+      "correct": "d",
+      "explanation": "Hofstede's dimensions are cultural-level (national averages) and explicitly do not predict individual behaviour. They describe tendencies within cultures and help managers anticipate likely patterns, but individuals vary significantly around cultural averages. Using Hofstede to stereotype individuals rather than inform cultural expectations is a misapplication of the framework."
+    },
+    {
+      "id": "ibm-019",
+      "session": "5",
+      "type": "mcq_correct",
+      "question": "The Wal-Mart failure in Germany and IKEA's initial challenges in China are both cited in the IBM course. Which of the following BEST explains the common underlying lesson from these two cases?",
+      "options": {
+        "a": "Large retailers cannot succeed in foreign markets without prior experience in other European or Asian markets",
+        "b": "German and Chinese consumers are uniquely resistant to foreign retail formats and cannot be convinced to change purchasing behaviour",
+        "c": "Underestimating cultural and economic distance — and assuming home-country practices will transfer directly — can cause serious market failures even for large, successful companies",
+        "d": "Foreign retail expansion always requires acquiring a local competitor rather than entering with the home-country format"
+      },
+      "correct": "c",
+      "explanation": "Wal-Mart in Germany failed because its US-style service culture conflicted with German shopping preferences and labour laws (Cultural and Administrative distance). IKEA in China initially failed because flat-pack self-assembly prices were unaffordable for the target segment (Economic distance). Both cases illustrate that successful home-country formulas cannot be assumed to transfer — careful CAGE distance analysis is required."
+    },
+    {
+      "id": "ibm-020",
+      "session": "7",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes the three dimensions of 'Global Mindset' as used in the IBM course?",
+      "options": {
+        "a": "Geography, Language, and Ethics",
+        "b": "Empathy, Engagement, and Ethics",
+        "c": "Environment, Experience, and Empathy",
+        "d": "Efficiency, Effectiveness, and Engagement"
+      },
+      "correct": "b",
+      "explanation": "Global Mindset in the IBM course comprises three Es: Empathy (understanding different cultural perspectives and seeing situations from others' points of view), Engagement (actively seeking and building relationships across cultural boundaries), and Ethics (maintaining consistent ethical standards across diverse cultural contexts). Note: Environment is NOT one of the three Es."
+    },
+    {
+      "id": "ibm-021",
+      "session": "7",
+      "type": "mcq_not_correct",
+      "question": "Regarding cross-cultural communication in international management, which of the following statements is NOT correct?",
+      "options": {
+        "a": "High-context cultures (e.g. Japan, China) rely heavily on implicit communication, context, and non-verbal cues",
+        "b": "Low-context cultures (e.g. Germany, US) prefer explicit, direct, and literal communication",
+        "c": "Managers from low-context cultures always communicate more effectively than managers from high-context cultures in international business",
+        "d": "Understanding context-communication style differences can prevent serious misunderstandings in cross-cultural negotiations"
+      },
+      "correct": "c",
+      "explanation": "Neither communication style is universally superior. In international business, effectiveness depends on whether the communication style matches the counterpart's expectations and context. A German manager's directness may be valued in the Netherlands but perceived as rude in Japan; a Japanese manager's indirectness may be misinterpreted as vagueness by American partners. Adaptability and cultural intelligence, not one style, determine effectiveness."
+    },
+    {
+      "id": "ibm-022",
+      "session": "7",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes 'path dependence' as a barrier to organisational adaptation in international business?",
+      "options": {
+        "a": "The legal requirement in some countries for firms to follow prescribed business practices",
+        "b": "The tendency of organisations to remain committed to historically successful approaches even when external conditions have changed, making adaptation costly or unlikely",
+        "c": "The strategy of following competitors into new markets once they have proven profitable",
+        "d": "The preference of multinational firms for incremental market entry rather than rapid expansion"
+      },
+      "correct": "b",
+      "explanation": "Path dependence describes how organisations become 'locked in' to strategies, processes, and capabilities that worked historically but are no longer optimal as circumstances change. In international business, path dependence manifests as failure to adapt products, management styles, or structures to local market conditions — because existing routines are deeply embedded and changing them is costly and organisationally challenging."
+    },
+    {
+      "id": "ibm-023",
+      "session": "7",
+      "type": "mcq_not_correct",
+      "question": "Regarding organisational adaptation in multinational companies, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Adaptation requires both formal structural changes (reorganisation) and informal cultural and attitudinal changes",
+        "b": "Local responsiveness can be achieved through decentralisation — delegating strategic decisions to subsidiary management",
+        "c": "Multinational companies that fully decentralise all decisions to subsidiaries automatically achieve the best possible balance between global efficiency and local responsiveness",
+        "d": "The headquarter-subsidiary relationship is a key governance challenge in multinationals, involving conflicts between global standardisation and local adaptation"
+      },
+      "correct": "c",
+      "explanation": "Full decentralisation does not automatically produce the optimal balance. Without coordination mechanisms, fully decentralised subsidiaries duplicate resources, miss global scale opportunities, and fail to share knowledge across the network. The I-R framework demonstrates that high responsiveness (decentralisation) and high integration (centralisation) are in tension — the transnational model attempts a selective balance, not full decentralisation."
+    },
+    {
+      "id": "ibm-024",
+      "session": "7",
+      "type": "mcq_correct",
+      "question": "The Philips-Matsushita case is used in the IBM course to illustrate which key international management concept?",
+      "options": {
+        "a": "The advantages of joint ventures over wholly-owned subsidiaries in electronic markets",
+        "b": "How different business units within the same company may require different international strategies — what works for one BU does not necessarily work for another",
+        "c": "Why Dutch companies consistently outperform Japanese companies in international markets",
+        "d": "The superiority of greenfield investment over acquisition as an entry mode for technology companies"
+      },
+      "correct": "b",
+      "explanation": "The Philips-Matsushita case illustrates that no single international strategy is optimal across all business units. Different products, markets, and competitive contexts require different configurations of global integration vs local responsiveness. A company that applies a uniform strategy across all BUs will misfit some — requiring managers to recognise and accommodate this heterogeneity within a single corporate structure."
+    },
+    {
+      "id": "ibm-025",
+      "session": "8",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST explains Porter's Diamond model's relevance to international business strategy?",
+      "options": {
+        "a": "Porter's Diamond identifies the five competitive forces that determine industry profitability in international markets",
+        "b": "Porter's Diamond explains why firms from certain home countries are more competitive globally in specific industries, due to home-country factor conditions, demand conditions, related industries, and rivalry",
+        "c": "Porter's Diamond prescribes the optimal sequence of market entry for firms seeking to expand internationally",
+        "d": "Porter's Diamond is a tool for evaluating the attractiveness of individual foreign markets before entry"
+      },
+      "correct": "b",
+      "explanation": "Porter's Diamond explains national competitive advantage — why certain industries in certain countries produce world-class competitors. The four key determinants: Factor conditions (skilled labour, infrastructure), Demand conditions (sophisticated home demand), Related and supporting industries, Firm strategy/structure/rivalry. Plus two exogenous factors: Chance and Government. Example: Germany's automotive industry advantages reflect strong engineering education (factor conditions), demanding domestic buyers (demand), and a dense supplier ecosystem (related industries)."
+    },
+    {
+      "id": "ibm-026",
+      "session": "8",
+      "type": "mcq_not_correct",
+      "question": "Regarding sources of competitive advantage in international business, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Country-of-origin effects can create both advantages (German engineering quality association) and disadvantages (negative perceptions of certain origins)",
+        "b": "Firms can leverage home-country advantages (Porter's Diamond) as a source of competitive advantage in international markets",
+        "c": "Once a firm internationalises, its home-country advantages automatically transfer to all host markets without any adaptation",
+        "d": "Location advantages (natural resources, skilled labour, market size) vary across countries and influence where firms choose to locate activities"
+      },
+      "correct": "c",
+      "explanation": "Home-country advantages do not automatically transfer to host markets. A German engineering reputation may not translate in markets where 'Made in Germany' is not associated with premium quality. Labour cost advantages from home may be irrelevant if the host country has even lower costs. Transferring advantages across markets requires deliberate strategy, communication, and often local adaptation."
+    },
+    {
+      "id": "ibm-027",
+      "session": "8",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes the 'OLI framework' (Dunning's Eclectic Paradigm) and its application to FDI decisions?",
+      "options": {
+        "a": "OLI stands for Operations, Logistics, and Integration — it describes the main cost components of international business",
+        "b": "OLI (Ownership, Location, Internalisation) explains why firms undertake FDI: they have ownership advantages worth exploiting, a specific location offers advantages, and internalisation within the firm is more efficient than licensing",
+        "c": "OLI predicts that all firms with competitive advantages should immediately pursue FDI rather than licensing or exporting",
+        "d": "OLI applies only to manufacturing companies and is irrelevant for service sector international expansion"
+      },
+      "correct": "b",
+      "explanation": "Dunning's OLI: Ownership advantage (firm-specific capabilities — technology, brand, management) worth leveraging abroad; Location advantage (host country offers something valuable — market, resources, lower cost) that makes FDI superior to exporting; Internalisation advantage (keeping the capability within the firm rather than licensing it to a third party reduces transaction costs and protects IP). All three conditions must hold for FDI to be optimal."
+    },
+    {
+      "id": "ibm-028",
+      "session": "8",
+      "type": "mcq_not_correct",
+      "question": "Regarding competitive advantage sustainability in international markets, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Proprietary technology and patents can create temporary competitive advantages in international markets",
+        "b": "Strong brand reputation in the home market is always sufficient to guarantee competitive success in foreign markets",
+        "c": "Dynamic capabilities — the ability to reconfigure resources in response to changing environments — are important for sustaining advantage over time",
+        "d": "Competitive advantages can erode as competitors imitate successful strategies or as technological change disrupts industry dynamics"
+      },
+      "correct": "b",
+      "explanation": "Home-market brand strength does not guarantee foreign market success. Retail (Wal-Mart in Germany, Tesco in the US), consumer goods, and technology companies have all discovered that strong domestic brands do not automatically transfer. Brand associations, consumer trust, and brand relevance must be built or adapted in each new market. Global brand extensions require deliberate investment and sometimes local adaptation."
+    },
+    {
+      "id": "ibm-029",
+      "session": "8",
+      "type": "mcq_correct",
+      "question": "In the context of competitive advantage in international business, which of the following correctly describes 'resource-seeking FDI'?",
+      "options": {
+        "a": "Investment aimed at acquiring exclusive control of all competitors in a target market",
+        "b": "Investment motivated by access to natural resources, specialised skills, or knowledge that are more abundant or cheaper in the host country than at home",
+        "c": "Investment that seeks to exploit the firm's own resources in a new market by selling products that are already successful at home",
+        "d": "Investment driven primarily by the desire to escape domestic regulatory constraints"
+      },
+      "correct": "b",
+      "explanation": "Resource-seeking FDI (one of Dunning's four FDI motivations alongside market-seeking, efficiency-seeking, and strategic asset-seeking) is driven by access to host-country inputs unavailable or more expensive at home: natural resources (oil, minerals), agricultural products, and specialised human capital (engineering talent hubs). Example: tech companies establishing R&D centres in specific cities for access to specialised talent."
+    },
+    {
+      "id": "ibm-030",
+      "session": "9",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes the concept of a 'world mandate subsidiary' in an international corporation?",
+      "options": {
+        "a": "A subsidiary that is legally required to comply with the regulations of all countries in which the parent corporation operates",
+        "b": "A subsidiary that has been assigned global responsibility for a specific product line, technology, or business unit — developing and supplying it to the entire corporate network",
+        "c": "A subsidiary that operates exclusively in the host country market and has no connection to the parent's global operations",
+        "d": "A subsidiary created specifically to avoid paying taxes in the parent company's home country"
+      },
+      "correct": "b",
+      "explanation": "A world mandate (or 'centre of excellence') subsidiary has global responsibility for a specific domain — it is not just an implementer of headquarters strategy but a contributor to the corporate network. Example: a Canadian subsidiary of a multinational that leads global R&D in a specific technology area. World mandates emerge when subsidiaries develop distinctive capabilities that the corporate network wants to leverage globally."
+    },
+    {
+      "id": "ibm-031",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding building sustainable competitive advantage in international markets, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Capabilities that are valuable, rare, inimitable, and non-substitutable (VRIN) are the basis for sustainable competitive advantage (Resource-Based View)",
+        "b": "A firm with a strong technology patent has a sustainable advantage as long as the patent remains valid and is actively defended",
+        "c": "All firms that enter international markets will automatically develop the capabilities needed to sustain competitive advantage in those markets without deliberate investment",
+        "d": "Continuous investment in R&D, talent development, and brand building is necessary to renew competitive advantages over time"
+      },
+      "correct": "c",
+      "explanation": "International market entry does not automatically build capabilities — it creates the opportunity and necessity to develop them, but doing so requires deliberate investment in local market knowledge, talent acquisition, relationships, and operational adaptation. Firms that enter without investing in capability building often fail or underperform due to persistent liability of foreignness."
+    },
+    {
+      "id": "ibm-032",
+      "session": "9",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes the CAGE distance framework and its application to market prioritisation?",
+      "options": {
+        "a": "CAGE is a model that evaluates Cultural, Administrative, Geographic, and Economic distance between a firm's home country and potential host markets",
+        "b": "CAGE stands for Customers, Alliances, Governance, and Efficiency — four dimensions of international market attractiveness",
+        "c": "CAGE is used to calculate the exact financial cost of entering each foreign market",
+        "d": "CAGE applies only to cultural distance and has no relevance to economic or regulatory considerations"
+      },
+      "correct": "a",
+      "explanation": "The CAGE framework (Pankaj Ghemawat) measures four dimensions of distance: Cultural (language, values, religion, norms), Administrative (trade agreements, currency, governance quality, colonial ties), Geographic (physical distance, size, shared borders, time zones), Economic (income levels, cost structures, resource availability). High CAGE distance → higher liability of foreignness and adaptation costs. Used to prioritise markets and design entry strategies."
+    },
+    {
+      "id": "ibm-033",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding knowledge transfer within multinational corporations, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Tacit knowledge (embedded in people and routines) is harder to transfer across borders than explicit codified knowledge",
+        "b": "Multinational corporations can gain competitive advantage by transferring superior knowledge from headquarters to subsidiaries",
+        "c": "Knowledge transfer within MNCs only flows from headquarters to subsidiaries — subsidiaries never generate knowledge worth transferring to headquarters",
+        "d": "World mandate subsidiaries often contribute knowledge and innovation back to the corporate network, reversing the traditional headquarters-to-subsidiary flow"
+      },
+      "correct": "c",
+      "explanation": "Knowledge flows in MNCs are multi-directional, not unidirectional. Subsidiaries with world mandates or centres of excellence generate innovation and best practices that are transferred to headquarters and other subsidiaries. Reverse innovation (innovations originating in emerging markets that are adopted globally) is a well-documented example. Assuming one-way flow misses the value of the global subsidiary network."
+    },
+    {
+      "id": "ibm-034",
+      "session": "11-12",
+      "type": "mcq_not_correct",
+      "question": "Regarding global supply chain management, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Global supply chains trade off cost efficiency against resilience — optimising one tends to compromise the other",
+        "b": "COVID-19 and geopolitical tensions revealed significant vulnerabilities in highly concentrated, efficiency-optimised global supply chains",
+        "c": "Near-shoring and friend-shoring strategies accept higher costs in exchange for greater supply chain resilience",
+        "d": "A perfectly optimised global supply chain with a single supplier per component provides maximum resilience against disruption"
+      },
+      "correct": "d",
+      "explanation": "Single sourcing per component maximises efficiency but minimises resilience — a single supplier failure can halt entire production lines. This was dramatically illustrated by semiconductor shortages (2021-22) and COVID-related factory shutdowns. Resilient supply chains require dual sourcing, geographic diversification, and strategic inventory buffers — all of which increase cost."
+    },
+    {
+      "id": "ibm-035",
+      "session": "11-12",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes a 'transnational' international management structure?",
+      "options": {
+        "a": "All strategic decisions are made at headquarters with subsidiaries implementing them with no adaptation",
+        "b": "Each subsidiary operates independently with full autonomy to adapt products, processes, and strategy to local market conditions",
+        "c": "A networked organisation where capabilities, resources, and decisions are distributed across the corporate network, with selective integration and selective local adaptation based on the strategic requirements of each function",
+        "d": "A structure in which international operations are managed through arm's-length licensing agreements with local partners"
+      },
+      "correct": "c",
+      "explanation": "Bartlett and Ghoshal's transnational structure attempts to achieve simultaneous high integration (global efficiency) and high local responsiveness. It is a distributed network in which different capabilities reside in different subsidiaries (not all at headquarters), coordination is achieved through shared values and informal networks rather than pure hierarchy, and both global scale and local adaptation are pursued selectively depending on the specific function."
+    },
+    {
+      "id": "ibm-036",
+      "session": "11-12",
+      "type": "mcq_not_correct",
+      "question": "Regarding the management of global operations and international coordination mechanisms, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Formal coordination mechanisms include organisational structure, planning systems, and control systems",
+        "b": "Informal coordination mechanisms include shared values, corporate culture, personal networks, and socialisation of managers",
+        "c": "As multinational complexity increases, firms can rely exclusively on formal hierarchical coordination without needing informal mechanisms",
+        "d": "The effectiveness of coordination mechanisms in MNCs depends on the extent to which managers share a common understanding of corporate goals"
+      },
+      "correct": "c",
+      "explanation": "Formal coordination mechanisms alone are insufficient in complex MNCs — the information processing demands exceed what any formal hierarchy can handle. Informal mechanisms (shared values, manager rotation, cross-functional teams, personal relationships) are essential complements. Bartlett and Ghoshal specifically argue that the transnational requires a 'matrix in the minds of managers' — internalised values and goals — because formal structure alone cannot achieve the required coordination."
+    },
+    {
+      "id": "ibm-037",
+      "session": "11-12",
+      "type": "mcq_correct",
+      "question": "Which of the following correctly describes the main purpose of expatriate assignments in multinational corporations?",
+      "options": {
+        "a": "Expatriate assignments are used exclusively to reduce labour costs by deploying cheaper home-country workers in expensive host markets",
+        "b": "Expatriate assignments serve multiple purposes: transferring headquarters knowledge and practices, developing globally-experienced managers, and maintaining coordination and control of subsidiaries",
+        "c": "Expatriate assignments are legally required in most countries when establishing a new subsidiary",
+        "d": "Expatriate assignments are primarily used to avoid local employment law obligations in host countries"
+      },
+      "correct": "b",
+      "explanation": "Expatriate assignments serve strategic coordination functions beyond cost management: knowledge transfer (technical, managerial practices from HQ to subsidiary or vice versa), development of globally-minded managers who build cross-border networks, and informal control through trusted representatives with strong HQ relationships. High failure rates of expatriates (often 25-40%) due to cultural adjustment difficulties make their effective management a critical HRM function."
+    },
+    {
+      "id": "ibm-038",
+      "session": "11-12",
+      "type": "mcq_not_correct",
+      "question": "Regarding internationalisation of services versus manufacturing, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Services are often harder to trade across borders than goods because they frequently require simultaneous production and consumption (inseparability)",
+        "b": "Some services (financial, digital, professional) can be delivered remotely and are therefore highly tradeable across borders",
+        "c": "The geographic expansion of service firms always requires the same entry mode choices as manufacturing firms",
+        "d": "Service firm internationalisation often relies more heavily on franchising, licensing, and partnerships than manufacturing FDI because physical proximity to customers is required"
+      },
+      "correct": "c",
+      "explanation": "Service firm internationalisation differs significantly from manufacturing in entry mode requirements. Because many services require physical customer presence (restaurants, hotels, healthcare), service MNCs disproportionately use franchising and management contracts rather than wholly-owned manufacturing plants. The intangibility, inseparability, and local customisation requirements of services create distinct internationalisation challenges not directly mirrored in manufacturing."
+    },
+    {
+      "id": "ibm-039",
+      "session": "13-14",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes the key challenge of doing business in emerging markets compared to developed markets?",
+      "options": {
+        "a": "Emerging markets have lower growth rates than developed markets and therefore offer less attractive investment opportunities",
+        "b": "Emerging markets present higher growth potential but also greater institutional voids — weaker rule of law, less developed financial markets, and less reliable infrastructure — requiring adapted business models",
+        "c": "Emerging markets are characterised by excessive government regulation that makes all forms of business impossible without local political connections",
+        "d": "Emerging market consumers always prefer local products and systematically reject international brands"
+      },
+      "correct": "b",
+      "explanation": "The 'institutional void' concept (Khanna and Palepu) captures the core emerging market challenge: the absence of well-functioning market intermediaries (strong property rights enforcement, credit bureaus, reliable logistics, transparent information). Firms must often create the institutional infrastructure themselves (build distribution, provide supplier financing) rather than relying on developed-market institutions. This requires business model adaptation beyond the home-country formula."
+    },
+    {
+      "id": "ibm-040",
+      "session": "13-14",
+      "type": "mcq_not_correct",
+      "question": "Regarding global value chains (GVCs) and their governance, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A global value chain maps all activities — from raw materials through production to final customer — across different countries",
+        "b": "Lead firms in GVCs (typically branded manufacturers or retailers) often capture a disproportionate share of value by controlling design, branding, and distribution",
+        "c": "Suppliers in GVCs always capture equal value to the lead firm, as competitive markets ensure equitable value distribution",
+        "d": "Developing-country firms can upgrade within GVCs by moving from process upgrading (efficiency) to product, functional, and inter-chain upgrading"
+      },
+      "correct": "c",
+      "explanation": "GVC research consistently shows that value distribution is highly unequal. Lead firms (Apple, Nike, Walmart) capture value through intellectual property, brands, and control of demand access. Manufacturing suppliers in labour-intensive stages capture thin margins in commoditised, competitive segments. This 'smile curve' of value distribution shows that production-stage activities capture the least value; design, R&D, and distribution capture the most."
+    },
+    {
+      "id": "ibm-041",
+      "session": "13-14",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes the 'arbitrage' strategy in international business?",
+      "options": {
+        "a": "Exploiting differences across countries — in labour costs, tax rates, regulatory environments, or resource availability — to reduce costs or access capabilities unavailable at home",
+        "b": "Buying and selling currencies simultaneously to profit from exchange rate differences across markets",
+        "c": "Entering multiple markets simultaneously to avoid competitive retaliation in any single market",
+        "d": "Using the home country's dominant market position to set global prices and extract maximum margins in all markets"
+      },
+      "correct": "a",
+      "explanation": "In international business strategy (Ghemawat's AAA framework: Adaptation, Aggregation, Arbitrage), arbitrage means exploiting cross-country differences rather than working around them. Examples: labour cost arbitrage (manufacturing in Vietnam), tax arbitrage (holding companies in Ireland), regulatory arbitrage (clinical trials in countries with lower regulatory costs), and knowledge arbitrage (R&D in countries with deep specialised expertise). This is distinct from financial market arbitrage."
+    },
+    {
+      "id": "ibm-042",
+      "session": "13-14",
+      "type": "mcq_not_correct",
+      "question": "Regarding strategies for emerging market entry, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Premium pricing strategies that worked in developed markets often fail in emerging markets due to lower average income levels",
+        "b": "Bottom-of-pyramid (BoP) strategies redesign products and distribution for very low-income consumers, creating large volume opportunities",
+        "c": "Local emerging market competitors ('local champions') always lack the resources and capabilities to compete effectively against established multinationals",
+        "d": "Emerging market firms sometimes develop competitive advantages (cost management, ability to operate in resource-constrained environments) that make them formidable global competitors"
+      },
+      "correct": "c",
+      "explanation": "Local champions in emerging markets can develop significant competitive strengths: deep knowledge of local consumers and regulations, cost management in resource-constrained environments, government relationships, and often large domestic market scale. Companies like Huawei, Haier (China), Embraer (Brazil), and IndiGo (India) demonstrate that emerging market firms can not only defend their home markets but also expand globally with distinctive competitive advantages."
+    },
+    {
+      "id": "ibm-043",
+      "session": "13-14",
+      "type": "mcq_correct",
+      "question": "Which of the following BEST describes Ghemawat's AAA framework for international strategy?",
+      "options": {
+        "a": "Adaptation, Assimilation, and Arbitrage — three ways to handle cultural differences in international business",
+        "b": "Adaptation (adjusting to local differences), Aggregation (achieving global scale), and Arbitrage (exploiting cross-country differences) — three distinct international value creation strategies",
+        "c": "Availability, Affordability, and Accessibility — three dimensions of market entry attractiveness",
+        "d": "Acquisition, Alliance, and Autonomous growth — three modes of international expansion"
+      },
+      "correct": "b",
+      "explanation": "Ghemawat's AAA framework identifies three distinct international strategies: Adaptation (varying offerings for local markets — high local responsiveness, high cost); Aggregation (standardising globally for scale economies — high integration, low local responsiveness); Arbitrage (exploiting cross-country differences in costs, regulations, skills). Most MNCs combine all three but must decide which to emphasise — excelling at all three simultaneously is rare and difficult."
+    }
+  ]
+}

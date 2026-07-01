@@ -1,0 +1,1165 @@
+{
+  "id": "digital_strategy",
+  "name": "Digital Strategy (eBusiness)",
+  "exam_date": "22 May 2026",
+  "exam_format": "1 hour — mix of open and closed-end questions. All three sources required: slides, Digital Human Enterprise textbook, and papers announced in class. Guest speaker sessions may be tested.",
+  "sessions": [
+    {
+      "id": "1",
+      "title": "SS 1 - Course Introduction",
+      "topics": [
+        "eBusiness vs eCommerce distinction",
+        "Digital transformation overview",
+        "Information goods economics: high first-copy cost, near-zero marginal cost",
+        "Experience goods and the role of DRM",
+        "Network effects: direct and indirect",
+        "Course structure and assessment"
+      ],
+      "slides": [
+        {"title": "Course Introduction", "file": "Digital Strategy/EBIZ 2026 - Course intro shared.pdf"}
+      ]
+    },
+    {
+      "id": "2",
+      "title": "SS 2 - New Landscape and New Players: Towards the Sharing Economy",
+      "topics": [
+        "B2B, B2C, C2C eBusiness models",
+        "Platform economy and two-sided markets",
+        "Sharing economy: monetising underutilised assets",
+        "Revenue models: freemium, subscription, advertising, affiliate",
+        "Peer economy and trust mechanisms",
+        "Regulatory challenges for platform businesses"
+      ],
+      "slides": [
+        {"title": "Session 2", "file": "Digital Strategy/eBiz_ss_2 2026 shared.pdf"}
+      ]
+    },
+    {
+      "id": "3",
+      "title": "SS 3 - The Impact of Digital Transformation on the Value Chain",
+      "topics": [
+        "Physical value chain vs virtual value chain",
+        "Decoupling: unbundling of traditionally integrated activities",
+        "Recoupling: reassembly in new digital configurations",
+        "Infomediaries: aggregating and monetising information flows",
+        "New operator types enabled by digital disruption",
+        "Intersection of physical and virtual value networks"
+      ],
+      "slides": [
+        {"title": "Session 3", "file": "Digital Strategy/eBiz_ss_3 2026 shared.pdf"}
+      ]
+    },
+    {
+      "id": "4",
+      "title": "SS 4 - Bending Spoon (Guest Speaker)",
+      "topics": [
+        "Mobile app economy and growth strategies",
+        "Italian tech unicorn: Bending Spoon case",
+        "App monetisation models",
+        "Growth hacking and user acquisition",
+        "Product-led growth in consumer apps",
+        "Scaling a digital product company"
+      ],
+      "slides": [
+        {"title": "Bending Spoon Guest Lecture", "file": "Digital Strategy/Bending Spoon_Feb2026.pdf"}
+      ]
+    },
+    {
+      "id": "5",
+      "title": "SS 5 - The Rules of Competition in Digital Settings",
+      "topics": [
+        "Network effects and winner-take-all / winner-take-most dynamics",
+        "Multi-homing and its effect on platform moats",
+        "Co-opetition: simultaneous competition and cooperation",
+        "Chicken-and-egg problems in two-sided markets",
+        "Digital ecosystem orchestrators and power asymmetry",
+        "Lock-in, switching costs, and competitive moats"
+      ],
+      "slides": [
+        {"title": "Session 5", "file": "Digital Strategy/eBiz_ss_5 2026 shared.pdf"}
+      ]
+    },
+    {
+      "id": "6",
+      "title": "SS 6 - New Business Drivers and Entrepreneurial Management",
+      "topics": [
+        "Entrepreneurial capitalism in digital markets",
+        "Modular and reconfigurable business models",
+        "Speed and agility as competitive advantage",
+        "AI and machine learning in eBusiness applications",
+        "Big data: volume, velocity, variety",
+        "Implications for strategic time horizons"
+      ],
+      "slides": [
+        {"title": "Session 6", "file": "Digital Strategy/eBiz_ss_6 2026.pdf"}
+      ]
+    },
+    {
+      "id": "7",
+      "title": "SS 7 - The Role of SEO and SEM in Raising Traffic",
+      "topics": [
+        "SEO: organic ranking through content quality, relevance, and technical optimisation",
+        "SEM: paid search advertising and keyword bidding",
+        "Google Ads: Quality Score, ad rank, cost per click",
+        "Click-through rate (CTR), impressions, cost per acquisition",
+        "Search intent and keyword strategy",
+        "Google guest session perspective (F. Moro, SDA Bocconi)"
+      ],
+      "slides": [
+        {"title": "Google / SEO & SEM Session", "file": "Digital Strategy/(shared) SDA Bocconi - F. Moro __ Google session (March 2026) (2).pdf"}
+      ]
+    },
+    {
+      "id": "8",
+      "title": "SS 8 - Behavioral Customization",
+      "topics": [
+        "Behavioral targeting: segmenting visitors by real-time on-site actions",
+        "Real-time personalisation: delivering differentiated experiences within a session",
+        "Fanplayr case: conversion optimisation via behavioral rules",
+        "A/B testing: methodology, statistical significance, limitations",
+        "Personalisation platform implementation challenges",
+        "Data ethics, GDPR, and consumer trust in personalisation"
+      ],
+      "slides": [
+        {"title": "Fanplayr x Bocconi", "file": "Digital Strategy/FanplayrxBocconi_2026_Uni.pdf"}
+      ]
+    },
+    {
+      "id": "9",
+      "title": "SS 9 - Digital Customer Experience",
+      "topics": [
+        "Customer journey mapping across digital touchpoints",
+        "Multichannel vs omnichannel: key distinction and integration requirements",
+        "Online-to-offline (O2O) commerce",
+        "CRM: tracking interactions, customer profiles, Social CRM",
+        "Customer Lifetime Value (CLV) as a CRM metric",
+        "Beacon technology, geo-location, and contextual marketing",
+        "Personalisation and privacy trade-offs"
+      ],
+      "slides": [
+        {"title": "Session 9", "file": "Digital Strategy/eBiz_ss_9 2026 shared.pdf"}
+      ]
+    },
+    {
+      "id": "midterm",
+      "title": "Wrap Up + Midterm Sample Questions",
+      "topics": [
+        "Midterm exam structure and sample questions",
+        "Key themes: value chain, platform models, competitive dynamics",
+        "Revision of SS 1–9 core concepts",
+        "Exam technique for Bocconi-format MCQs (which is NOT correct?)"
+      ],
+      "slides": [
+        {"title": "Midterm Wrap-Up & Sample Questions", "file": "Digital Strategy/midterm wrap-up   sample questions (1).pdf"}
+      ]
+    },
+    {
+      "id": "10",
+      "title": "SS 10 - Group Assignment Kick Off",
+      "topics": [
+        "Group assignment brief and requirements",
+        "Project structure and deliverables",
+        "Team formation and topic selection"
+      ],
+      "slides": []
+    },
+    {
+      "id": "11",
+      "title": "SS 11 - Quantitative Demand Analysis and ROI Equation",
+      "topics": [
+        "ROI equation for digital marketing investments",
+        "Customer Lifetime Value (CLV): formula and drivers",
+        "Customer Acquisition Cost (CAC) and CAC:CLV ratio",
+        "Demand forecasting: time-series analysis, leading indicators",
+        "Price elasticity and dynamic pricing in digital markets",
+        "Subscription economics: MRR, ARR, churn rate, leaky bucket problem",
+        "Digital marketing metrics: CPA, ROAS, CTR vs conversion"
+      ],
+      "slides": [
+        {"title": "Quantitative Demand Analysis", "file": "Digital Strategy/EBIZ - cdemand analysis shared.pdf"}
+      ]
+    },
+    {
+      "id": "12-13",
+      "title": "SS 12-13 - Web-Enabled and Web-Centric Market Research",
+      "topics": [
+        "Online surveys: reach, cost, and limitations (self-selection bias, satisficing)",
+        "Netnography (digital ethnography): observing online communities",
+        "Social listening: monitoring brand mentions and sentiment in real time",
+        "Web analytics: bounce rate, unique visitors vs sessions, funnel analysis",
+        "Zero Moment of Truth (ZMOT): pre-purchase online research",
+        "Online consumer behaviour and cognitive biases",
+        "Primary vs secondary research in digital contexts",
+        "Big data biases and complementarity with traditional research"
+      ],
+      "slides": [
+        {"title": "Web-Enabled Market Research", "file": "Digital Strategy/2026 eBiz ricerche mkt shared.pdf"}
+      ]
+    },
+    {
+      "id": "14",
+      "title": "SS 14 - Costa Guest Session",
+      "topics": [
+        "Digital marketing in the travel and hospitality industry",
+        "Costa Cruises: digital transformation case",
+        "Customer acquisition and retention in a high-consideration category",
+        "Digital touchpoints in a complex customer journey"
+      ],
+      "slides": [
+        {"title": "Costa x Bocconi Guest Session", "file": "Digital Strategy/Costa x Bocconi_25.3.26 (1).pdf"}
+      ]
+    },
+    {
+      "id": "15",
+      "title": "SS 15 - Social Media Listening",
+      "topics": [
+        "Social listening: systematic monitoring of social platforms for brand signals",
+        "Blogmeter / SHIBUMI tools: capabilities and methodology",
+        "Sentiment analysis: positive, negative, neutral classification",
+        "Key metrics: share of voice, engagement rate, reach, mentions",
+        "Crisis detection and reputation management via listening",
+        "Translating listening data into actionable marketing insights"
+      ],
+      "slides": [
+        {"title": "Blogmeter / Web Intelligence Guest Session", "file": "Digital Strategy/ENG_Blogmeter-SHIBUMI_Web Intelligence_Bocconi.pdf"}
+      ]
+    },
+    {
+      "id": "16",
+      "title": "SS 16 - Targeting and Strategic Positioning",
+      "topics": [
+        "Digital market segmentation: behavioural, demographic, psychographic",
+        "Lookalike audiences: identifying users similar to best customers",
+        "Micro-segmentation: precision targeting at lower cost than mass media",
+        "GDPR constraints on data-based targeting",
+        "Strategic positioning in digital markets",
+        "Targeting strategy decisions: reach vs relevance"
+      ],
+      "slides": [
+        {"title": "eBiz Strategy", "file": "Digital Strategy/2026 eBiz strategy.pdf"}
+      ]
+    },
+    {
+      "id": "17-18",
+      "title": "SS 17-18 - New Product Development and Collaborative Innovation",
+      "topics": [
+        "Open innovation: sourcing ideas beyond firm boundaries",
+        "Co-creation with customers and external communities",
+        "Crowdsourcing models for product development",
+        "Digital platforms enabling collaborative innovation",
+        "From closed R&D to open ecosystems",
+        "Managing intellectual property in collaborative innovation"
+      ],
+      "slides": [
+        {"title": "Open Innovation", "file": "Digital Strategy/2026 open innovation shared.pdf"}
+      ]
+    },
+    {
+      "id": "19",
+      "title": "SS 19 - Product Development and eCommerce: The Experience from Amazon",
+      "topics": [
+        "Amazon marketplace model: connecting buyers and sellers at scale",
+        "Amazon flywheel: how growth reinforces growth",
+        "Customer obsession as a product development principle",
+        "Working backwards: press release methodology",
+        "Amazon's data advantage in product decisions",
+        "eCommerce strategy lessons from Amazon"
+      ],
+      "slides": [
+        {"title": "Amazon Case", "file": "Digital Strategy/2026_Amazon.pdf"}
+      ]
+    },
+    {
+      "id": "20",
+      "title": "SS 20 - Customer Funnel and eCommerce",
+      "topics": [
+        "Customer funnel: awareness, consideration, purchase, retention, advocacy",
+        "Conversion Rate Optimisation (CRO): continuous testing and iteration",
+        "Landing page design, CTA placement, page load speed as conversion factors",
+        "Mobile commerce (m-commerce) and mobile-first design",
+        "Progressive Web Apps (PWAs) vs native apps",
+        "eCommerce strategy: cart abandonment, checkout optimisation"
+      ],
+      "slides": [
+        {"title": "Customer Funnel & eCommerce", "file": "Digital Strategy/2026 eBiz-customer funnel shared.pdf"}
+      ]
+    },
+    {
+      "id": "21",
+      "title": "SS 21 - Social Media Marketing",
+      "topics": [
+        "Social media platforms: strategic differences and audience profiles",
+        "Organic vs paid social: declining organic reach on major platforms",
+        "Influencer marketing: types, selection, measurement",
+        "User-generated content (UGC) as authentic marketing",
+        "Social commerce: integrated shopping within social platforms",
+        "Corriere della Sera digital marketing case"
+      ],
+      "slides": [
+        {"title": "Corriere Digital Marketing", "file": "Digital Strategy/Corriere Mktg Digital per Bocconi 2026 selezione.pdf"}
+      ]
+    },
+    {
+      "id": "22",
+      "title": "SS 22 - Content Management",
+      "topics": [
+        "Content marketing: attracting and retaining customers through valuable content",
+        "Content as a long-term SEO and brand-building strategy",
+        "Content management systems and editorial planning",
+        "Thought leadership content in B2B contexts",
+        "Measuring content marketing ROI",
+        "Content strategy vs paid advertising trade-offs"
+      ],
+      "slides": []
+    }
+  ],
+  "definitions": [
+    {
+      "term": "eBusiness",
+      "definition": "Conducting business activities using electronic networks; broader than eCommerce — covers internal operations, supply chain, customer service, and transactions"
+    },
+    {
+      "term": "eCommerce",
+      "definition": "Subset of eBusiness: specifically the buying and selling of goods/services online. A firm can have eBusiness without eCommerce"
+    },
+    {
+      "term": "Digital Transformation",
+      "definition": "Fundamental change in how organisations operate by leveraging digital technologies. Requires changes to business models, culture, and structure — not just IT systems"
+    },
+    {
+      "term": "Decoupling",
+      "definition": "Unbundling of activities that were traditionally integrated within a single value chain, enabled by digital technologies"
+    },
+    {
+      "term": "Recoupling",
+      "definition": "Reassembly of decoupled value chain activities in new configurations, enabling new operator types such as infomediaries and pure-play platforms"
+    },
+    {
+      "term": "Infomediary",
+      "definition": "An intermediary that creates value by collecting, aggregating, and monetising information — enabling better matching between buyers and sellers"
+    },
+    {
+      "term": "Network Effects (Direct)",
+      "definition": "Value of a product increases as more users join the same network (e.g. WhatsApp becomes more valuable as more contacts use it)"
+    },
+    {
+      "term": "Network Effects (Indirect)",
+      "definition": "Growth on one side of a platform increases value for users on the other side (e.g. more Uber drivers → better service for riders)"
+    },
+    {
+      "term": "Co-opetition",
+      "definition": "Strategic dynamic where firms simultaneously compete and cooperate — common in digital platform ecosystems"
+    },
+    {
+      "term": "Multi-homing",
+      "definition": "Users or providers participating in multiple competing platforms simultaneously; weakens any single platform's competitive moat"
+    },
+    {
+      "term": "Freemium",
+      "definition": "Revenue model offering basic version free, charging for premium features or additional capacity"
+    },
+    {
+      "term": "CLV (Customer Lifetime Value)",
+      "definition": "Total net profit expected from a customer over the entire relationship; central metric in subscription and platform businesses"
+    },
+    {
+      "term": "CAC (Customer Acquisition Cost)",
+      "definition": "Total cost of acquiring one new customer. CAC:CLV ratio is the key indicator of business model sustainability"
+    },
+    {
+      "term": "Omnichannel",
+      "definition": "Integration of all channels so customers experience a seamless, consistent interaction regardless of channel — distinct from multichannel (channels may operate independently)"
+    },
+    {
+      "term": "ZMOT (Zero Moment of Truth)",
+      "definition": "The online research and evaluation consumers undertake before a purchase decision — coined by Google"
+    },
+    {
+      "term": "Churn Rate",
+      "definition": "Percentage of subscribers who cancel within a period; directly determines sustainability of subscription business economics"
+    },
+    {
+      "term": "Behavioural Targeting",
+      "definition": "Segmenting website visitors based on real-time actions — pages viewed, time on site, purchase intent signals — to deliver personalised offers"
+    },
+    {
+      "term": "SEO",
+      "definition": "Search Engine Optimisation: improving organic (non-paid) search ranking through content quality, relevance, and technical site optimisation. Cannot be purchased directly"
+    },
+    {
+      "term": "SEM",
+      "definition": "Search Engine Marketing: paid search advertising where firms bid on keywords to appear in sponsored results"
+    },
+    {
+      "term": "Open Innovation",
+      "definition": "Sourcing ideas and R&D inputs from outside firm boundaries — customers, partners, communities — rather than relying solely on internal R&D"
+    },
+    {
+      "term": "Netnography",
+      "definition": "Digital ethnography: observing and analysing online communities and social media to derive consumer insights without direct interviewing"
+    },
+    {
+      "term": "Social Listening",
+      "definition": "Systematic monitoring of social platforms for brand mentions, sentiment, competitor activity, and consumer conversations in real time"
+    },
+    {
+      "term": "CRO (Conversion Rate Optimisation)",
+      "definition": "Ongoing process of testing and improving website/funnel elements to increase the percentage of visitors who complete a desired action. Not a one-time project"
+    },
+    {
+      "term": "Information Goods",
+      "definition": "Digitisable products with high first-copy costs but near-zero marginal cost of reproduction. Experience goods — quality hard to assess before consumption"
+    },
+    {
+      "term": "Sharing Economy",
+      "definition": "Economic model where individuals monetise underutilised assets (cars, homes, skills) through peer-to-peer platforms — e.g. Airbnb, BlaBlaCar"
+    }
+  ],
+  "concepts": [
+    {
+      "name": "Physical vs Virtual Value Chain",
+      "explanation": "The physical value chain handles tangible activities; the virtual value chain runs parallel, managing information flows. Digital transformation enables firms to extract value from both simultaneously. They intersect and interact rather than one replacing the other"
+    },
+    {
+      "name": "Winner-Take-All Dynamics",
+      "explanation": "Strong network effects can produce markets dominated by one or few players. But not inevitable — multi-homing, low switching costs, and niche differentiation can sustain competition. Regulatory scrutiny also limits monopoly formation"
+    },
+    {
+      "name": "Chicken-and-Egg Problem",
+      "explanation": "Platform must attract two sides simultaneously, but each side waits for the other. Solved by subsidising one side, seeding supply, or targeting a niche where smaller network still has value"
+    },
+    {
+      "name": "Entrepreneurial Capitalism",
+      "explanation": "Digital markets reward speed, agility, and continuous innovation over scale. Competitive advantage is more dynamic and time-sensitive. Firms must operate with modular, reconfigurable business configurations"
+    },
+    {
+      "name": "CAC:CLV Ratio",
+      "explanation": "Core metric for digital business sustainability. Business only works if CLV > CAC. Subscription businesses need ongoing acquisition just to replace churned customers (leaky bucket). Reducing churn has compounding positive impact on CLV"
+    },
+    {
+      "name": "Big Data Bias",
+      "explanation": "Digital behavioural data only captures people who use digital channels — excludes offline populations. Selection bias means online users differ from the general population. Big data complements but does not replace traditional research"
+    },
+    {
+      "name": "Amazon Flywheel",
+      "explanation": "Growth reinforces growth: lower prices → more customers → more sellers → more selection → lower costs → lower prices. A self-reinforcing loop that creates compounding competitive advantage"
+    },
+    {
+      "name": "Space-Time Dimensions of Digital Strategy",
+      "explanation": "Digital collapses spatial constraints (global reach from day one, cross-industry entry) and temporal constraints (continuous innovation, compressed strategic time horizons). Together these drive 'entrepreneurial capitalism'"
+    }
+  ],
+  "distinctions": [
+    {
+      "a": "eBusiness",
+      "b": "eCommerce",
+      "difference": "eCommerce is a subset of eBusiness focused solely on online buying/selling transactions. eBusiness encompasses all digital business activities including internal operations, supply chain, HR, and communication. A firm can have eBusiness without eCommerce"
+    },
+    {
+      "a": "Omnichannel",
+      "b": "Multichannel",
+      "difference": "Multichannel = present on multiple channels, but they operate independently with separate data and experiences. Omnichannel = all channels integrated; cart, history, and experience are consistent everywhere. Omnichannel requires significant backend integration investment"
+    },
+    {
+      "a": "SEO",
+      "b": "SEM",
+      "difference": "SEO = organic ranking earned through quality, relevance, and technical optimisation — cannot be purchased. SEM = paid placement in sponsored results via keyword bidding. High organic ranking is not for sale"
+    },
+    {
+      "a": "Direct Network Effects",
+      "b": "Indirect Network Effects",
+      "difference": "Direct: value increases as more users join the same side of the network (e.g. messaging apps). Indirect: growth on one side increases value for the other side (e.g. more app developers → better iPhone for users)"
+    },
+    {
+      "a": "Content Marketing",
+      "b": "Paid Advertising",
+      "difference": "Content marketing builds authority and organic traffic over months/years — poor for immediate results, strong for long-term brand equity. Paid advertising generates traffic within hours but stops when spend stops. Both serve different strategic time horizons"
+    },
+    {
+      "a": "Open Innovation",
+      "b": "Closed R&D",
+      "difference": "Closed R&D: all innovation sourced internally, proprietary. Open innovation: ideas and inputs sourced from customers, partners, communities, acquisitions. Digital platforms have made open innovation dramatically cheaper and faster"
+    },
+    {
+      "a": "Primary Research",
+      "b": "Secondary Research",
+      "difference": "Primary: new data generated directly from target audience (surveys, interviews, usability tests) — bespoke but costly. Secondary: existing data (industry reports, analytics, platform data) — faster and cheaper but may not address the specific question. Good research uses both"
+    }
+  ],
+  "examples": [
+    "Bending Spoon — Italian mobile app unicorn; rapid growth through app store optimisation and acquisition",
+    "Fanplayr — behavioural targeting platform; real-time personalisation case for eCommerce conversion",
+    "Amazon — flywheel model, customer obsession, marketplace and product development",
+    "Airbnb / BlaBlaCar — sharing economy; monetising underutilised assets via peer-to-peer platforms",
+    "Blogmeter / SHIBUMI — social listening tools for brand monitoring and sentiment analysis",
+    "Corriere della Sera — legacy media organisation navigating digital content and marketing",
+    "Costa Cruises — digital marketing in high-consideration travel/hospitality category"
+  ],
+  "keywords": [
+    "eBusiness", "eCommerce", "Digital Transformation", "Decoupling", "Recoupling",
+    "Infomediary", "Platform Economy", "Network Effects", "Co-opetition", "Multi-homing",
+    "Sharing Economy", "Winner-Take-All", "CLV", "CAC", "Churn", "ZMOT",
+    "SEO", "SEM", "Omnichannel", "CRM", "Behavioural Targeting", "CRO",
+    "Open Innovation", "Social Listening", "Netnography", "Big Data", "Freemium",
+    "Entrepreneurial Capitalism", "Virtual Value Chain", "Amazon Flywheel"
+  ],
+  "questions": [
+    {
+      "id": "ds-001",
+      "session": "1-2",
+      "type": "mcq_not_correct",
+      "question": "Regarding the impact of digital technologies on business models, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Digital technologies enabled the emergence of the platform economy and two-sided markets",
+        "b": "The sharing economy created new business models by enabling individuals to monetise underutilised assets",
+        "c": "Infomediaries enable new business models by managing and monetising large amounts of information",
+        "d": "Infomediaries overshadow and replace the role of humans in managing the value chain"
+      },
+      "correct": "d",
+      "explanation": "This directly mirrors the sample question from your Digital Strategy exam. Infomediaries augment and transform the value chain — they do not simply replace human roles. The course emphasises that humans remain central; digital tools change how they operate, not whether they are needed."
+    },
+    {
+      "id": "ds-002",
+      "session": "3",
+      "type": "mcq_not_correct",
+      "question": "Regarding the decoupling and recoupling of value chains in the digital economy, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Decoupling refers to the unbundling of traditionally integrated activities in the value chain",
+        "b": "Recoupling refers to the reassembly of value chain activities in new configurations enabled by digital technology",
+        "c": "The physical value network and the virtual value network can intersect and interact",
+        "d": "Decoupling and recoupling result in a simpler, more linear value chain with fewer participants"
+      },
+      "correct": "d",
+      "explanation": "Decoupling and recoupling create more complex, networked value configurations — not simpler ones. New intermediaries, platform players, and specialist operators emerge. The result is a richer, more diverse value network, not a simplified linear chain."
+    },
+    {
+      "id": "ds-003",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding competitive dynamics in digital markets, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Online competition has shifted from product-based to information-based competition in many industries",
+        "b": "Digital markets have enabled 'cross-industry' competition where firms from other sectors enter traditional markets",
+        "c": "Co-opetition describes a strategy where companies simultaneously compete and cooperate",
+        "d": "In digital markets, competitive advantage is primarily determined by company size, making small firms permanently disadvantaged"
+      },
+      "correct": "d",
+      "explanation": "Digital markets can actually level the playing field — small firms with superior data capabilities, network effects, or platform designs can outcompete much larger incumbents. Company size is not the primary determinant of digital competitive advantage."
+    },
+    {
+      "id": "ds-004",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding digital personalisation and customer experience, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Personalisation can apply to content, product, and the overall customer experience",
+        "b": "Beacons and geo-location technology enable contextual marketing tied to physical location",
+        "c": "The omnichannel approach integrates online and offline touchpoints into a seamless customer experience",
+        "d": "Real-time communication between companies and customers is a new capability that existed before digital technologies"
+      },
+      "correct": "d",
+      "explanation": "Real-time, scalable, personalised communication between companies and individual customers is a fundamentally new capability enabled by digital technologies. Before digital, mass communication was broadcast (one-to-many) and real-time personalisation at scale was impossible."
+    },
+    {
+      "id": "ds-005",
+      "session": "2",
+      "type": "mcq_not_correct",
+      "question": "Regarding the platform economy and two-sided markets, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A two-sided market connects two distinct user groups who provide each other with network benefits",
+        "b": "Platform businesses can grow rapidly because of network effects — value increases as more users join",
+        "c": "Platforms always charge the same price to both sides of the market",
+        "d": "Examples of platform businesses include marketplaces, social networks, and app stores"
+      },
+      "correct": "c",
+      "explanation": "A distinctive feature of two-sided markets is asymmetric pricing. Platforms often charge one side very little or nothing (e.g. users of a social network) while extracting value from the other side (e.g. advertisers). Pricing strategy on each side depends on which group's participation is more valuable to attract."
+    },
+    {
+      "id": "ds-006",
+      "session": "open",
+      "type": "open",
+      "question": "Describe the notion of decoupling and re-coupling of the value chain and explain how this enables the emergence of new types of operators. (4 points)",
+      "model_answer": "Decoupling refers to the unbundling of activities that were traditionally integrated within a single value chain. Digital technologies allow previously bundled steps — such as information provision, transaction processing, and physical delivery — to be separated and performed by different specialists. Recoupling refers to the reassembly of these activities in new configurations, creating new types of operators who aggregate specific steps across multiple industries or customer journeys. This enables the emergence of infomediaries (information intermediaries who manage data flows), pure-play online retailers, comparison platforms, and marketplace operators who own no physical assets but control customer relationships. The physical and virtual value networks intersect, creating hybrid models. The key insight is that digital technology destroys old value chain logic and enables new entrants to occupy highly profitable niches that were previously inaccessible.",
+      "key_points": [
+        "Define decoupling (unbundling of integrated activities)",
+        "Define recoupling (reassembly in new configurations)",
+        "Explain role of infomediaries",
+        "Give examples of new operator types",
+        "Note intersection of physical and virtual networks"
+      ]
+    },
+    {
+      "id": "ds-007",
+      "session": "open",
+      "type": "open",
+      "question": "Illustrate how digital technologies have changed the space-time dimensions of business strategies. (4 points)",
+      "model_answer": "Digital technologies have collapsed both the spatial and temporal constraints of traditional business strategy. In terms of space: firms can now operate globally from day one, reach any market without physical presence, and compete cross-industry (a technology company can enter financial services, retail, or logistics). Geographic barriers to entry have been dramatically reduced. In terms of time: competition is now characterised by continuous innovation rather than periodic product cycles. Speed to market, real-time customer feedback, and the ability to iterate rapidly have compressed strategic time horizons. This has pushed business towards 'entrepreneurial capitalism' — faster decision-making, modular business configurations that can be reconfigured quickly, and a premium on agility over scale. The combination means that competitive advantage is more dynamic, contested, and time-sensitive than in pre-digital markets.",
+      "key_points": [
+        "Address both space (geographic) and time (speed) dimensions",
+        "Cross-industry competition as spatial change",
+        "Continuous innovation / entrepreneurial capitalism as temporal change",
+        "Impact on competitive advantage dynamics",
+        "Concrete examples"
+      ]
+    },
+    {
+      "id": "ds-008",
+      "session": "open",
+      "type": "open",
+      "question": "Explain what is meant by co-opetition in digital markets and why it has become more prevalent with digital transformation.",
+      "model_answer": "Co-opetition describes a strategic dynamic where firms simultaneously compete and cooperate. In digital markets this is common because: (1) platform ecosystems create situations where firms need each other's participation even as they compete for value share; (2) open standards and APIs create interdependencies; (3) the speed of innovation makes it rational to partner in some areas while competing in others. For example, Google and Apple compete in smartphones but cooperate on standards. Firms cooperate on technology infrastructure and compete on customer experience. Co-opetition is more prevalent in digital markets because the modular, networked nature of digital business creates more opportunities for partial overlap — unlike traditional industries where competition was more binary.",
+      "key_points": [
+        "Define co-opetition clearly",
+        "Explain why it arises (network effects, platform ecosystems)",
+        "Give concrete digital examples",
+        "Contrast with traditional competition"
+      ]
+    },
+    {
+      "id": "ds-009",
+      "session": "1",
+      "type": "mcq_not_correct",
+      "question": "Regarding the distinction between eBusiness and eCommerce, which of the following statements is NOT correct?",
+      "options": {
+        "a": "eCommerce refers specifically to online buying and selling transactions between parties",
+        "b": "eBusiness encompasses a broader set of activities including internal operations, supply chain management, and customer service",
+        "c": "An organisation can engage in eBusiness activities without necessarily conducting eCommerce transactions",
+        "d": "eBusiness and eCommerce are interchangeable terms that refer to identical concepts"
+      },
+      "correct": "d",
+      "explanation": "eBusiness is the broader concept — it covers all aspects of conducting business electronically (internal processes, supply chain, HR, communication, collaboration). eCommerce is a subset that refers specifically to buying and selling transactions online. A firm can digitise its internal operations (eBusiness) without running an online store (eCommerce)."
+    },
+    {
+      "id": "ds-010",
+      "session": "1",
+      "type": "mcq_not_correct",
+      "question": "Regarding digital transformation in organisations, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Digital transformation involves changes to business models, processes, and customer value propositions",
+        "b": "Digital transformation is solely a technology project and does not require changes to organisational culture or structure",
+        "c": "Incumbent firms face organisational inertia challenges when undergoing digital transformation",
+        "d": "Digital transformation can create new revenue streams by enabling entirely new business models"
+      },
+      "correct": "b",
+      "explanation": "Digital transformation is not a technology project alone. It requires fundamental changes to organisational culture, structure, capabilities, and mindset — not just IT systems. Firms that treat it as purely technical typically fail to capture the value. Cultural and organisational change is usually the harder and more critical dimension."
+    },
+    {
+      "id": "ds-011",
+      "session": "1",
+      "type": "mcq_not_correct",
+      "question": "Regarding the economics of information goods (digitisable products), which of the following statements is NOT correct?",
+      "options": {
+        "a": "Information goods have high first-copy costs but near-zero marginal cost of reproduction and distribution",
+        "b": "Information goods are experience goods — consumers often cannot fully assess quality before consumption",
+        "c": "Because digital goods can be copied at zero cost, intellectual property mechanisms such as DRM have no role in digital markets",
+        "d": "Versioning — selling differentiated versions of the same information good at different price points — is a key pricing strategy in digital markets"
+      },
+      "correct": "c",
+      "explanation": "The near-zero reproduction cost of digital goods makes intellectual property protection more important, not irrelevant. Without DRM, licensing, or legal frameworks, firms cannot recoup the high fixed costs of creating information goods. The economics of information goods require firms to find ways to prevent unlimited free copying — hence DRM, paywalls, and licensing arrangements remain central to digital content business models."
+    },
+    {
+      "id": "ds-012",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding network effects in digital markets, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Direct network effects occur when the value of a product increases as more users join the same network",
+        "b": "Indirect network effects occur when growth on one side of a platform increases value for users on the other side",
+        "c": "Network effects guarantee that the firm with the largest network will always remain dominant regardless of competitor innovations",
+        "d": "Platform businesses can leverage network effects to achieve rapid growth and create significant barriers to entry"
+      },
+      "correct": "c",
+      "explanation": "Network effects confer advantages but do not guarantee permanent dominance. Competitors can overcome them through superior technology, better user experience, disruptive business models, or by targeting unserved segments. Multi-homing (users joining multiple platforms) also weakens the protective power of network effects. MySpace had strong network effects but was displaced by Facebook; Skype by WhatsApp."
+    },
+    {
+      "id": "ds-013",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding the competitive dynamics created by digital transformation, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Digital technologies have enabled cross-industry competition, with firms from outside traditional industry boundaries entering new markets",
+        "b": "The 'entrepreneurial capitalism' concept emphasises that digital markets favour speed, agility, and continuous innovation",
+        "c": "Digital markets always result in perfect competition because information is freely available and switching costs are eliminated",
+        "d": "Digital transformation has compressed strategic time horizons, requiring firms to innovate more continuously than in pre-digital eras"
+      },
+      "correct": "c",
+      "explanation": "Digital markets do not produce perfect competition — they often produce the opposite. Network effects, data advantages, switching costs, ecosystem lock-in, and platform control create strong competitive moats. Many digital markets tend toward oligopoly or monopoly. The course's emphasis on winner-take-all dynamics and platform power directly contradicts the perfect competition claim."
+    },
+    {
+      "id": "ds-014",
+      "session": "2",
+      "type": "mcq_not_correct",
+      "question": "Regarding the components of a digital business model, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A business model describes how a company creates, delivers, and captures value",
+        "b": "The revenue model is a key component of the business model, defining how the firm generates income",
+        "c": "Digital business models always require the firm to own the physical assets involved in value delivery",
+        "d": "The value proposition defines the benefits a firm offers customers and the problems it solves for them"
+      },
+      "correct": "c",
+      "explanation": "Asset-light models are a defining innovation of digital business. Airbnb owns no hotels; Uber owns no cars; Spotify owns no recording studios. Digital platforms create value by orchestrating assets owned by third parties. Ownership of physical assets is neither required nor always desirable in digital business models — it is the marketplace or platform that controls the customer relationship and data."
+    },
+    {
+      "id": "ds-015",
+      "session": "2",
+      "type": "mcq_not_correct",
+      "question": "Regarding differences between B2B and B2C eBusiness models, which of the following statements is NOT correct?",
+      "options": {
+        "a": "B2B transactions typically involve longer sales cycles and more complex decision-making processes than B2C",
+        "b": "B2B eCommerce markets are larger in aggregate transaction volume than B2C markets globally",
+        "c": "In B2B markets, purchasing decisions are always made by a single individual, unlike B2C where group decisions are more common",
+        "d": "B2B digital platforms often include features like personalised pricing, dedicated catalogues, and procurement system integration"
+      },
+      "correct": "c",
+      "explanation": "The reality is the reverse. B2B purchasing typically involves buying centres — multiple stakeholders including users, technical evaluators, financial decision-makers, and executives. This is why B2B sales cycles are longer and more complex. In B2C, while household decisions can involve multiple people, individual purchasing decisions are far more common than in B2B."
+    },
+    {
+      "id": "ds-016",
+      "session": "2",
+      "type": "mcq_not_correct",
+      "question": "Regarding digital business revenue models, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The freemium model offers a basic version free of charge and charges for premium features or additional capacity",
+        "b": "A subscription model generates recurring revenue by charging customers on a periodic basis",
+        "c": "Advertising-based revenue models require the firm to charge users directly for access to content or services",
+        "d": "Affiliate marketing generates revenue by earning commissions when referred customers complete purchases on partner sites"
+      },
+      "correct": "c",
+      "explanation": "Advertising-based models are funded by advertisers, not users — users typically receive access for free. This is the 'if you're not paying, you're the product' dynamic. Google Search, Facebook, and most news sites use advertising models precisely because they do not charge users, instead monetising user attention and data. Charging users directly is the opposite of an advertising model."
+    },
+    {
+      "id": "ds-017",
+      "session": "3",
+      "type": "mcq_not_correct",
+      "question": "Regarding the virtual value chain and infomediaries, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The virtual value chain runs parallel to the physical value chain and involves the gathering, processing, and distribution of information",
+        "b": "Infomediaries create value by collecting, aggregating, and monetising information that enables better matching between buyers and sellers",
+        "c": "The virtual value chain has entirely replaced the physical value chain in most industries",
+        "d": "Companies that master both the physical and virtual value chains can achieve distinctive competitive positions"
+      },
+      "correct": "c",
+      "explanation": "The virtual and physical value chains coexist and intersect — one has not replaced the other in most industries. Even heavily digitalised sectors like retail, financial services, or logistics rely on physical infrastructure. The course explicitly discusses the intersection of physical and virtual networks as a strategic opportunity, not a transition where the physical disappears."
+    },
+    {
+      "id": "ds-018",
+      "session": "2",
+      "type": "mcq_not_correct",
+      "question": "Regarding C2C eBusiness models and the sharing economy, which of the following statements is NOT correct?",
+      "options": {
+        "a": "C2C platforms like eBay or Vinted enable individuals to sell to other individuals, with the platform earning fees or advertising revenue",
+        "b": "The sharing economy creates value by enabling individuals to monetise underutilised assets such as cars, homes, or skills",
+        "c": "C2C and peer economy models eliminate all need for trust mechanisms since all participants are non-commercial individuals",
+        "d": "Regulatory uncertainty is a significant challenge for peer economy platforms as they often blur traditional industry category boundaries"
+      },
+      "correct": "c",
+      "explanation": "Trust is critical — and harder to establish — in C2C contexts precisely because participants are private individuals rather than established commercial entities. Platforms invest heavily in reputation systems (star ratings, reviews), identity verification, payment escrow, and insurance precisely to solve this trust problem. Airbnb's host guarantee and eBay's feedback system are direct responses to the trust challenge in peer transactions."
+    },
+    {
+      "id": "ds-019",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding the digital customer journey, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The customer journey maps all touchpoints a customer has with a brand from initial awareness through to post-purchase engagement",
+        "b": "Customer journey mapping helps firms identify pain points and opportunities to improve the customer experience",
+        "c": "In digital markets, the customer journey is strictly linear and always follows the same sequence of awareness, consideration, and purchase",
+        "d": "Post-purchase experience and loyalty phases are increasingly important parts of the digital customer journey"
+      },
+      "correct": "c",
+      "explanation": "Digital customer journeys are non-linear. Consumers switch between devices and channels, re-enter the journey at different stages, share experiences on social media that influence others, and make purchases outside the 'expected' sequence. A customer might discover a product on Instagram, research via Google, watch a YouTube review, purchase via mobile, and seek support on Twitter. Journey mapping must account for this complexity."
+    },
+    {
+      "id": "ds-020",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding omnichannel and multichannel strategies, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A multichannel strategy involves a brand being present on multiple channels, but those channels may operate independently with separate data and experiences",
+        "b": "An omnichannel strategy integrates all channels so customers experience a seamless, consistent interaction regardless of which channel they use",
+        "c": "Omnichannel and multichannel strategies are interchangeable terms that describe the same approach to customer engagement",
+        "d": "Online-to-offline (O2O) commerce connects digital interactions with physical store experiences and is a dimension of omnichannel strategy"
+      },
+      "correct": "c",
+      "explanation": "Omnichannel and multichannel are distinct. A multichannel firm may have a website, app, and stores that each operate independently — different inventory, different pricing, different data silos. An omnichannel firm integrates all these so the customer's cart, history, and experience is consistent everywhere. The distinction matters strategically: omnichannel requires significant backend integration investment."
+    },
+    {
+      "id": "ds-021",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding digital personalisation and customer data, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Data collected across digital touchpoints can enable personalised product recommendations and targeted communications",
+        "b": "Beacon technology enables location-based marketing by communicating with customers' mobile devices near a physical store",
+        "c": "Personalisation based on individual customer data always increases customer satisfaction with no privacy or ethical implications",
+        "d": "Contextual marketing delivers relevant content or offers based on the real-time context of the customer, such as location or time of day"
+      },
+      "correct": "c",
+      "explanation": "Personalisation at scale using individual data raises significant privacy, consent, and ethical concerns. GDPR and consumer expectations around data use mean that personalisation can feel intrusive or manipulative if done without transparency. The course — and the Fanplayr case — acknowledges that personalisation effectiveness must be balanced against trust and regulatory compliance."
+    },
+    {
+      "id": "ds-022",
+      "session": "9",
+      "type": "mcq_not_correct",
+      "question": "Regarding Customer Relationship Management (CRM) in digital business, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Digital CRM systems enable firms to track customer interactions across multiple channels and touchpoints",
+        "b": "Customer Lifetime Value (CLV) is a key CRM metric representing the total net profit expected from a customer over the entire relationship",
+        "c": "CRM systems are only useful for large companies with millions of customers and offer no benefit to small businesses",
+        "d": "Social CRM extends traditional CRM to incorporate social media data, enabling more complete customer profiles and social engagement tracking"
+      },
+      "correct": "c",
+      "explanation": "CRM tools are valuable at all scales. For small businesses, CRM systems provide structure for managing customer relationships, tracking interactions, and identifying high-value customers — functions that become harder to manage manually as a customer base grows beyond a handful of contacts. Cloud-based CRM tools (HubSpot, Pipedrive) are specifically designed for and widely adopted by small businesses."
+    },
+    {
+      "id": "ds-023",
+      "session": "7",
+      "type": "mcq_not_correct",
+      "question": "Regarding search engine marketing (SEM) and search engine optimisation (SEO), which of the following statements is NOT correct?",
+      "options": {
+        "a": "SEO involves optimising website content and structure to improve organic (non-paid) ranking in search engine results",
+        "b": "SEM typically refers to paid search advertising, where firms bid on keywords to appear in sponsored results",
+        "c": "A high organic search ranking can be purchased directly from the search engine for a fixed monthly fee",
+        "d": "Click-through rate (CTR) is a key metric in search marketing, measuring the proportion of users who click on a given result"
+      },
+      "correct": "c",
+      "explanation": "Organic search rankings cannot be purchased — that is the fundamental distinction between SEO (earned through quality, relevance, and technical optimisation) and paid search (SEM). Selling guaranteed organic rankings would undermine the integrity of search results, which is why search engines do not offer this. What can be purchased is placement in the sponsored/ads section, not organic rankings."
+    },
+    {
+      "id": "ds-024",
+      "session": "21",
+      "type": "mcq_not_correct",
+      "question": "Regarding social media marketing, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Social media enables two-way dialogue between brands and consumers, unlike traditional broadcast advertising",
+        "b": "Influencer marketing involves partnering with individuals who have social media followings to promote products or services",
+        "c": "Organic social media reach has generally increased over time on major platforms as those platforms have grown larger",
+        "d": "User-generated content serves as authentic marketing material and can build consumer trust more effectively than brand-produced content"
+      },
+      "correct": "c",
+      "explanation": "Organic reach has declined significantly on major platforms like Facebook and Instagram. As platforms have grown, they have prioritised content from friends and paid advertising over brand pages, reducing the percentage of followers who see a brand's organic posts. This is partly a business model choice — declining organic reach pushes brands toward paid promotion. This trend is one of the key challenges in social media marketing strategy."
+    },
+    {
+      "id": "ds-025",
+      "session": "21",
+      "type": "mcq_not_correct",
+      "question": "Regarding email marketing and digital direct marketing, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Email marketing offers high return on investment relative to many other digital channels because of its low cost per message",
+        "b": "Segmentation and personalisation in email campaigns can significantly improve open rates and conversion rates",
+        "c": "Under GDPR and similar regulations, companies can send marketing emails to any address they can find without prior consent",
+        "d": "A/B testing of subject lines, content, and send times is standard practice in professional email marketing"
+      },
+      "correct": "c",
+      "explanation": "GDPR (and similar laws such as CAN-SPAM and CASL) requires that recipients have explicitly consented to receive marketing communications. Sending unsolicited marketing emails is illegal under GDPR and can result in significant fines. Legitimate email marketing requires a permission-based list, clear opt-in mechanisms, and easy unsubscribe options. This is a fundamental legal and ethical constraint on email marketing."
+    },
+    {
+      "id": "ds-026",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding digital marketing metrics and measurement, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Cost per acquisition (CPA) measures how much it costs to acquire one customer through a specific marketing channel",
+        "b": "Return on advertising spend (ROAS) measures revenue generated for every unit of currency spent on advertising",
+        "c": "A high click-through rate (CTR) always indicates that a campaign is profitable and generating positive return on investment",
+        "d": "Attribution modelling addresses the challenge of assigning credit for a conversion to the correct touchpoint in a multi-channel customer journey"
+      },
+      "correct": "c",
+      "explanation": "CTR measures engagement with an ad but says nothing about what happens after the click. A campaign could have a high CTR but generate no purchases (poor landing page, irrelevant audience, wrong product-market fit). ROI depends on what happens downstream: conversion rate, average order value, and margins. A high CTR with poor conversion is worse than a lower CTR with strong conversion."
+    },
+    {
+      "id": "ds-027",
+      "session": "22",
+      "type": "mcq_not_correct",
+      "question": "Regarding content marketing in digital business, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Content marketing aims to attract and retain customers by creating and distributing valuable, relevant content",
+        "b": "Content marketing can improve SEO performance by generating high-quality pages and inbound links",
+        "c": "Content marketing delivers immediate, guaranteed results and consistently outperforms paid advertising for short-term lead generation",
+        "d": "Thought leadership content — white papers, webinars, expert articles — is particularly effective in B2B content marketing"
+      },
+      "correct": "c",
+      "explanation": "Content marketing is a long-term strategy. It builds authority, organic traffic, and audience trust over time — typically months or years — before generating significant ROI. It is generally poor at delivering immediate results compared to paid advertising, which can generate traffic and leads within hours. The comparison between content marketing (brand building, long-term) and paid advertising (immediate, scalable but costly) is a classic strategic tradeoff."
+    },
+    {
+      "id": "ds-028",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding platform economics and winner-take-all dynamics in digital markets, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Strong network effects can lead to winner-take-all or winner-take-most outcomes in platform markets",
+        "b": "Multi-homing — where users or providers participate in multiple competing platforms — weakens a platform's competitive moat",
+        "c": "All digital platform markets inevitably converge on a single dominant monopolist, making competition policy irrelevant",
+        "d": "Chicken-and-egg problems arise when a platform must attract two sides of the market simultaneously and each side waits for the other"
+      },
+      "correct": "c",
+      "explanation": "Many digital platform markets sustain multiple competing platforms, especially where multi-homing is easy. Dating apps, food delivery, ride-hailing, and B2B marketplaces often have several viable competitors. Winner-take-all is more likely when switching costs are very high, multi-homing is costly, and network effects are very strong — but it is not inevitable. Competition policy remains highly relevant in platform markets precisely because of the risk (not certainty) of monopoly."
+    },
+    {
+      "id": "ds-029",
+      "session": "6",
+      "type": "mcq_not_correct",
+      "question": "Regarding the role of artificial intelligence in eBusiness, which of the following statements is NOT correct?",
+      "options": {
+        "a": "AI enables more sophisticated personalisation by processing large volumes of behavioural data to predict customer preferences",
+        "b": "Chatbots powered by AI can handle routine customer service inquiries at scale without human intervention",
+        "c": "AI-driven recommendation systems have no significant impact on consumer purchasing behaviour or platform revenues",
+        "d": "Machine learning algorithms require substantial volumes of training data to generate reliable predictions"
+      },
+      "correct": "c",
+      "explanation": "AI recommendation systems drive substantial revenue. Amazon attributes approximately 35% of its revenue to recommendation algorithms. Netflix estimates its recommendation engine saves over $1 billion annually in customer retention. These systems are among the highest-ROI applications of AI in digital commerce. The idea that recommendations have no significant impact is directly contradicted by extensive industry evidence."
+    },
+    {
+      "id": "ds-030",
+      "session": "12-13",
+      "type": "mcq_not_correct",
+      "question": "Regarding big data and its application in digital market research, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Big data is characterised by volume, velocity, and variety — the three Vs describing its scale, speed, and diversity of types",
+        "b": "Big data analytics can reveal customer behavioural patterns that would be invisible through traditional small-sample survey research",
+        "c": "Because big data is derived from real customer actions, it is always unbiased and superior to all other forms of market research",
+        "d": "Data governance and quality management are critical challenges when implementing big data analytics capabilities"
+      },
+      "correct": "c",
+      "explanation": "Big data has its own inherent biases. Digital behavioural data only captures people who use digital channels — excluding offline populations. Selection bias means the sample of people who engage online differs from the general population. Data collected passively can also reflect existing inequalities or platform design choices. Big data is a powerful complement to, not a replacement for, other research methods — and its quality and biases must be critically evaluated."
+    },
+    {
+      "id": "ds-031",
+      "session": "20",
+      "type": "mcq_not_correct",
+      "question": "Regarding mobile commerce (m-commerce) and mobile consumer experience, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Mobile devices have become a primary channel for product research, price comparison, and purchase in many consumer markets",
+        "b": "Mobile-first design prioritises the user experience on smaller screens, then adapts for desktop",
+        "c": "Progressive Web Apps (PWAs) require users to download and install them from app stores, making access harder than native apps",
+        "d": "Push notifications are a key mobile app feature enabling brands to re-engage users with timely, personalised messages"
+      },
+      "correct": "c",
+      "explanation": "PWAs are specifically designed to avoid the app store download requirement. They run in the browser, can be 'added to homescreen' without an app store visit, load quickly, and work offline via service workers. The ability to bypass app store distribution (and its associated costs and approval processes) is one of the key advantages of PWAs over native apps — not a disadvantage."
+    },
+    {
+      "id": "ds-032",
+      "session": "5",
+      "type": "mcq_not_correct",
+      "question": "Regarding digital ecosystems and their strategic implications, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A digital ecosystem is a network of organisations, individuals, and technologies that interact and co-evolve around a digital platform",
+        "b": "Ecosystem orchestrators — firms controlling key platform infrastructure or data — typically capture disproportionate value from the ecosystem",
+        "c": "All participants in a digital ecosystem have equal power and capture equal value relative to the ecosystem orchestrator",
+        "d": "Lock-in effects and switching costs are mechanisms through which ecosystem orchestrators maintain platform attractiveness and retain participants"
+      },
+      "correct": "c",
+      "explanation": "Power and value distribution within ecosystems is deeply asymmetric. Orchestrators (Apple App Store, Amazon Marketplace, Google Play) set the rules, take a percentage of all transactions, and control access to users — while app developers and sellers are dependent on the platform. Many ecosystem participants accept unfavourable terms because the alternative (leaving the ecosystem) means losing access to the user base. This asymmetry is a defining feature of platform power."
+    },
+    {
+      "id": "ds-033",
+      "session": "12-13",
+      "type": "mcq_not_correct",
+      "question": "Regarding online market research methods, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Online surveys allow firms to reach large samples quickly and at lower cost than face-to-face interviews",
+        "b": "Netnography (digital ethnography) involves observing and analysing online communities and social media to derive consumer insights",
+        "c": "Online market research always produces more accurate results than offline methods because respondents are anonymous and face no social desirability bias",
+        "d": "Social listening tools can monitor brand mentions, sentiment, and consumer conversations across social platforms in real time"
+      },
+      "correct": "c",
+      "explanation": "Online research has its own biases and limitations. Self-selection means only certain people complete online surveys. Samples may not represent the general population. Online respondents can still face social desirability effects (trying to appear rational, responsible, or fashionable) and are susceptible to satisficing (giving quick, low-effort answers). Additionally, survey fraud and bot responses are practical issues. Online and offline methods have complementary strengths."
+    },
+    {
+      "id": "ds-034",
+      "session": "12-13",
+      "type": "mcq_not_correct",
+      "question": "Regarding online consumer behaviour, which of the following statements is NOT correct?",
+      "options": {
+        "a": "The zero moment of truth (ZMOT) describes the online research and evaluation that consumers undertake before a purchase decision",
+        "b": "Online reviews and ratings significantly influence consumer purchasing decisions, especially where product quality is hard to assess in advance",
+        "c": "Online consumers are purely rational decision-makers who always search exhaustively and invariably choose the lowest-priced option",
+        "d": "Digital comparison tools have reduced information asymmetry in many markets by making price and product information more transparent"
+      },
+      "correct": "c",
+      "explanation": "Behavioural economics research consistently shows that online consumers are subject to cognitive biases — anchoring on first prices seen, preferring default options, being influenced by framing, reviews, and recommendations, and responding to scarcity cues. Convenience, trust, brand familiarity, and interface design often matter more than price. The 'rational economic man' model does not describe real online consumer behaviour."
+    },
+    {
+      "id": "ds-035",
+      "session": "12-13",
+      "type": "mcq_not_correct",
+      "question": "Regarding web analytics and digital performance measurement, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Bounce rate measures the percentage of visitors who leave a website after viewing only one page without further interaction",
+        "b": "Unique visitors and sessions are different metrics: unique visitors counts distinct individuals; sessions counts visits including repeat visits",
+        "c": "Web analytics tools provide complete, perfect data on all users, including those who use ad blockers or have disabled cookies",
+        "d": "Funnel analysis maps how users move through a defined sequence of steps toward a conversion goal, identifying where drop-offs occur"
+      },
+      "correct": "c",
+      "explanation": "Web analytics data is necessarily incomplete. Ad blockers prevent tracking scripts from loading. Browser privacy features (Safari ITP, Firefox Enhanced Tracking Protection) limit cookie duration. Users who opt out of tracking or use private browsing are invisible to standard analytics. GDPR consent requirements mean many users decline tracking. Real analytics professionals apply statistical corrections for known data gaps — treating raw analytics numbers as perfect is a common error."
+    },
+    {
+      "id": "ds-036",
+      "session": "16",
+      "type": "mcq_not_correct",
+      "question": "Regarding digital market segmentation and targeting, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Behavioural segmentation in digital markets uses data on purchase history, browsing behaviour, and engagement patterns",
+        "b": "Lookalike audiences are created by identifying users who share characteristics with a firm's best existing customers",
+        "c": "In digital markets, it is possible and legally unrestricted to use any customer data for targeting without limitation",
+        "d": "Micro-segmentation enables firms to target very specific consumer groups with tailored messages at lower cost than traditional mass media"
+      },
+      "correct": "c",
+      "explanation": "Data use for targeting is heavily regulated. GDPR restricts the collection and processing of personal data of EU citizens, requiring lawful basis (typically consent or legitimate interest), data minimisation, and purpose limitation. Sensitive categories (health, political views) face even stricter rules. Third-party data brokerage and cross-site tracking are under increasing regulatory and platform-level restrictions. The idea of unrestricted data use for targeting is precisely what regulators are challenging."
+    },
+    {
+      "id": "ds-037",
+      "session": "12-13",
+      "type": "mcq_not_correct",
+      "question": "Regarding primary and secondary research in digital market analysis, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Secondary research analyses existing data — such as industry reports, government statistics, or platform analytics",
+        "b": "Primary research generates new data directly from the target audience through surveys, interviews, or usability tests",
+        "c": "Secondary research is always preferable to primary research and the two methods address identical research questions",
+        "d": "Digital tools have blurred the line between secondary and primary research by making real-time behavioural data available as an alternative to self-reported survey data"
+      },
+      "correct": "c",
+      "explanation": "Secondary and primary research serve different purposes and neither is universally preferable. Secondary research is faster and cheaper but may not address the specific question, may be outdated, or may lack the granularity required. Primary research answers bespoke questions with fresh data but costs more time and money. Good research design uses both in complementary ways — secondary to build context and hypothesis, primary to test and fill gaps."
+    },
+    {
+      "id": "ds-038",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding demand forecasting in digital markets, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Time-series analysis uses historical sales data to identify patterns and project future demand",
+        "b": "Digital platforms have access to large volumes of real-time data that can improve the accuracy and timeliness of demand forecasts",
+        "c": "A demand forecast produced by a digital algorithm is always accurate because data eliminates all uncertainty",
+        "d": "Leading indicators — such as search volume trends, social media activity, or website traffic — can serve as early signals of demand change"
+      },
+      "correct": "c",
+      "explanation": "All forecasts carry uncertainty — including algorithmic ones. Digital data improves signal quality and timeliness but cannot eliminate uncertainty arising from novel events, behavioural shifts, competitive moves, or macroeconomic shocks. Amazon, with arguably the world's best demand forecasting capability, still experiences stockouts and overstock situations. Forecasting is fundamentally probabilistic, and the value of algorithms is in reducing — not eliminating — forecast error."
+    },
+    {
+      "id": "ds-039",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding price sensitivity and elasticity in digital markets, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Price comparison websites and search engines have increased price transparency in many consumer markets",
+        "b": "Dynamic pricing — adjusting prices in real time based on demand, competition, and customer characteristics — is widely used by digital businesses",
+        "c": "In digital markets, lower prices always lead to higher profitability because marginal cost of serving additional customers is near zero",
+        "d": "Personalised pricing based on willingness-to-pay data raises ethical questions and faces increasing regulatory scrutiny"
+      },
+      "correct": "c",
+      "explanation": "Even with near-zero marginal cost of digital delivery, lower prices reduce revenue per unit and may not be compensated by sufficient volume increase if demand is inelastic. Customer acquisition also has cost (marketing, sales, onboarding) regardless of marginal delivery cost. The near-zero marginal cost argument applies to delivery, not to the full economics of the business. Pricing decisions must consider contribution margin, positioning, and competitive dynamics — not just marginal cost."
+    },
+    {
+      "id": "ds-040",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding Customer Lifetime Value (CLV) in digital business, which of the following statements is NOT correct?",
+      "options": {
+        "a": "CLV is calculated based on expected future revenue from a customer, adjusted for retention probability and cost to serve",
+        "b": "In subscription businesses, reducing churn rate has a significant positive compounding impact on CLV",
+        "c": "CLV is only relevant for companies with physical products and has no application in digital or service businesses",
+        "d": "The ratio of Customer Acquisition Cost (CAC) to CLV is a key indicator of business model sustainability"
+      },
+      "correct": "c",
+      "explanation": "CLV is especially important for digital and subscription businesses, where recurring revenue and long-term customer retention are the central value-creation mechanisms. Netflix, Spotify, SaaS companies, and digital marketplaces are more dependent on CLV thinking than most physical product companies. The entire economics of subscription business — and the decision about how much to spend acquiring a customer — hinges on CLV calculations."
+    },
+    {
+      "id": "ds-041",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding demand drivers in the digital economy, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Network effects — where value increases as more users adopt a product — are a demand-side driver particular to digital and platform markets",
+        "b": "Switching costs created by data lock-in or integration dependencies can reduce price sensitivity and sustain customer relationships",
+        "c": "In digital markets, demand is driven purely by product features and price, making brand equity and consumer trust irrelevant",
+        "d": "Complementary products and services (such as apps for a smartphone platform) can drive demand for the primary platform"
+      },
+      "correct": "c",
+      "explanation": "Brand equity and trust are significant demand drivers in digital markets, particularly in categories involving personal data, financial transactions, health, or privacy. Consumers are more likely to share data, make purchases, or adopt a platform from a brand they trust. Trust asymmetry is one of the reasons incumbent platforms retain users even when competitors offer superior features — and why new entrants investing heavily in trust-building often outperform those that do not."
+    },
+    {
+      "id": "ds-042",
+      "session": "11",
+      "type": "mcq_not_correct",
+      "question": "Regarding subscription business models in digital markets, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Monthly Recurring Revenue (MRR) and Annual Recurring Revenue (ARR) are key financial metrics for subscription businesses",
+        "b": "Churn rate — the percentage of subscribers who cancel within a period — directly determines the sustainability of subscription business economics",
+        "c": "Subscription models eliminate the need to invest in customer acquisition because subscribers are permanently committed and never leave",
+        "d": "Subscription businesses benefit from more predictable revenue streams than transactional businesses, aiding financial planning and investor valuation"
+      },
+      "correct": "c",
+      "explanation": "Churn is inherent to subscription businesses — subscribers leave due to price sensitivity, lifecycle changes, competition, or dissatisfaction. Subscriber attrition means continuous acquisition investment is required just to maintain revenue (the 'leaky bucket' problem). Growing a subscription business requires acquisition well in excess of churn. This is why CAC:CLV ratio is so central to subscription economics: the business only works if the lifetime value of customers acquired exceeds the cost of acquiring and retaining them."
+    },
+    {
+      "id": "ds-043",
+      "session": "8",
+      "type": "mcq_not_correct",
+      "question": "Regarding behavioural targeting and real-time personalisation (as illustrated in the Fanplayr case), which of the following statements is NOT correct?",
+      "options": {
+        "a": "Behavioural targeting segments website visitors based on real-time actions such as pages viewed, time on site, and purchase intent signals",
+        "b": "Real-time personalisation can deliver different offers, messages, or experiences to visitors based on their predicted behaviour or segment",
+        "c": "Behavioural targeting can operate within the same browsing session, influencing the user experience in real time",
+        "d": "Behavioural targeting guarantees conversion for every visitor shown a personalised offer, provided the offer is sufficiently attractive"
+      },
+      "correct": "d",
+      "explanation": "Targeting improves conversion rates at a population level — it does not guarantee conversion for any individual visitor. Many visitors will not convert regardless of the offer, due to non-intent browsing, budget constraints, or simply not being at the right point in the purchase journey. The value of behavioural targeting is statistical: shifting the conversion rate from, say, 2% to 3% across millions of sessions creates substantial revenue — but individual conversion is never guaranteed."
+    },
+    {
+      "id": "ds-044",
+      "session": "20",
+      "type": "mcq_not_correct",
+      "question": "Regarding conversion rate optimisation (CRO) in digital business, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Conversion rate is calculated as the number of conversions divided by the total number of visitors or sessions",
+        "b": "Small improvements in conversion rate can generate significant revenue impact, especially on high-traffic websites",
+        "c": "CRO is a one-time project that, once completed, requires no further testing or iteration",
+        "d": "Landing page design, call-to-action placement, and page load speed are among the factors that can influence conversion rates"
+      },
+      "correct": "c",
+      "explanation": "CRO is a continuous process, not a one-time fix. User behaviour evolves, competitive context changes, seasonal patterns shift, and new product ranges change what is optimal. What works today may be outperformed by a new variant tomorrow. Professional CRO programmes maintain ongoing A/B testing and experimentation roadmaps, continuously seeking incremental improvements. The idea of a finished, permanent optimal state is inconsistent with how digital markets and user behaviour actually work."
+    },
+    {
+      "id": "ds-045",
+      "session": "12-13",
+      "type": "mcq_not_correct",
+      "question": "Regarding A/B testing in digital marketing and product optimisation, which of the following statements is NOT correct?",
+      "options": {
+        "a": "A/B testing compares two or more variants of a webpage, email, or ad to determine which performs better on a defined metric",
+        "b": "Statistical significance is required before drawing conclusions from A/B tests to ensure results are not due to random chance",
+        "c": "A/B test results from one audience or time period can always be directly applied to different audiences or future periods without further validation",
+        "d": "Multivariate testing extends A/B testing to simultaneously test multiple variables and their interactions"
+      },
+      "correct": "c",
+      "explanation": "A/B test results have limited external validity. A test run on UK visitors in Q4 (peak shopping season) may not predict results for different audiences, geographies, or times of year. User segments respond differently to the same changes. This is why CRO programmes run ongoing tests rather than applying a single historical result indefinitely. Novelty effects (initial engagement with anything new) can also cause A/B results to fade over time."
+    },
+    {
+      "id": "ds-046",
+      "session": "8",
+      "type": "mcq_not_correct",
+      "question": "Regarding the implementation of personalisation platforms in digital businesses, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Integrating a personalisation platform with existing CRM, analytics, and eCommerce systems is typically a significant technical challenge",
+        "b": "High-quality, clean data is a prerequisite for effective personalisation — poor data quality leads to poor targeting outcomes",
+        "c": "Once a personalisation platform is implemented, it operates autonomously and requires no ongoing management or optimisation",
+        "d": "Change management — ensuring marketing and commercial teams adopt data-driven approaches — is a key implementation challenge"
+      },
+      "correct": "c",
+      "explanation": "Personalisation platforms require continuous management: models need retraining as customer behaviour evolves, audience segments need updating, rules require reviewing for relevance, and new use cases need designing and testing. The technical implementation is often the easier part; sustained business value requires ongoing human oversight, strategic decision-making, and iterative optimisation. This is consistent with the Fanplayr case emphasis on partnership and ongoing collaboration, not a 'set-and-forget' deployment."
+    },
+    {
+      "id": "ds-047",
+      "session": "8",
+      "type": "mcq_not_correct",
+      "question": "Regarding data ethics and consumer trust in digital marketing, which of the following statements is NOT correct?",
+      "options": {
+        "a": "Transparency about data collection and usage practices can increase consumer trust and willingness to share personal information",
+        "b": "GDPR imposes obligations on firms processing personal data of EU citizens, including requirements for consent and data minimisation",
+        "c": "Consumer trust in data usage is irrelevant for digital businesses because most consumers are indifferent to how their data is used",
+        "d": "First-party data — collected directly from customers through owned channels — is increasingly valuable as third-party cookie restrictions tighten"
+      },
+      "correct": "c",
+      "explanation": "Consumer awareness of and concern about data privacy has grown substantially. Post-Cambridge Analytica, post-GDPR, and with continued media coverage of data breaches, consumers increasingly factor data practices into brand trust and purchasing decisions. Research consistently shows significant segments of consumers who actively choose providers based on privacy practices. For digital businesses, trust is a competitive differentiator — and its erosion (through a breach or scandal) can cause immediate and lasting revenue damage."
+    }
+  ]
+}
